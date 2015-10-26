@@ -29,6 +29,7 @@
   -moz-border-radius: 3px;
   border-radius: 3px;
   max-width: 195px;
+  font-size: 13px;
 }
 
 .header .header_tel_wrap .head_zvonok span {
