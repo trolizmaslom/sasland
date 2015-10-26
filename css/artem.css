@@ -1,0 +1,40 @@
+.long-table-wrap {
+  width: 100%;
+  background-color: #fafbfc;
+}
+
+.long-table-wrap .container .get-analiz-box {
+  text-align: center;
+}
+
+.long-table-wrap .container .header-table-stroke {
+  text-align: center;
+}
+
+.long-table-wrap .container .table-striped-chits .table-chits thead tr th {
+  text-align: center;
+  background-color: #283040;
+  color: #ffffff;
+  padding-bottom: 36px;
+  padding-top: 36px;
+}
+
+.long-table-wrap .container .table-striped-chits .table-chits thead tr th:first-child {
+  width: 23.5%;
+}
+
+.long-table-wrap .container .table-striped-chits .table-chits thead tr th:nth-child(2) {
+  width: 24%;
+}
+
+.long-table-wrap .container .table-striped-chits .table-chits thead tr th:nth-child(3) {
+  width: 14%;
+}
+
+.long-table-wrap .container .table-striped-chits .table-chits thead tr th:nth-child(4) {
+  width: 23.5%;
+}
+
+.long-table-wrap .container .table-striped-chits .table-chits thead tr th:last-child {
+  width: 15%;
+}
