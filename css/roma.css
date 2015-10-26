@@ -3,4 +3,83 @@
   background-color: #283040;
 }
 
+.footer .container .footer-wrap .left-info h2 {
+  color: #fff;
+  font-family: 'PNova';
+  font-size: 30px;
+}
+
+.footer .container .footer-wrap .left-info .info {
+  padding-left: 30px;
+}
+
+.footer .container .footer-wrap .left-info .info .address span {
+  font-size: 18px;
+  font-family: 'PNova';
+  color: #676C77;
+}
+
+.footer .container .footer-wrap .left-info .info .address span:before {
+  display: block;
+  content: '';
+  background-image: url(../images/home-icon.png);
+  background-repeat: no-repeat;
+  width: 19px;
+  height: 17px;
+  position: absolute;
+  left: 15px;
+}
+
+.footer .container .footer-wrap .left-info .info .address p {
+  font-size: 18px;
+  font-family: 'PNova';
+  color: #fcfcfc;
+}
+
+.footer .container .footer-wrap .left-info .info .phone span {
+  font-size: 18px;
+  font-family: 'PNova';
+  color: #676C77;
+}
+
+.footer .container .footer-wrap .left-info .info .phone span:before {
+  display: block;
+  content: '';
+  background-image: url(../images/phone-icon.png);
+  background-repeat: no-repeat;
+  width: 17px;
+  height: 17px;
+  position: absolute;
+  left: 15px;
+}
+
+.footer .container .footer-wrap .left-info .info .phone p {
+  font-size: 18px;
+  font-family: 'PNova';
+  color: #fcfcfc;
+}
+
+.footer .container .footer-wrap .left-info .info .email span {
+  font-size: 18px;
+  font-family: 'PNova';
+  color: #676C77;
+}
+
+.footer .container .footer-wrap .left-info .info .email span:before {
+  display: block;
+  content: '';
+  background-image: url(../images/mail-icon.png);
+  background-repeat: no-repeat;
+  width: 17px;
+  height: 12px;
+  position: absolute;
+  left: 15px;
+}
+
+.footer .container .footer-wrap .left-info .info .email p {
+  font-size: 18px;
+  font-family: 'PNova';
+  color: #fcfcfc;
+}
+
 /* /footer */
