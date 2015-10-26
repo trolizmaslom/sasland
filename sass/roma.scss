@@ -1,0 +1,47 @@
+/* footer */
+
+.footer{background-color: #283040;
+	.container{
+		.footer-wrap{
+			.left-info{
+				h2{color: #fff;font-family: 'PNova'; font-size: 30px;}
+				.info{padding-left: 30px;
+					.address{
+						span{font-size: 18px; font-family: 'PNova'; color: #676C77; 
+							&:before{display: block;content: ''; background-image: url(../images/home-icon.png); background-repeat: no-repeat;width: 19px;height: 17px; position: absolute; left:15px;}
+						}
+						p{font-size: 18px; font-family: 'PNova'; color: #fcfcfc; }
+					}
+					.phone{
+						span{font-size: 18px; font-family: 'PNova'; color: #676C77; 
+							&:before{display: block;content: ''; background-image: url(../images/phone-icon.png); background-repeat: no-repeat;width: 17px;height: 17px; position: absolute; left:15px;}
+						}
+						p{font-size: 18px; font-family: 'PNova'; color: #fcfcfc; }
+					}
+					.email{
+						span{font-size: 18px; font-family: 'PNova'; color: #676C77; 
+							&:before{display: block;content: ''; background-image: url(../images/mail-icon.png); background-repeat: no-repeat;width: 17px;height: 12px; position: absolute; left:15px;}
+						}
+						p{font-size: 18px; font-family: 'PNova'; color: #fcfcfc; }
+					}
+				}
+				.work-graph{
+					span{}
+					p{}
+				}
+			}
+			.right-form{
+				.form-wrap{
+					.input-wrap{
+						input{}
+					}
+					.input-submit-wrap{
+						button{}
+					}
+				}
+			}
+		}
+	}
+}
+
+/* /footer */
