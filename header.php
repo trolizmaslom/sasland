@@ -4,11 +4,12 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="description" content="" />
 	<meta name="keywords" content="" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title></title>
 	<link rel="stylesheet" type="text/css" href="css/reset.css" media="all" />
 
-	<!--<link rel="stylesheet" href="css/bootstrap.css" media="all" />
-	<link rel="stylesheet" href="css/bootstrap-theme.css" media="all" />-->
+	<link rel="stylesheet" href="css/bootstrap.css" media="all" />
+	<link rel="stylesheet" href="css/bootstrap-theme.css" media="all" />
 
 	<link rel="stylesheet" type="text/css" href="css/style.css" media="all" />
 
@@ -107,7 +108,11 @@
 <body>
 	<?partial('zHiddenBlock');?>
 	<header class="header">
-		<div class="mbox">
-
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-4"></div>
+				<div class="col-xs-4"></div>
+				<div class="col-xs-4"></div>
+			</div>
 		</div>
 	</header>
