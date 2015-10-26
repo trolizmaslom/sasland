@@ -3,16 +3,18 @@
     .clients-align{
         .client-title{span{}}
         .client-img{
-            .item-img{display: block;}
-            .img0{a{background-image: url('../images/client0.png');width:300px;height:89px;}}
-            .img1{a{background-image: url('../images/client1.png');width:300px;height:89px;}}
-            .img2{a{background-image: url('../images/client2.png');width:300px;height:89px;}}
-            .img3{a{background-image: url('../images/client3.png');width:300px;height:89px;}}
-            .img4{a{background-image: url('../images/client4.png');width:300px;height:89px;}}
-            .img5{a{background-image: url('../images/client5.png');width:300px;height:89px;}}
-            .img6{a{background-image: url('../images/client6.png');width:300px;height:89px;}}
-            .img7{a{background-image: url('../images/client7.png');width:300px;height:89px;}}
-            .img8{a{background-image: url('../images/client9.png');width:300px;height:89px;}}
+            .item-img{
+                a{background-color: transparent;position: relative;display: block;
+                &:hover{img{
+                    &:nth-child(2){z-index: 1; }
+                }}
+                img{
+                    &:nth-child(2){position:absolute;left:0;top:0;z-index: -1;}
+                }
+                }
+
+            }
+
 
 
         }
