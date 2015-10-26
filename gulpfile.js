@@ -41,7 +41,7 @@ gulp.task('sass', function () {
     .pipe(sass(sassOptions).on('error', sass.logError))
     // Run Sass on those files
     .pipe(autoprefixer({
-        browsers: ['last 2 versions'],
+        browsers: ['> 0%'],
         cascade: false
     }))
     // Write the resulting CSS in the output folder
