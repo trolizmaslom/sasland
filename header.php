@@ -7,6 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title></title>
 	<link rel="stylesheet" type="text/css" href="css/reset.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="css/fonts.css" media="all" />
 
 	<link rel="stylesheet" href="css/bootstrap.css" media="all" />
 	<link rel="stylesheet" href="css/bootstrap-theme.css" media="all" />
