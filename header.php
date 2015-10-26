@@ -110,9 +110,26 @@
 	<header class="header">
 		<div class="container">
 			<div class="row">
-				<div class="col-xs-4"></div>
-				<div class="col-xs-4"></div>
-				<div class="col-xs-4"></div>
+				<div class="col-sm-4">
+					<div class="logo">
+						<a href="#">
+							<img src="images/logo.png" alt="">
+						</a>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="head_descr">
+						<p>Составление инвестиционной декларации</p>
+						<p>и Технико-экономичекого обоснования</p>
+						<p>для регистрации участником СЭЗ в Крыму</p>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="header_tel_wrap">
+						<a href="#" class="head_zvonok btn btn-lg"><span>Заказать звонок</span></a>
+						<a href="tel:+79787280001"><span>+7&nbsp;978&nbsp;728&nbsp;0001</span></a>
+					</div>
+				</div>
 			</div>
 		</div>
 	</header>
