@@ -1,0 +1,37 @@
+.header .row {
+  padding-top: 45px;
+}
+
+.header .head_descr {
+  color: #99a3ab;
+  font-size: 15px;
+  border-left: 4px solid #46c3ee;
+  padding-left: 13px;
+  margin-left: 11px;
+}
+
+.header .header_tel_wrap {
+  text-align: center;
+}
+
+.header .header_tel_wrap a {
+  text-decoration: none;
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.header .header_tel_wrap .head_zvonok {
+  color: #46c3ee;
+  border: 1px solid #46c3ee;
+  font-weight: 600;
+  position: relative;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  max-width: 195px;
+  font-size: 13px;
+}
+
+.header .header_tel_wrap .head_zvonok span {
+  text-transform: uppercase;
+}
