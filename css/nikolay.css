@@ -1,0 +1,60 @@
+/*our-clients*/
+.clients-wrapp .clients-align .client-img .item-img {
+  display: block;
+}
+
+.clients-wrapp .clients-align .client-img .img0 a {
+  background-image: url("../images/client0.png");
+  width: 300px;
+  height: 89px;
+}
+
+.clients-wrapp .clients-align .client-img .img1 a {
+  background-image: url("../images/client1.png");
+  width: 300px;
+  height: 89px;
+}
+
+.clients-wrapp .clients-align .client-img .img2 a {
+  background-image: url("../images/client2.png");
+  width: 300px;
+  height: 89px;
+}
+
+.clients-wrapp .clients-align .client-img .img3 a {
+  background-image: url("../images/client3.png");
+  width: 300px;
+  height: 89px;
+}
+
+.clients-wrapp .clients-align .client-img .img4 a {
+  background-image: url("../images/client4.png");
+  width: 300px;
+  height: 89px;
+}
+
+.clients-wrapp .clients-align .client-img .img5 a {
+  background-image: url("../images/client5.png");
+  width: 300px;
+  height: 89px;
+}
+
+.clients-wrapp .clients-align .client-img .img6 a {
+  background-image: url("../images/client6.png");
+  width: 300px;
+  height: 89px;
+}
+
+.clients-wrapp .clients-align .client-img .img7 a {
+  background-image: url("../images/client7.png");
+  width: 300px;
+  height: 89px;
+}
+
+.clients-wrapp .clients-align .client-img .img8 a {
+  background-image: url("../images/client9.png");
+  width: 300px;
+  height: 89px;
+}
+
+/*/our-clients*/
