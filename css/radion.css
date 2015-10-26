@@ -17,7 +17,8 @@
 .header .header_tel_wrap a {
   text-decoration: none;
   display: inline-block;
-  margin: 0 10px;
+  width: 49%;
+  vertical-align: middle;
 }
 
 .header .header_tel_wrap .head_zvonok {
@@ -30,8 +31,44 @@
   border-radius: 3px;
   max-width: 195px;
   font-size: 13px;
+  padding: 21px 19px 18px;
+  background-color: #fff;
 }
 
 .header .header_tel_wrap .head_zvonok span {
   text-transform: uppercase;
+}
+
+.header .header_tel_wrap .head_zvonok:after, .header .header_tel_wrap .head_zvonok:before {
+  content: '';
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  position: absolute;
+  border-left: 6px solid #46c3ee;
+  right: -6px;
+  z-index: 1;
+  top: 22px;
+}
+
+.header .header_tel_wrap .head_zvonok:before {
+  right: -5px;
+  border-left: 6px solid white;
+  z-index: 2;
+}
+
+.header .header_tel_wrap .head_zvonok:hover {
+  border: 1px solid transparent;
+  background-color: #46c3ee;
+  color: #fff;
+}
+
+.header .header_tel_wrap .head_zvonok:hover:before {
+  border-left: 6px solid #46c3ee;
+}
+
+.header .header_tel_wrap .head_tel {
+  font-family: 'PNova';
+  font-weight: 600;
+  color: #000;
+  font-size: 19px;
 }
