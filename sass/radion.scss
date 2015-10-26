@@ -1,0 +1,11 @@
+.header{
+    .row{padding-top: 45px;}
+    .head_descr{color: #99a3ab;font-size: 15px;border-left:4px solid #46c3ee;padding-left: 13px;margin-left: 11px;}
+
+    .header_tel_wrap{text-align: center;
+        a{text-decoration: none;display: inline-block;margin: 0 10px;}
+        .head_zvonok{color: #46c3ee;border:1px solid #46c3ee;font-weight: 600;position: relative;border-radius: 3px;max-width: 195px;
+            span{text-transform: uppercase;}
+        }
+    }
+}
