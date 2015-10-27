@@ -1,24 +1,28 @@
 function drawSvg(){
-
     $('.svg_item').each(function(){
-        var itemSvg = $(this)
-        var circle = itemSvg.find('.svg_circle');
-        var svgText = itemSvg.find('.svgText');
-        var maxValue = itemSvg.data('value');
+        var itemSvg = $(this),
+            circle = itemSvg.find('.svg_circle'),
+            svgText = itemSvg.find('.svgText'),
+            maxValue = itemSvg.data('value'),
+            radius = $(this).find('.svg_circle').attr('r'),
+            interval = 15,
+            angle = 0,
+            angle_increment = 10,
+            max_angle_R = parseInt((maxValue*(2*Math.PI*radius)/100)),
+            zero = 0;
 
-        var interval = 30;
-        var angle = 0;
-        var angle_increment = 10;
-        var max_angle = (maxValue*360/100);
-
+        if(!((maxValue ^ 0) === maxValue)){
+            zero = 1;
+        }
+        itemSvg.addClass("show");
         var timerId = setInterval(function () {;
             circle.attr("stroke-dasharray", angle + ", 20000");
-            svgText.text((angle/360*100).toFixed(1) + '%');
+            svgText.text((angle/(2*Math.PI*radius)*100).toFixed(zero));
 
             angle += angle_increment;
-            if (angle > max_angle) {
-                circle.attr("stroke-dasharray", max_angle + ", 20000");
-                svgText.text((max_angle/360*100).toFixed(1) + '%');
+            if (angle > max_angle_R ) {
+                circle.attr("stroke-dasharray", max_angle_R + ", 20000");
+                svgText.text((max_angle_R/(2*Math.PI*radius)*100).toFixed(zero));
                 clearInterval(timerId);
             }
 
