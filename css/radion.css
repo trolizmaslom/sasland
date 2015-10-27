@@ -84,6 +84,7 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  padding-bottom: 134px;
 }
 
 .svg-circles h2 {
@@ -110,6 +111,7 @@
   float: left;
   width: 20%;
   position: relative;
+  min-height: 265px;
 }
 
 .svg-circles .svg_item.show:after {
@@ -176,6 +178,15 @@
   color: white;
   font-size: 20px;
   font-weight: 100;
+  opacity: 0;
+  -webkit-transition: all ease-out 0.2s;
+  -moz-transition: all ease-out 0.2s;
+  -o-transition: all ease-out 0.2s;
+  transition: all ease-out 0.2s;
+}
+
+.svg-circles .svg_item_text.animated {
+  opacity: 1;
 }
 
 .svg-circles .svg_item_text_wrap {

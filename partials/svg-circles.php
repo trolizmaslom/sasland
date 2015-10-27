@@ -1,5 +1,5 @@
 <div class="svg-circles">
-    <div class="svg-circles-wrap">
+    <div class="svg-circles-wrap animate-section">
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 text-center">
@@ -18,7 +18,7 @@
                                     <text class="svgText" text-anchor="middle" x="95" y="120" fill="#fff" style="font-size: 66px;font-family:PNova;font-weight: 100" >0</text>
                                 </svg>
                             </div>
-                            <div class="svg_item_text">
+                            <div class="svg_item_text animate-delay">
                                 <div class="svg_item_text_wrap">
                                     <p>налога на прибыль</p>
                                 </div>
@@ -31,7 +31,7 @@
                                     <text class="svgText" text-anchor="middle" x="90" y="120" fill="#fff" style="font-size: 66px;font-family:PNova;font-weight: 100" >0</text>
                                 </svg>
                             </div>
-                            <div class="svg_item_text">
+                            <div class="svg_item_text animate-delay">
                                 <div class="svg_item_text_wrap">
                                     <p>начислений на фонд</p>
                                     <p>оплаты труда</p>
@@ -45,7 +45,7 @@
                                     <text class="svgText" text-anchor="middle" x="95" y="120" fill="#fff" style="font-size: 66px;font-family:PNova;font-weight: 100" >0</text>
                                 </svg>
                             </div>
-                            <div class="svg_item_text">
+                            <div class="svg_item_text animate-delay">
                                 <div class="svg_item_text_wrap">
                                     <p>налога на имущество</p>
                                 </div>
@@ -58,7 +58,7 @@
                                     <text class="svgText" text-anchor="middle" x="95" y="120" fill="#fff" style="font-size: 66px;font-family:PNova;font-weight: 100" >0</text>
                                 </svg>
                             </div>
-                            <div class="svg_item_text">
+                            <div class="svg_item_text animate-delay">
                                 <div class="svg_item_text_wrap">
                                     <p>таможенной</p>
                                     <p>пошлины и НДС</p>
@@ -72,7 +72,7 @@
                                     <text class="svgText" text-anchor="middle" x="95" y="120" fill="#fff" style="font-size: 66px;font-family:PNova;font-weight: 100" >0</text>
                                 </svg>
                             </div>
-                            <div class="svg_item_text">
+                            <div class="svg_item_text animate-delay">
                                 <div class="svg_item_text_wrap">
                                     <p>Налога на землю</p>
                                 </div>

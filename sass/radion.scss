@@ -17,12 +17,12 @@
 
 /*svg-circles*/
 .svg-circles{padding-top: 49px;
-    .svg-circles-wrap{background: url('../images/svg_section_bg.jpg') center center no-repeat;background-size: cover;}
+    .svg-circles-wrap{background: url('../images/svg_section_bg.jpg') center center no-repeat;background-size: cover;padding-bottom: 134px;}
     h2{font-size: 56px;color: white;margin: 0;padding-top: 127px;font-weight: bold;line-height: 66px;}
     h5{font-size: 36px;color: #2299ff;margin: 0;padding-top: 31px;}
 
     .svg_item_wrap{padding-top: 71px;}
-    .svg_item{float: left;width: 20%;position: relative;
+    .svg_item{float: left;width: 20%;position: relative;min-height: 265px;
         &.show{
             &:after{opacity: 1;}
             &.item_1:before{opacity: 1}
@@ -36,7 +36,9 @@
     }
     .svgText{position: relative;}
     .svg_circle{}
-    .svg_item_text{font-family: 'PNova';color: white;font-size: 20px;font-weight: 100;}
+    .svg_item_text{font-family: 'PNova';color: white;font-size: 20px;font-weight: 100;opacity: 0;transition:all ease-out .2s;
+        &.animated{opacity: 1;}
+    }
     .svg_item_text_wrap{margin-right: 28px;}
 }
 
