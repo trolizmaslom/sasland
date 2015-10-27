@@ -92,9 +92,15 @@
     /*header*/
     .header .header_tel_wrap .head_zvonok{width: 100%;text-align: center;}
     .header .header_tel_wrap a{width: 100%;margin: 10px 0px;}
+    /*responce*/
+    .responce.animated:after {right: 10%;}
 }
 @media screen and (max-width: 992px){
-
+    /*responce*/
+    .responce{overflow: hidden;}
+    .responce .responce_descr{font-size: 18px;}
+    .responce.animated:after {right: -5%;}
+    .responce .responce_title{padding-top: 41px;}
 }
 @media screen and (max-width: 767px){
 
@@ -105,8 +111,9 @@
         .svg-circles-wrap{padding-bottom: 90px;}
         h2{font-size: 44px;color: white;margin: 0;padding-top: 80px;font-weight: bold;line-height: 58px;}
         h5{font-size: 30px;color: #2299ff;margin: 0;padding-top: 31px;}
-
     }
+    /*responce*/
+    .responce.animated:after {right: -39%;}
 }
 @media screen and (max-width: 479px){
     /*header*/
@@ -124,7 +131,13 @@
 
         .svg_item{display: block;margin: 0 auto 20px !important;}
     }
+    /*responce*/
+    .responce.animated:after {right: -52%;}
+    .responce .responce_descr{font-size: 13px;}
+    .responce .responce_title h2 {font-size: 30px;}
 }
 @media screen and (max-width: 320px){
+    /*responce*/
+    .responce.animated:after {right: -81%;}
 
 }
