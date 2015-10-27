@@ -105,32 +105,39 @@
 
 .svg-circles .svg_item_wrap {
   padding-top: 71px;
+  text-align: center;
 }
 
 .svg-circles .svg_item {
-  float: left;
-  width: 20%;
+  display: inline-block;
   position: relative;
   min-height: 265px;
+  width: 200px;
+  overflow: hidden;
+  margin-right: 2.9%;
 }
 
-.svg-circles .svg_item.show:after {
+.svg-circles .svg_item:last-child {
+  margin-right: 0;
+}
+
+.svg-circles .svg_item.show-block:after {
   opacity: 1;
 }
 
-.svg-circles .svg_item.show.item_1:before {
+.svg-circles .svg_item.show-block.item_1:before {
   opacity: 1;
 }
 
 .svg-circles .svg_item.item_1:after {
-  right: 82px;
+  right: 51px;
 }
 
 .svg-circles .svg_item.item_1:before {
   content: attr(data-text);
   position: absolute;
   top: 89px;
-  right: 178px;
+  right: 154px;
   width: 20px;
   height: 21px;
   color: white;
@@ -145,14 +152,14 @@
 }
 
 .svg-circles .svg_item.item_2:after {
-  right: 54px;
+  right: 27px;
 }
 
 .svg-circles .svg_item:after {
   content: attr(data-percent);
   position: absolute;
   top: 87px;
-  right: 64px;
+  right: 35px;
   width: 20px;
   height: 21px;
   color: white;
@@ -189,8 +196,9 @@
   opacity: 1;
 }
 
-.svg-circles .svg_item_text_wrap {
-  margin-right: 28px;
+/* map section*/
+.map #google_map {
+  height: 500px;
 }
 
 @media screen and (max-width: 1024px) {
@@ -202,5 +210,72 @@
   .header .header_tel_wrap a {
     width: 100%;
     margin: 10px 0px;
+  }
+}
+
+@media screen and (max-width: 666px) {
+  /*svg*/
+  .svg-circles {
+    padding-top: 49px;
+  }
+  .svg-circles .svg-circles-wrap {
+    padding-bottom: 90px;
+  }
+  .svg-circles h2 {
+    font-size: 44px;
+    color: white;
+    margin: 0;
+    padding-top: 80px;
+    font-weight: bold;
+    line-height: 58px;
+  }
+  .svg-circles h5 {
+    font-size: 30px;
+    color: #2299ff;
+    margin: 0;
+    padding-top: 31px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  /*header*/
+  .header .header_tel_wrap .head_zvonok {
+    width: 100%;
+    text-align: center;
+  }
+  .header .header_tel_wrap a {
+    width: 100%;
+    margin: 10px 0px;
+  }
+  .header .logo {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  .header .logo a {
+    display: inline-block;
+  }
+  .header .head_descr {
+    margin: 0 14% 20px;
+  }
+  /*svg*/
+  .svg-circles {
+    padding-top: 49px;
+  }
+  .svg-circles .svg-circles-wrap {
+    padding-bottom: 90px;
+  }
+  .svg-circles h2 {
+    font-size: 33px;
+    line-height: 46px;
+  }
+  .svg-circles h5 {
+    font-size: 30px;
+    color: #2299ff;
+    margin: 0;
+    padding-top: 31px;
+  }
+  .svg-circles .svg_item {
+    display: block;
+    margin: 0 auto 20px !important;
   }
 }

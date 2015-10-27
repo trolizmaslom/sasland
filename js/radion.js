@@ -14,7 +14,7 @@ function drawSvg(){
         if(!((maxValue ^ 0) === maxValue)){
             zero = 1;
         }
-        itemSvg.addClass("show");
+        itemSvg.addClass("show-block");
         var timerId = setInterval(function () {;
             circle.attr("stroke-dasharray", angle + ", 20000");
             svgText.text((angle/(2*Math.PI*radius)*100).toFixed(zero));
