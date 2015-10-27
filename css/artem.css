@@ -78,6 +78,7 @@
   padding-bottom: 36px;
   padding-top: 36px;
   font-size: 19px;
+  vertical-align: middle;
 }
 
 .long-table-wrap .container .table-striped-chits .table-chits thead tr th:first-child {
