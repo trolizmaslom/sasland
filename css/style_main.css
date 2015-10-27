@@ -49,24 +49,83 @@
 
 /* calc */
 .calc-wrap {
-  margin-bottom: 20px;
+  margin-bottom: 100px;
+  overflow: hidden;
+  padding-top: 100px;
 }
 
 .calc-title {
-  border-left: 5px solid #2299ff;
-  padding-left: 39px;
+  padding-left: 44px;
   font-weight: 300;
   margin-bottom: 30px;
+  position: relative;
 }
 
 .calc-title .calc-title-top {
   color: #020202;
   font-size: 48px;
+  -webkit-transform: translate(0, -25%);
+  -moz-transform: translate(0, -25%);
+  -ms-transform: translate(0, -25%);
+  -o-transform: translate(0, -25%);
+  transform: translate(0, -25%);
+  opacity: 0;
+  -webkit-transition: -webkit-transform 300ms ease, opacity 500ms ease;
+  -moz-transition: -moz-transform 300ms ease, opacity 500ms ease;
+  -o-transition: -o-transform 300ms ease, opacity 500ms ease;
+  transition: transform 300ms ease, opacity 500ms ease;
 }
 
 .calc-title .calc-title-bottom {
   font-size: 21px;
   color: #888888;
+  -webkit-transform: translate(0, -25%);
+  -moz-transform: translate(0, -25%);
+  -ms-transform: translate(0, -25%);
+  -o-transform: translate(0, -25%);
+  transform: translate(0, -25%);
+  opacity: 0;
+  -webkit-transition: -webkit-transform 300ms ease, opacity 500ms ease;
+  -moz-transition: -moz-transform 300ms ease, opacity 500ms ease;
+  -o-transition: -o-transform 300ms ease, opacity 500ms ease;
+  transition: transform 300ms ease, opacity 500ms ease;
+}
+
+.calc-title:before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 5px;
+  background-color: #2299ff;
+  height: 0;
+  -webkit-transition: height 300ms ease;
+  -moz-transition: height 300ms ease;
+  -o-transition: height 300ms ease;
+  transition: height 300ms ease;
+}
+
+.calc-title.animated:before {
+  height: 100%;
+}
+
+.calc-title.animated .calc-title-top {
+  -webkit-transform: translate(0, 0);
+  -moz-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  -o-transform: translate(0, 0);
+  transform: translate(0, 0);
+  opacity: 1;
+}
+
+.calc-title.animated .calc-title-bottom {
+  -webkit-transform: translate(0, 0);
+  -moz-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  -o-transform: translate(0, 0);
+  transform: translate(0, 0);
+  opacity: 1;
 }
 
 .calc-form-wrap-title {
@@ -79,31 +138,79 @@
   vertical-align: middle;
 }
 
-.calc-form-wrap-title .col-sm-4 a {
+.calc-form-wrap-title .col-xs-8 {
+  opacity: 0;
+  -webkit-transform: translate(-25%, 0);
+  -moz-transform: translate(-25%, 0);
+  -ms-transform: translate(-25%, 0);
+  -o-transform: translate(-25%, 0);
+  transform: translate(-25%, 0);
+  -webkit-transition: -webkit-transform 300ms ease, opacity 500ms ease;
+  -moz-transition: -moz-transform 300ms ease, opacity 500ms ease;
+  -o-transition: -o-transform 300ms ease, opacity 500ms ease;
+  transition: transform 300ms ease, opacity 500ms ease;
+}
+
+.calc-form-wrap-title .col-xs-4 {
+  opacity: 0;
+  -webkit-transform: translate(0, -25%);
+  -moz-transform: translate(0, -25%);
+  -ms-transform: translate(0, -25%);
+  -o-transform: translate(0, -25%);
+  transform: translate(0, -25%);
+  -webkit-transition: -webkit-transform 300ms ease, opacity 500ms ease;
+  -moz-transition: -moz-transform 300ms ease, opacity 500ms ease;
+  -o-transition: -o-transform 300ms ease, opacity 500ms ease;
+  transition: transform 300ms ease, opacity 500ms ease;
+}
+
+.calc-form-wrap-title .col-xs-4 a {
   display: inline-block;
   position: relative;
 }
 
-.calc-form-wrap-title .col-sm-4 a .icon {
+.calc-form-wrap-title .col-xs-4 a .icon {
   -webkit-transition: opacity 300ms ease;
   -moz-transition: opacity 300ms ease;
   -o-transition: opacity 300ms ease;
   transition: opacity 300ms ease;
 }
 
-.calc-form-wrap-title .col-sm-4 a .icon-hover {
+.calc-form-wrap-title .col-xs-4 a .icon-hover {
   position: absolute;
   opacity: 0;
   top: 0;
   left: 0;
 }
 
-.calc-form-wrap-title .col-sm-4 a:hover .icon:not(.icon-hover) {
+.calc-form-wrap-title .col-xs-4 a:hover .icon:not(.icon-hover) {
   opacity: 0;
 }
 
-.calc-form-wrap-title .col-sm-4 a:hover .icon-hover {
+.calc-form-wrap-title .col-xs-4 a:hover .icon-hover {
   opacity: 1;
+}
+
+.calc-form-wrap-title .animated.col-xs-8 {
+  opacity: 0;
+  -webkit-transform: translate(0, 0);
+  -moz-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  -o-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+
+.calc-form-wrap-title .animated.col-xs-4 {
+  opacity: 0;
+  -webkit-transform: translate(0, 0);
+  -moz-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  -o-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+
+.calc-form-main {
+  margin-bottom: 30px;
 }
 
 .calc-form .inline-block {
@@ -112,10 +219,33 @@
 
 .calc-form .form-row {
   margin-bottom: 15px;
+  opacity: 0;
+  -webkit-transform: translate(-25%, 0);
+  -moz-transform: translate(-25%, 0);
+  -ms-transform: translate(-25%, 0);
+  -o-transform: translate(-25%, 0);
+  transform: translate(-25%, 0);
+  -webkit-transition: -webkit-transform 300ms ease, opacity 500ms ease;
+  -moz-transition: -moz-transform 300ms ease, opacity 500ms ease;
+  -o-transition: -o-transform 300ms ease, opacity 500ms ease;
+  transition: transform 300ms ease, opacity 500ms ease;
+}
+
+.calc-form .form-row.animated {
+  opacity: 1;
+  -webkit-transform: translate(0, 0);
+  -moz-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  -o-transform: translate(0, 0);
+  transform: translate(0, 0);
 }
 
 .calc-form .form-row:last-child {
   margin-bottom: 0;
+}
+
+.calc-form .form-row.submit {
+  padding-right: 20px;
 }
 
 .calc-form .calc-form-description {
@@ -143,6 +273,19 @@
   color: #000000;
 }
 
+.calc-form-table-wrap {
+  opacity: 0;
+  -webkit-transform: translate(0, 25%);
+  -moz-transform: translate(0, 25%);
+  -ms-transform: translate(0, 25%);
+  -o-transform: translate(0, 25%);
+  transform: translate(0, 25%);
+  -webkit-transition: -webkit-transform 300ms ease, opacity 500ms ease;
+  -moz-transition: -moz-transform 300ms ease, opacity 500ms ease;
+  -o-transition: -o-transform 300ms ease, opacity 500ms ease;
+  transition: transform 300ms ease, opacity 500ms ease;
+}
+
 .calc-form-table-wrap table {
   width: 100%;
   border: 1px solid #f5f5f5;
@@ -163,6 +306,15 @@
 
 .calc-form-table-wrap td.text-left, .calc-form-table-wrap th.text-left {
   text-align: left;
+}
+
+.calc-form-table-wrap.animated {
+  opacity: 1;
+  -webkit-transform: translate(0, 0);
+  -moz-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  -o-transform: translate(0, 0);
+  transform: translate(0, 0);
 }
 
 .gray-50 {
@@ -190,3 +342,167 @@
 }
 
 /* /calc */
+/* we-answer */
+.we-answer {
+  position: relative;
+  overflow: hidden;
+  padding: 142px 0 80px 0;
+  color: #fff;
+  text-align: center;
+}
+
+.we-answer .we-answer-bg {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  -webkit-transform: translate(-50%, 0);
+  -moz-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  -o-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+  z-index: 0;
+}
+
+.we-answer .we-answer-bg img {
+  max-width: none;
+}
+
+.we-answer .container {
+  position: relative;
+  z-index: 1;
+}
+
+.we-answer .we-answer-title {
+  position: relative;
+  padding-bottom: 34px;
+  margin-bottom: 31px;
+  font-weight: 300;
+  font-size: 48px;
+  opacity: 0;
+  -webkit-transform: translate(0, -25%);
+  -moz-transform: translate(0, -25%);
+  -ms-transform: translate(0, -25%);
+  -o-transform: translate(0, -25%);
+  transform: translate(0, -25%);
+  -webkit-transition: -webkit-transform 300ms ease, opacity 500ms ease;
+  -moz-transition: -moz-transform 300ms ease, opacity 500ms ease;
+  -o-transition: -o-transform 300ms ease, opacity 500ms ease;
+  transition: transform 300ms ease, opacity 500ms ease;
+}
+
+.we-answer .we-answer-title:after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 92px;
+  height: 1px;
+  background-color: #d1d1d1;
+  left: 50%;
+  bottom: 0;
+  -webkit-transform: translate(-50%, 0) scale(0);
+  -moz-transform: translate(-50%, 0) scale(0);
+  -ms-transform: translate(-50%, 0) scale(0);
+  -o-transform: translate(-50%, 0) scale(0);
+  transform: translate(-50%, 0) scale(0);
+  -webkit-transition: -webkit-transform 300ms ease;
+  -moz-transition: -moz-transform 300ms ease;
+  -o-transition: -o-transform 300ms ease;
+  transition: transform 300ms ease;
+}
+
+.we-answer .we-answer-title.animated {
+  opacity: 1;
+  -webkit-transform: translate(0, 0);
+  -moz-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  -o-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+
+.we-answer .we-answer-title.animated:after {
+  -webkit-transform: translate(-50%, 0) scale(1);
+  -moz-transform: translate(-50%, 0) scale(1);
+  -ms-transform: translate(-50%, 0) scale(1);
+  -o-transform: translate(-50%, 0) scale(1);
+  transform: translate(-50%, 0) scale(1);
+}
+
+.we-answer .we-answer-text {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 100;
+  line-height: 30px;
+  opacity: 0;
+  -webkit-transform: translate(0, 25%);
+  -moz-transform: translate(0, 25%);
+  -ms-transform: translate(0, 25%);
+  -o-transform: translate(0, 25%);
+  transform: translate(0, 25%);
+  -webkit-transition: -webkit-transform 300ms ease, opacity 500ms ease;
+  -moz-transition: -moz-transform 300ms ease, opacity 500ms ease;
+  -o-transition: -o-transform 300ms ease, opacity 500ms ease;
+  transition: transform 300ms ease, opacity 500ms ease;
+}
+
+.we-answer .we-answer-text p {
+  display: block;
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.we-answer .we-answer-text.animated {
+  opacity: 1;
+  -webkit-transform: translate(0, 0);
+  -moz-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  -o-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+
+/* /we-answer */
+/* adaptive */
+@media screen and (max-width: 666px) {
+  /* calc */
+  .calc-title {
+    padding-left: 15px;
+  }
+  .calc-title .calc-title-top {
+    font-size: 26px;
+  }
+  .calc-title .calc-title-bottom {
+    font-size: 16px;
+  }
+  .calc-form-table-wrap {
+    overflow: scroll;
+    border-width: 0 1px;
+    border-style: solid;
+    border-color: #ccc;
+  }
+  /* /calc */
+}
+
+@media screen and (max-width: 479px) {
+  /* calc */
+  .calc-form-wrap-title {
+    font-size: 16px;
+  }
+  .calc-form-wrap-title .col-xs-8 {
+    margin-bottom: 10px;
+  }
+  .calc-form-wrap-title .col-xs-8, .calc-form-wrap-title .col-xs-4 {
+    width: 100%;
+  }
+  .calc-form .calc-form-description {
+    font-size: 16px;
+  }
+  .calc-form .valute {
+    font-size: 15px;
+  }
+  .calc-form-table-wrap table {
+    font-size: 12px;
+  }
+  /* /calc */
+}
+
+/* adaptive */
