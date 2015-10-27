@@ -21,16 +21,18 @@
     h2{font-size: 56px;color: white;margin: 0;padding-top: 127px;font-weight: bold;line-height: 66px;}
     h5{font-size: 36px;color: #2299ff;margin: 0;padding-top: 31px;}
 
-    .svg_item_wrap{padding-top: 71px;}
-    .svg_item{float: left;width: 20%;position: relative;min-height: 265px;
-        &.show{
+    .svg_item_wrap{padding-top: 71px;text-align: center;}
+    .svg_item{display: inline-block;position: relative;min-height: 265px;width: 200px;overflow: hidden;margin-right: 2.9%;
+        &:first-child{}
+        &:last-child{margin-right: 0;}
+        &.show-block{
             &:after{opacity: 1;}
             &.item_1:before{opacity: 1}
         }
-        &.item_1:after{right: 82px;}
-        &.item_1:before{content: attr(data-text);position: absolute;top: 89px;right: 178px;width: 20px;height: 21px;color: white;font-size: 27px;font-weight: 300;font-family: 'PNova';opacity: 0;transition: opacity linear .3s;}
-        &.item_2:after{right: 54px;}
-        &:after{content: attr(data-percent);position: absolute;top: 87px;right: 64px;width: 20px;height: 21px;color: white;font-size: 30px;opacity: 0;transition: opacity linear .3s;}
+        &.item_1:after{right: 51px;}
+        &.item_1:before{content: attr(data-text);position: absolute;top: 89px;right: 154px;width: 20px;height: 21px;color: white;font-size: 27px;font-weight: 300;font-family: 'PNova';opacity: 0;transition: opacity linear .3s;}
+        &.item_2:after{right: 27px;}
+        &:after{content: attr(data-percent);position: absolute;top: 87px;right: 35px;width: 20px;height: 21px;color: white;font-size: 30px;opacity: 0;transition: opacity linear .3s;}
 
         .svg_item_img{height: 205px;overflow: hidden;}
     }
@@ -39,7 +41,7 @@
     .svg_item_text{font-family: 'PNova';color: white;font-size: 20px;font-weight: 100;opacity: 0;transition:all ease-out .2s;
         &.animated{opacity: 1;}
     }
-    .svg_item_text_wrap{margin-right: 28px;}
+    // .svg_item_text_wrap{margin-right: 28px;}
 }
 
 
@@ -73,10 +75,30 @@
 
 }
 @media screen and (max-width: 666px){
+    /*svg*/
+    .svg-circles{padding-top: 49px;
+        .svg-circles-wrap{padding-bottom: 90px;}
+        h2{font-size: 44px;color: white;margin: 0;padding-top: 80px;font-weight: bold;line-height: 58px;}
+        h5{font-size: 30px;color: #2299ff;margin: 0;padding-top: 31px;}
 
+    }
 }
 @media screen and (max-width: 479px){
+    /*header*/
+    .header .header_tel_wrap .head_zvonok{width: 100%;text-align: center;}
+    .header .header_tel_wrap a{width: 100%;margin: 10px 0px;}
+    .header .logo{text-align: center;padding-bottom: 20px;
+        a{display: inline-block;}
+    }
+    .header .head_descr{margin: 0 14% 20px;}
+    /*svg*/
+    .svg-circles{padding-top: 49px;
+        .svg-circles-wrap{padding-bottom: 90px;}
+        h2{font-size: 33px;line-height: 46px;}
+        h5{font-size: 30px;color: #2299ff;margin: 0;padding-top: 31px;}
 
+        .svg_item{display: block;margin: 0 auto 20px !important;}
+    }
 }
 @media screen and (max-width: 320px){
 
