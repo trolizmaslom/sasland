@@ -215,6 +215,7 @@
 
 .calc-form .inline-block {
   vertical-align: middle;
+  margin-left: -3px;
 }
 
 .calc-form .form-row {
@@ -462,6 +463,10 @@
 
 /* /we-answer */
 /* facts-about-us */
+.facts-about-us {
+  padding: 50px 0 50px 0;
+}
+
 .facts-about-us .container {
   position: relative;
 }
@@ -538,6 +543,10 @@
   transform: translate(0, 0);
 }
 
+.facts-about-us-wrap {
+  font-size: 0;
+}
+
 .facts-about-us-wrap .inline-block {
   vertical-align: top;
   margin-bottom: 20px;
@@ -606,28 +615,95 @@
 
 /* /facts-about-us */
 /* adaptive */
+@media screen and (max-width: 1069px) {
+  /* calc */
+  .calc-title .calc-title-top {
+    font-size: 46px;
+  }
+  /* /calc */
+}
+
+@media screen and (max-width: 767px) {
+  /* we answer */
+  .we-answer .we-answer-bg {
+    -webkit-transform: translate(-65%, 0);
+    -moz-transform: translate(-65%, 0);
+    -ms-transform: translate(-65%, 0);
+    -o-transform: translate(-65%, 0);
+    transform: translate(-65%, 0);
+  }
+  .we-answer .we-answer-title {
+    padding: 0 10px 34px 10px;
+  }
+  .we-answer .we-answer-text {
+    padding: 0 10px;
+  }
+  /* /we answer */
+  /* facts about us */
+  .facts-about-us-wrap .inline-block {
+    width: 47.5%;
+  }
+  .facts-about-us-wrap .inline-block:nth-child(2n) {
+    margin-left: 5%;
+  }
+  /* /facts about us */
+}
+
 @media screen and (max-width: 666px) {
   /* calc */
   .calc-title {
     padding-left: 15px;
   }
   .calc-title .calc-title-top {
-    font-size: 26px;
+    font-size: 30px;
   }
   .calc-title .calc-title-bottom {
-    font-size: 16px;
+    font-size: 18px;
   }
   .calc-form-table-wrap {
-    overflow: scroll;
+    overflow-x: scroll;
     border-width: 0 1px;
     border-style: solid;
     border-color: #ccc;
   }
   /* /calc */
+  /* we answer */
+  .we-answer .we-answer-title {
+    font-size: 32px;
+  }
+  .we-answer .we-answer-text {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  /* /we answer */
+  /* facts about us */
+  .facts-about-us-title-wrap {
+    padding: 0 10px;
+    margin-bottom: 20px;
+  }
+  .facts-about-us-title-wrap h2 {
+    font-size: 30px;
+  }
+  .facts-about-us-wrap .inline-block {
+    width: 100%;
+  }
+  .facts-about-us-wrap .inline-block:nth-child(2n) {
+    margin-left: 0%;
+  }
+  /* /facts about us */
 }
 
 @media screen and (max-width: 479px) {
   /* calc */
+  .calc-title {
+    padding-left: 15px;
+  }
+  .calc-title .calc-title-top {
+    font-size: 24px;
+  }
+  .calc-title .calc-title-bottom {
+    font-size: 16px;
+  }
   .calc-form-wrap-title {
     font-size: 16px;
   }
@@ -647,6 +723,16 @@
     font-size: 12px;
   }
   /* /calc */
+  /* we answer */
+  .we-answer {
+    padding: 92px 0 80px 0;
+  }
+  .we-answer .we-answer-title {
+    font-size: 24px;
+    padding: 0 10px 20px 10px;
+    margin-bottom: 28px;
+  }
+  /* /we answer */
 }
 
 /* adaptive */

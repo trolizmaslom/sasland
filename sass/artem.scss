@@ -12,7 +12,7 @@
                 tr{ opacity: 0; transition: all 1s ease ; -webkit-transition: all 1s ease ; -moz-transition: all 1s ease ;  -ms-transition: all 1s ease ; transform:translate(0,100%);-webkit-transform:translate(0,100%);-moz-transform:translate(0,100%);-ms-transform:translate(0,100%);
                     &.animated { opacity: 1; transform:translate(0,0);-webkit-transform:translate(0,0);-moz-transform:translate(0,0);-ms-transform:translate(0,0);}
                 }
-                thead tr th{text-align: center;background-color: #283040;color: #ffffff; padding-bottom: 36px; padding-top: 36px;  font-size: 19px;
+                thead tr th{text-align: center;background-color: #283040;color: #ffffff; padding-bottom: 36px; padding-top: 36px;  font-size: 19px;vertical-align: middle;
                     &:first-child{ width: 23.5%;  }
                     &:nth-child(2){ width: 24%; }
                     &:nth-child(3){ width: 14%; }
