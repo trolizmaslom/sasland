@@ -75,6 +75,29 @@
 
 /* /calc */
 
+/* we-answer */
+
+.we-answer{position: relative;overflow: hidden;padding: 142px 0 80px 0;color:#fff;text-align: center;
+    .we-answer-bg{position: absolute;left: 50%;top:0;transform:translate(-50%,0);z-index: 0;
+        img{max-width: none;}
+    }
+    .container{position: relative;z-index: 1;}
+    .we-answer-title{position: relative;padding-bottom: 34px;margin-bottom:31px;font-weight: 300;font-size: 48px;opacity: 0;transform:translate(0, -25%);transition:transform 300ms ease, opacity 500ms ease;
+        &:after{content:'';display: block;position: absolute;width: 92px;height: 1px;background-color: #d1d1d1;left: 50%;bottom:0;transform:translate(-50%, 0) scale(0);transition:transform 300ms ease;}
+        &.animated{opacity: 1;transform:translate(0,0);
+            &:after{transform:translate(-50%, 0) scale(1);}
+        }
+    }
+    .we-answer-text{color:#fff;font-size: 24px;font-weight: 100;line-height: 30px;opacity: 0;transform:translate(0, 25%);transition:transform 300ms ease, opacity 500ms ease;
+        p{display: block;max-width: 900px;width: 100%;margin: 0 auto;}
+        &.animated{opacity: 1;transform:translate(0,0);}
+    }
+}
+
+/* /we-answer */
+
+
+
 /* adaptive */
 
 @media screen and (max-width: 666px){
@@ -108,3 +131,5 @@
     /* /calc */
 
 }
+
+/* adaptive */
