@@ -1,12 +1,14 @@
 /*our-clients*/
-.clients-wrapp{padding:0;
+.clients-wrapp{
     .clients-align{    padding-bottom: 92px;
         .client-title{padding:0 0 29px 14px;
-            span{font-family: 'PNova'; font-weight: 300;color:#343c4b; font-size: 48px;padding-left: 36px;
                 &:before{content: ""; display: block; width:5px; height: 35px; background-color: #2299ff;float:left;position: absolute; top: 18%; }
-            }
+                span{font-family: 'PNova'; font-weight: 300;color:#343c4b; font-size: 48px;padding-left: 36px; display: block;
+
+                }
         }
-        .client-img{white-space: nowrap;
+        .client-img{ text-align: justify; opacity: 0; transition:opacity 600ms linear;
+            &.animated{opacity:1;}
             .item-img{display: inline-block; vertical-align: top;margin-left: -4px;
                 a{background-color: transparent;
                     img{-webkit-filter: grayscale(100%);opacity:0.58; transition: opacity 600ms linear;
@@ -14,26 +16,30 @@
                     }
                 }
             }
-            .img0{width:23%;margin-right: 58px;    padding-top: 21px;}
-            .img1{padding-top: 33px;}
-            .img2{width:14%;margin-left: 57px;    padding-top: 14px;    margin-right: 63px;}
-            .img4{padding-top: 26px;margin-left: 44px;}
-            .img5{padding-top: 42px;margin-left: 13px;}
-            .img6{padding-top: 73px;margin-left: 64px;}
-            .img7{width:25.2%;padding-top: 70px;margin-left: 51px;}
-            .img8{width:17.8%;padding-top: 70px;margin-left: 78px;}
+
         }
     }
 }
 
+@media screen and (max-width: 479px){
+    .clients-wrapp{
+        .clients-align{
+            .client-img{ text-align: center;
+                .item-img{width:100%;}
+            }
+        }
+    }
 
+
+}
 /*/our-clients*/
 /*our-services*/
     .services-wrapp{padding: 55px 0 48px 0; background-color: #fafbfc; width:100%;
-        .services-align{padding: 0;
+        .services-align{
             .services-title{padding:0 0 29px 14px;
-                span{font-family: 'PNova'; font-weight: 300;color:#343c4b; font-size: 48px;padding-left: 36px;
-                    &:before{content: ""; display: block; width:5px; height: 35px; background-color: #2299ff;float:left;position: absolute; top: 18%; }
+                &:before{content: ""; display: block; width:5px; height: 35px; background-color: #2299ff;float:left;position: absolute; top: 18%; }
+                span{font-family: 'PNova'; font-weight: 300;color:#343c4b; font-size: 48px;padding-left: 36px; display: block;
+
                 }
             }
 
@@ -50,10 +56,11 @@
 /*/our-services*/
 /*risks*/
 .risk-wrapp{padding: 55px 0 48px 0; background-color: #fff; width:100%;
-        .risk-align{padding: 0;
+        .risk-align{
             .risk-title{padding:0 0 29px 14px;
-                span{font-family: 'PNova'; font-weight: 300;color:#343c4b; font-size: 48px;padding-left: 36px;
-                    &:before{content: ""; display: block; width:5px; height: 35px; background-color: #2299ff;float:left;position: absolute; top: 18%; }
+                &:before{content: ""; display: block; width:5px; height: 35px; background-color: #2299ff;float:left;position: absolute; top: 18%; }
+                span{font-family: 'PNova'; font-weight: 300;color:#343c4b; font-size: 48px;padding-left: 36px; display: block;
+
                 }
             }
 
