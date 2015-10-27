@@ -197,12 +197,8 @@
 }
 
 /* /footer */
-/* consult-form3 */
-.consult-from3-wrap {
-  position: relative;
-}
-
-.consult-from3-wrap .consult-form3 .form-wrap h2 {
+/* form */
+.form-wrap h2 {
   margin: 0 auto;
   float: none;
   text-align: center;
@@ -212,7 +208,7 @@
   margin-bottom: 68px;
 }
 
-.consult-from3-wrap .consult-form3 .form-wrap h2:after {
+.form-wrap h2:after {
   display: block;
   content: '';
   position: absolute;
@@ -223,7 +219,7 @@
   left: 44%;
 }
 
-.consult-from3-wrap .consult-form3 .form-wrap p {
+.form-wrap p {
   font-family: 'PNova';
   font-size: 25px;
   font-weight: 100;
@@ -235,12 +231,12 @@
   margin-bottom: 85px;
 }
 
-.consult-from3-wrap .consult-form3 .form-wrap #consult-form3 {
+.form-wrap #consult-form3, .form-wrap #consult-form2, .form-wrap #consult-form1 {
   float: none;
   margin: 0 auto;
 }
 
-.consult-from3-wrap .consult-form3 .form-wrap #consult-form3 .input-wrap {
+.form-wrap #consult-form3 .input-wrap, .form-wrap #consult-form2 .input-wrap, .form-wrap #consult-form1 .input-wrap {
   float: none;
   margin: 0 auto;
   width: 100%;
@@ -248,7 +244,7 @@
   margin-bottom: 32px;
 }
 
-.consult-from3-wrap .consult-form3 .form-wrap #consult-form3 .input-wrap input {
+.form-wrap #consult-form3 .input-wrap input, .form-wrap #consult-form2 .input-wrap input, .form-wrap #consult-form1 .input-wrap input {
   width: 78%;
   border: 1px solid #8ECAFD;
   padding: 19px 54px;
@@ -266,29 +262,30 @@
   -moz-transition: border-color 500ms ease;
   -webkit-transition: border-color 500ms ease;
   -ms-transition: border-color 500ms ease;
+  outline: none;
 }
 
-.consult-from3-wrap .consult-form3 .form-wrap #consult-form3 .input-wrap input::-webkit-input-placeholder {
+.form-wrap #consult-form3 .input-wrap input::-webkit-input-placeholder, .form-wrap #consult-form2 .input-wrap input::-webkit-input-placeholder, .form-wrap #consult-form1 .input-wrap input::-webkit-input-placeholder {
   color: #bbb;
 }
 
-.consult-from3-wrap .consult-form3 .form-wrap #consult-form3 .input-wrap input::-moz-placeholder {
+.form-wrap #consult-form3 .input-wrap input::-moz-placeholder, .form-wrap #consult-form2 .input-wrap input::-moz-placeholder, .form-wrap #consult-form1 .input-wrap input::-moz-placeholder {
   color: #bbb;
 }
 
-.consult-from3-wrap .consult-form3 .form-wrap #consult-form3 .input-wrap input:-moz-placeholder {
+.form-wrap #consult-form3 .input-wrap input:-moz-placeholder, .form-wrap #consult-form2 .input-wrap input:-moz-placeholder, .form-wrap #consult-form1 .input-wrap input:-moz-placeholder {
   color: #bbb;
 }
 
-.consult-from3-wrap .consult-form3 .form-wrap #consult-form3 .input-wrap input:-ms-input-placeholder {
+.form-wrap #consult-form3 .input-wrap input:-ms-input-placeholder, .form-wrap #consult-form2 .input-wrap input:-ms-input-placeholder, .form-wrap #consult-form1 .input-wrap input:-ms-input-placeholder {
   color: #bbb;
 }
 
-.consult-from3-wrap .consult-form3 .form-wrap #consult-form3 .input-wrap input.error {
-  border: 1px solid #f00;
+.form-wrap #consult-form3 .input-wrap input.error, .form-wrap #consult-form2 .input-wrap input.error, .form-wrap #consult-form1 .input-wrap input.error {
+  border: 1px solid #f00 !important;
 }
 
-.consult-from3-wrap .consult-form3 .form-wrap #consult-form3 .input-wrap.phone:before {
+.form-wrap #consult-form3 .input-wrap.phone:before, .form-wrap #consult-form2 .input-wrap.phone:before, .form-wrap #consult-form1 .input-wrap.phone:before {
   display: block;
   content: '';
   position: absolute;
@@ -301,14 +298,14 @@
   top: 35%;
 }
 
-.consult-from3-wrap .consult-form3 .form-wrap #consult-form3 .input-submit-wrap {
+.form-wrap #consult-form3 .input-submit-wrap, .form-wrap #consult-form2 .input-submit-wrap, .form-wrap #consult-form1 .input-submit-wrap {
   float: none;
   margin: 0 auto;
   width: 100%;
   margin-bottom: 15px;
 }
 
-.consult-from3-wrap .consult-form3 .form-wrap #consult-form3 .input-submit-wrap button {
+.form-wrap #consult-form3 .input-submit-wrap button, .form-wrap #consult-form2 .input-submit-wrap button, .form-wrap #consult-form1 .input-submit-wrap button {
   width: 78%;
   font-family: 'PNova';
   font-size: 20px;
@@ -322,7 +319,7 @@
   letter-spacing: -0.5px;
 }
 
-.consult-from3-wrap .consult-form3 .form-wrap #consult-form3 p {
+.form-wrap #consult-form3 p, .form-wrap #consult-form2 p, .form-wrap #consult-form1 p {
   font-weight: 300;
   font-size: 14px;
   text-align: right;
@@ -330,6 +327,12 @@
   width: 78%;
   margin-right: 11%;
   margin-bottom: 65px;
+}
+
+/* /form */
+/* consult-form3 */
+.consult-from3-wrap {
+  position: relative;
 }
 
 .consult-from3-wrap:after {
@@ -345,3 +348,111 @@
 }
 
 /* /consult-form3 */
+/* consult-form2 */
+.consult-from2-wrap {
+  position: relative;
+  background-color: #283040;
+}
+
+.consult-from2-wrap .consult-form2 .form-wrap h2 {
+  color: #fff;
+  padding-top: 62px;
+  margin-bottom: 98px;
+}
+
+.consult-from2-wrap .consult-form2 .form-wrap #consult-form2 .input-wrap input {
+  border: 1px solid #fff;
+}
+
+.consult-from2-wrap .consult-form2 .form-wrap #consult-form2 p {
+  margin-bottom: 84px;
+}
+
+/* /consult-form2 */
+/* consult-form3 */
+.consult-from1-wrap {
+  position: relative;
+}
+
+.consult-from1-wrap .consult-form1 .form-wrap h2 {
+  padding-top: 62px;
+  margin-bottom: 76px;
+  font-weight: 100;
+  letter-spacing: -0.6px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.consult-from1-wrap .consult-form1 .form-wrap h2 span {
+  text-transform: uppercase;
+}
+
+.consult-from1-wrap .consult-form1 .form-wrap p {
+  color: #2299ff;
+  font-size: 34px;
+  margin-bottom: 28px;
+}
+
+.consult-from1-wrap .consult-form1 .form-wrap #consult-form1 p {
+  margin-bottom: 84px;
+  color: #2299ff;
+}
+
+/* /consult-form3 */
+@media screen and (max-width: 1024px) {
+  /* form */
+  .form-wrap h2 {
+    width: 100%;
+  }
+  .form-wrap #consult-form3 .input-wrap input, .form-wrap #consult-form2 .input-wrap input, .form-wrap #consult-form1 .input-wrap input {
+    width: 100%;
+  }
+  .form-wrap #consult-form3 .input-wrap.phone:before, .form-wrap #consult-form2 .input-wrap.phone:before, .form-wrap #consult-form1 .input-wrap.phone:before {
+    left: 10%;
+  }
+  .form-wrap #consult-form3 .input-submit-wrap button, .form-wrap #consult-form2 .input-submit-wrap button, .form-wrap #consult-form1 .input-submit-wrap button {
+    width: 100%;
+  }
+  .form-wrap #consult-form3 p, .form-wrap #consult-form2 p, .form-wrap #consult-form1 p {
+    width: 100%;
+  }
+  /* /form */
+}
+
+@media screen and (max-width: 767px) {
+  .form-wrap #consult-form3 .input-wrap.phone:before, .form-wrap #consult-form2 .input-wrap.phone:before, .form-wrap #consult-form1 .input-wrap.phone:before {
+    left: 5%;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .form-wrap #consult-form3 .input-wrap.phone:before, .form-wrap #consult-form2 .input-wrap.phone:before, .form-wrap #consult-form1 .input-wrap.phone:before {
+    left: 8%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .form-wrap h2 {
+    font-size: 34px;
+  }
+  .form-wrap h2:after {
+    left: 35%;
+  }
+  .form-wrap p {
+    font-size: 22px !important;
+  }
+  .form-wrap #consult-form3 .input-wrap input, .form-wrap #consult-form2 .input-wrap input, .form-wrap #consult-form1 .input-wrap input {
+    font-size: 16px;
+  }
+  .form-wrap #consult-form3 .input-wrap.phone:before, .form-wrap #consult-form2 .input-wrap.phone:before, .form-wrap #consult-form1 .input-wrap.phone:before {
+    left: 12%;
+  }
+  .form-wrap #consult-form3 .input-submit-wrap button, .form-wrap #consult-form2 .input-submit-wrap button, .form-wrap #consult-form1 .input-submit-wrap button {
+    font-size: 18px;
+  }
+  .form-wrap #consult-form3 p, .form-wrap #consult-form2 p, .form-wrap #consult-form1 p {
+    font-size: 15px !important;
+    margin: 0;
+    text-align: center;
+  }
+}

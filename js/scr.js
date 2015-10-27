@@ -220,7 +220,18 @@ function calcForm(){
 
         $('.calc-form-table-wrap tr').eq(7).find('td:nth-child(2)').text(parseInt(fondValue * fondPerc));
         $('.calc-form-table-wrap tr').eq(7).find('td:nth-child(3)').text(parseInt(fondValue * fondPercCrim));
-        $('.calc-form-table-wrap tr').eq(7).find('td:nth-child(4)').text();
+        $('.calc-form-table-wrap tr').eq(7).find('td:nth-child(4)').text(parseInt(fondValue * fondPerc) - parseInt(fondValue * fondPercCrim));
+
+        var sumCalc = parseInt(sumValue*sumPerc) + parseInt(costValue*costPerc) + parseInt(fondValue * fondPerc);
+        var sumCalcCrim = parseInt(sumValue*sumPercCrim) + parseInt($('.calc-form-table-wrap tr').eq(4).find('td:nth-child(3)').text()) + parseInt(fondValue * fondPercCrim);
+        var sumCalcDif = sumCalc - sumCalcCrim;
+
+        $('.calc-form-table-wrap tr:last-child td:nth-child(2)').text(sumCalc);
+        $('.calc-form-table-wrap tr:last-child td:nth-child(3)').text(sumCalcCrim);
+        $('.calc-form-table-wrap tr:last-child td:nth-child(4)').text(sumCalcDif);
+
+
+        // here gona be ajax fucntion
 
         return false;
 
