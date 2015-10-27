@@ -28,3 +28,35 @@
 
 
 /*/our-clients*/
+/*our-services*/
+    .services-wrapp{padding: 55px 0 48px 0; background-color: #fafbfc; width:100%;
+        .services-align{padding: 0;
+            .services-title{padding:0 0 29px 14px;
+                span{font-family: 'PNova'; font-weight: 300;color:#343c4b; font-size: 48px;padding-left: 36px;
+                    &:before{content: ""; display: block; width:5px; height: 35px; background-color: #2299ff;float:left;position: absolute; top: 18%; }
+                }
+            }
+
+        }
+    }
+    .list-box{padding: 11px 0 0 14px;
+        ul{
+            li{    padding-bottom: 24px; position: relative;
+                &:before{content: "";width: 26px;height: 26px;position:absolute; top:0; background-image: url('../images/listyle.png');display: inline-block;vertical-align: top;}
+                span{font-family: 'PNova';font-weight: 300;font-size: 20px;color: #000; padding-left: 45px; display:block;    line-height: 24px;}
+            }
+        }
+    }
+/*/our-services*/
+/*risks*/
+.risk-wrapp{padding: 55px 0 48px 0; background-color: #fff; width:100%;
+        .risk-align{padding: 0;
+            .risk-title{padding:0 0 29px 14px;
+                span{font-family: 'PNova'; font-weight: 300;color:#343c4b; font-size: 48px;padding-left: 36px;
+                    &:before{content: ""; display: block; width:5px; height: 35px; background-color: #2299ff;float:left;position: absolute; top: 18%; }
+                }
+            }
+
+        }
+    }
+/*/risks*/
