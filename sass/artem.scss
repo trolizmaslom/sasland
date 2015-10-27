@@ -1,15 +1,16 @@
 .long-table-wrap{ width: 100%; background-color: #fafbfc;
     .container{
-        .get-analiz-box{text-align: center; color: #24ccf1; font-family: "PNova"; font-weight: 400; font-size: 29px; padding-top: 125px; padding-bottom: 128px;
-            a{background-color: none;}
-            a:hover, a:active, a:focus, a:visited {text-decoration: none; background: none; color: #24ccf1;}
+        .get-analiz-box{text-align: center; font-family: "PNova"; font-weight: 400; font-size: 29px; padding-top: 125px; padding-bottom: 128px;
+            a{background-color: none; color: #24ccf1; transition: all 1s ease ; -webkit-transition: all 1s ease ; -moz-transition: all 1s ease ;  -ms-transition: all 1s ease ;}
+            a:hover {text-decoration: none; background: none; color: #2491F1;}
 
         }
         .header-table-stroke{text-align: center; padding-bottom: 50px; padding-top: 50px; font-family: "PNova"; font-weight: 300; font-size: 48px;}
-        .table-striped-chits{
-            .table-chits { font-family: "PNova"; font-weight: 300;
-                tr{ opacity: 0; transition: all 1s ease ; -webkit-transition: all 1s ease ; -moz-transition: all 1s ease ;  -ms-transition: all 1s ease ;
-                    &.animated { opacity: 1;}
+        .table-striped-chits{width: 100%;
+
+            .table-chits { font-family: "PNova"; font-weight: 300; width: 100%; min-width: 666px;
+                tr{ opacity: 0; transition: all 1s ease ; -webkit-transition: all 1s ease ; -moz-transition: all 1s ease ;  -ms-transition: all 1s ease ; transform:translate(0,100%);-webkit-transform:translate(0,100%);-moz-transform:translate(0,100%);-ms-transform:translate(0,100%);
+                    &.animated { opacity: 1; transform:translate(0,0);-webkit-transform:translate(0,0);-moz-transform:translate(0,0);-ms-transform:translate(0,0);}
                 }
                 thead tr th{text-align: center;background-color: #283040;color: #ffffff; padding-bottom: 36px; padding-top: 36px;  font-size: 19px;
                     &:first-child{ width: 23.5%;  }
@@ -18,6 +19,7 @@
                     &:nth-child(4){ width: 23.5%; }
                     &:last-child{ width: 15%; }
                 }
+
                 .all-row-text td{ padding-bottom: 36px; padding-top: 36px; font-family: "PNova"; font-weight: 300; font-size: 30px; background-color: #ffffff; text-align: center; padding: 33px; }
 
                 .first-row-table-main{ font-size: 21px; padding: 20px; }
@@ -49,11 +51,11 @@
                 }
 
                 .tr-class-2-2{
-                    .first-row-table-main{ background-color: #edeeef;}
-                    .second-row-table-main{background-color: #fafbfc; }
-                    .third-row-table-main{background-color: #edeeef; }
-                    .fourth-row-table-main{background-color: #fafbfc;}
-                    .fifth-row-table-main{background-color: #edeeef; }
+                    .first-row-table-main{ background-color: #edeeef;  width: 23.5%;}
+                    .second-row-table-main{background-color: #fafbfc;  width: 24%; }
+                    .third-row-table-main{background-color: #edeeef;   width: 14%;}
+                    .fourth-row-table-main{background-color: #fafbfc;  width: 23.5%;}
+                    .fifth-row-table-main{background-color: #edeeef;   width: 15%; }
                 }
                 .tr-class-2-3{
                     .first-row-table-main{ background-color: #dbdee0;}
@@ -78,11 +80,11 @@
                     .fifth-row-table-main{background-color: #e6e9ea; }
                 }
                 .tr-class-3-2{
-                    .first-row-table-main{ background-color: #dbdee0;}
-                    .second-row-table-main{background-color: #e6eaec; }
-                    .third-row-table-main{background-color: #dbdee0; }
-                    .fourth-row-table-main{background-color: #e6eaec;}
-                    .fifth-row-table-main{background-color: #dbdee0; }
+                    .first-row-table-main{ background-color: #dbdee0; width: 23.5%;}
+                    .second-row-table-main{background-color: #e6eaec; width: 24%;}
+                    .third-row-table-main{background-color: #dbdee0;  width: 14%;}
+                    .fourth-row-table-main{background-color: #e6eaec; width: 23.5%;}
+                    .fifth-row-table-main{background-color: #dbdee0;  width: 15%; }
                 }
                 .tr-class-3-3{
                     .first-row-table-main{ background-color: #e6e9ea;}
@@ -99,8 +101,8 @@
                     .fifth-row-table-main{background-color: #dbdee0; }
                 }
                 .tr-class-4-2{
-                    .second-row-table-main{background-color: #e2e6e9; }
-                    .fifth-row-table-main{background-color: #d7dadd; }
+                    .second-row-table-main{background-color: #e2e6e9;width: 85%; }
+                    .fifth-row-table-main{background-color: #d7dadd; width: 15%; }
                 }
                 .tr-class-4-3{
                     .second-row-table-main{background-color: #f2f6f7; }
@@ -118,10 +120,19 @@
                     .second-row-table-main{background-color: #e2e6e9; }
                     .fifth-row-table-main{background-color: #d7dadd; }
                 }
-
-
             }
         }
     }
 
+}
+
+@media screen and (max-width: 767px){
+    .long-table-wrap .container .table-striped-chits .table-chits  {
+                .all-row-text td {padding-bottom: 16px; padding-top: 16px; font-size: 20px !important ;}
+                .first-row-table-main{ font-size: 15px; padding: 5px; }
+                .second-row-table-main{font-size: 10px; padding: 5px;}
+                .third-row-table-main{font-size: 15px; padding: 5px;}
+                .fourth-row-table-main{font-size: 10px; padding: 5px; }
+                .fifth-row-table-main{font-size: 10px; padding: 5px; }
+    }
 }
