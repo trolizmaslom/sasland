@@ -4,8 +4,8 @@ function googleMap(mapWrap){
         var myOptions = {
             zoom: 16,
             center: myLatlng,
-            disableDefaultUI: false, //без управляющих елементов
-            mapTypeId: google.maps.MapTypeId.ROADMAP, // SATELLITE - снимки со спутника,
+            disableDefaultUI: true,
+            mapTypeId: google.maps.MapTypeId.ROADMAP,
         }
         var map = new google.maps.Map(document.getElementById(mapWrap), myOptions);
 
@@ -14,13 +14,12 @@ function googleMap(mapWrap){
             content: contentString
         });
 
-        var image = 'images/footer-contact-marker.png';   // иконка картинкой
-
+        var image = 'images/footer-contact-marker.png';
         var marker = new google.maps.Marker({
             position: myLatlng,
             map: map,
             animation: google.maps.Animation.DROP, // анимация при загрузке карты
-            icon: image //  иконка картинкой
+            icon: image
         });
 
         /*анимация при клике на маркер*/
@@ -40,38 +39,25 @@ function googleMap(mapWrap){
         });
 
         map.set('styles', [
-          {
-            featureType: 'road',
-            elementType: 'geometry',
-            stylers: [
-              { color: '#000000' },
-              { weight: 1.6 }
-            ]
-          }, {
-            featureType: 'road',
-            elementType: 'labels',
-            stylers: [
-              { saturation: -100 },
-              { invert_lightness: true }
-            ]
-          }, {
-            featureType: 'landscape',
-            elementType: 'geometry',
-            stylers: [
-              { hue: '#ffff00' },
-              { gamma: 1.4 },
-              { saturation: 82 },
-              { lightness: 96 }
-            ]
-          }, {
-            featureType: 'poi.school',
-            elementType: 'geometry',
-            stylers: [
-              { hue: '#fff700' },
-              { lightness: -15 },
-              { saturation: 99 }
-            ]
-          }
+            {
+              stylers: [
+                { hue: "#ff0000" },
+                { saturation: -100 }
+              ]
+            },{
+              featureType: "road",
+              elementType: "geometry",
+              stylers: [
+               { saturation: 0 },
+                { invert_lightness: false }
+              ]
+            },{
+              featureType: "road",
+              elementType: "labels",
+              stylers: [
+                { visibility: "off" }
+              ]
+            }
         ]);
 
     }
