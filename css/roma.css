@@ -369,9 +369,10 @@
 }
 
 /* /consult-form2 */
-/* consult-form3 */
+/* consult-form1 */
 .consult-from1-wrap {
   position: relative;
+  background-color: #fafbfc;
 }
 
 .consult-from1-wrap .consult-form1 .form-wrap h2 {
@@ -398,7 +399,11 @@
   color: #2299ff;
 }
 
-/* /consult-form3 */
+.consult-from1-wrap .consult-form1 .form-wrap #consult-form1 .input-wrap input {
+  background-color: #fafbfc;
+}
+
+/* /consult-form1 */
 @media screen and (max-width: 1024px) {
   /* form */
   .form-wrap h2 {
@@ -422,6 +427,18 @@
 @media screen and (max-width: 767px) {
   .form-wrap #consult-form3 .input-wrap.phone:before, .form-wrap #consult-form2 .input-wrap.phone:before, .form-wrap #consult-form1 .input-wrap.phone:before {
     left: 5%;
+  }
+}
+
+@media screen and (max-width: 666px) {
+  .form-wrap h2 {
+    font-size: 30px;
+  }
+  .consult-from1-wrap .consult-form1 .form-wrap p {
+    font-size: 28px;
+  }
+  .form-wrap #consult-form3 p, .form-wrap #consult-form2 p, .form-wrap #consult-form1 p {
+    margin-right: 0;
   }
 }
 

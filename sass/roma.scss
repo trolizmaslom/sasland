@@ -88,7 +88,7 @@
 
 /* consult-form2 */
 
-.consult-from2-wrap{position: relative; background-color: #283040; 
+.consult-from2-wrap{position: relative; background-color: #283040;
 	.consult-form2{
 		.form-wrap{
 			h2{color: #fff;padding-top: 62px;    margin-bottom: 98px;}
@@ -104,9 +104,9 @@
 
 /* /consult-form2 */
 
-/* consult-form3 */
+/* consult-form1 */
 
-.consult-from1-wrap{position: relative;
+.consult-from1-wrap{position: relative;background-color: #fafbfc;
 	.consult-form1{
 		.form-wrap{
 			h2{padding-top: 62px;    margin-bottom: 76px;font-weight: 100;letter-spacing: -0.6px;padding-left: 0; padding-right: 0;
@@ -115,12 +115,13 @@
 			p{color: #2299ff;font-size: 34px;margin-bottom: 28px}
 			#consult-form1{
 				p{margin-bottom: 84px;color: #2299ff;}
+				.input-wrap input{background-color: #fafbfc;}
 			}
 		}
 	}
 }
 
-/* /consult-form3 */
+/* /consult-form1 */
 
 @media screen and (max-width: 1920px){
 
@@ -170,7 +171,9 @@
 	}
 }
 @media screen and (max-width: 666px){
-
+	.form-wrap h2{font-size: 30px;}
+	.consult-from1-wrap .consult-form1 .form-wrap p{font-size: 28px;}
+	.form-wrap #consult-form3 p, .form-wrap #consult-form2 p, .form-wrap #consult-form1 p{margin-right: 0;}
 }
 @media screen and (max-width: 479px){
 	.form-wrap{
