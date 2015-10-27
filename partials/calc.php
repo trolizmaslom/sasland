@@ -18,64 +18,64 @@
             <div class="col-sm-5">
                 <div class="calc-form-wrap">
                     <div class="calc-form-wrap-title row">
-                        <div class="col-sm-7 inline-block">
+                        <div class="col-sm-8 inline-block">
                             Расчет экономических выгод
                         </div>
-                        <div class="col-sm-5 inline-block">
+                        <div class="col-sm-4 inline-block">
                             <a href="#" download>
                                 <span class="icon pdf-icon"></span>
-                                <span class="span icon pdf-icon-hover"></span>
+                                <span class="icon pdf-icon icon-hover"></span>
                             </a>
                         </div>
                     </div>
                     <div class="calc-form-main">
                         <form class="calc-form">
                             <div class="form-row row">
-                                <div class="col-sm-5">
+                                <div class="col-sm-5 inline-block">
                                     <div class="calc-form-description">
                                         Сумма прибыли
                                     </div>
                                 </div>
-                                <div class="col-sm-5">
+                                <div class="col-sm-4 inline-block">
                                     <div class="calc-form-input">
-                                        <input type="text" name="sum"></input>
+                                        <input type="text" name="sum" class="sum-input" value=0></input>
                                     </div>
                                 </div>
-                                <div class="col-sm-2">
+                                <div class="col-sm-3 inline-block">
                                     <div class="valute">
                                         руб/мес.
                                     </div>
                                 </div>
                             </div>
                             <div class="form-row row">
-                                <div class="col-sm-5">
+                                <div class="col-sm-5 inline-block">
                                     <div class="calc-form-description">
                                         Фонд оплаты труда
                                     </div>
                                 </div>
-                                <div class="col-sm-5">
+                                <div class="col-sm-4 inline-block">
                                     <div class="calc-form-input">
-                                        <input type="text" name="fond"></input>
+                                        <input type="text" name="fond" class="fond-input" value=0></input>
                                     </div>
                                 </div>
-                                <div class="col-sm-2">
+                                <div class="col-sm-3 inline-block">
                                     <div class="valute">
                                         руб/мес.
                                     </div>
                                 </div>
                             </div>
                             <div class="form-row row">
-                                <div class="col-sm-5">
+                                <div class="col-sm-5 inline-block">
                                     <div class="calc-form-description">
                                         Стоимость имущества
                                     </div>
                                 </div>
-                                <div class="col-sm-5">
+                                <div class="col-sm-4 inline-block">
                                     <div class="calc-form-input">
-                                        <input type="text" name="increment"></input>
+                                        <input type="text" name="increment" class="cost-input" value=0></input>
                                     </div>
                                 </div>
-                                <div class="col-sm-2">
+                                <div class="col-sm-3 inline-block">
                                     <div class="valute">
                                         руб
                                     </div>
@@ -83,7 +83,7 @@
                             </div>
                             <div class="form-row submit row">
                                 <div class="col-xs-12">
-                                    <button class="btn btn-default btn-blue" type="submit">Расчитать</button>
+                                    <button class="btn btn-blue" type="submit">Расчитать</button>
                                 </div>
                             </div>
                         </form>
@@ -95,67 +95,66 @@
                     <table>
                         <tr>
                             <th></th>
-                            <th>Плательщики на общих основаниях</th>
-                            <th>Участники Свободной экономической зоны в Крыму</th>
-                            <th>Экономия</th>
+                            <th class="gray-50 text-left">Плательщики на <br /> общих основаниях</th>
+                            <th class="text-left">Участники Свободной <br /> экономической зоны в Крыму</th>
+                            <th class="blue-50">Экономия</th>
                         </tr>
                         <tr>
-                            <td>Прибыль предприятия</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
+                            <td class="gray-50 text-left">Прибыль предприятия</td>
+                            <td class="gray-75">0</td>
+                            <td class="gray-50">0</td>
+                            <td class="blue-75">0</td>
                         </tr>
                         <tr>
-                            <td rowspan=2>Налог на прибыль</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
+                            <td rowspan=2 class="text-left">Налог на прибыль</td>
+                            <td class="gray-100">20%</td>
+                            <td class="gray-75">2%</td>
+                            <td class="blue-100">18%</td>
                         </tr>
                         <tr>
+                            <td class="gray-50">0</td>
                             <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
+                            <td class="blue-50">0</td>
                         </tr>
                         <tr>
-                            <td rowspan=2>Налог на имущество </td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
+                            <td rowspan=2 class="gray-50 text-left">Налог на имущество </td>
+                            <td class="gray-100">1%</td>
+                            <td rowspan=2 class="gray-50">0</td>
+                            <td class="blue-100">1%</td>
                         </tr>
                         <tr>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
+                            <td class="gray-75">0</td>
+                            <td class="blue-75">0</td>
                         </tr>
                         <tr>
-                            <td>Начисления на Фонд оплаты труда </td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
+                            <td class="text-left">Начисления на <br /> Фонд оплаты труда </td>
+                            <td class="gray-50">30%</td>
+                            <td>7,6%</td>
+                            <td class="blue-50">22,40%</td>
                         </tr>
                         <tr>
-                            <td>(ПФ, ФСС, МС)</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
+                            <td class="gray-50 text-left">(ПФ, ФСС, МС)</td>
+                            <td class="gray-75">0</td>
+                            <td class="gray-50">0</td>
+                            <td class="blue-75">0</td>
                         </tr>
                         <tr>
-                            <td>Таможенная пошлина + НДС (при импорте)</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
+                            <td class="text-left">Таможенная пошлина <br /> + НДС (при импорте)</td>
+                            <td class="gray-50"></td>
+                            <td>0%</td>
+                            <td class="blue-50">0%</td>
                         </tr>
                         <tr>
-                            <td>Налог на землю</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
+                            <td class="gray-50 text-left">Налог на землю</td>
+                            <td class="gray-75"></td>
+                            <td class="gray-50">0%</td>
+                            <td class="blue-75">0%</td>
                         </tr>
                         <tr>
-                            <td>ИТОГО РАСХОДОВ</td>
+                            <td class="text-left">ИТОГО РАСХОДОВ</td>
+                            <td class="gray-50">0</td>
                             <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
+                            <td class="blue-50">0</td>
                         </tr>
                     </table>
                 </div>
