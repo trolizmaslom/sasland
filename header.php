@@ -54,20 +54,17 @@
 	<script type="text/javascript" src="js/jquery.jscrollpane.min.js"></script>
 <!-- jScrollPane -->
 
-<!-- jandexMaps -->
-	<style>
-		.map1{width: 100%;height: 350px;}
-		.mapes{height: 350px;margin-bottom: 15px;}
-		.list{width: 200px;float: left;}
-		.list-item.hover{background-color: red;}
-		.checkboxes{float: right;margin-right: 10px;}
-		.checkboxes label{display: inline-block;margin-right: 10px;}
-		.clear{clear: both;}
-	</style>
 
-	<script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
-	<script src="js/jandexMapsScr.js" type="text/javascript"></script>
-<!-- jandexMaps -->
+
+<!-- Google map -->
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&signed_in=true"></script>
+<script>
+	var cordX = 44.951255;
+	var cordY= 34.099116;
+	var googleText = "г. Симферополь, ул. К. Маркса, 4, офис 26";
+</script>
+<script src='js/googleMapsScr.js'></script>
+<!-- /Google map -->
 
 <!-- remove Files -->
 
@@ -111,21 +108,21 @@
 	<header class="header">
 		<div class="container">
 			<div class="row">
-				<div class="col-sm-4">
+				<div class="col-xs-12 col-sm-4">
 					<div class="logo">
 						<a href="#">
 							<img src="images/logo.png" alt="">
 						</a>
 					</div>
 				</div>
-				<div class="col-sm-4">
+				<div class="col-xs-12 col-sm-4">
 					<div class="head_descr">
 						<p>Составление инвестиционной декларации</p>
 						<p>и Технико-экономичекого обоснования</p>
 						<p>для регистрации участником СЭЗ в Крыму</p>
 					</div>
 				</div>
-				<div class="col-sm-4">
+				<div class="col-xs-12 col-sm-4">
 					<div class="header_tel_wrap">
 						<a href="#" class="head_zvonok btn btn-lg"><span>Заказать звонок</span></a>
 						<a href="tel:+79787280001" class="head_tel"><span>+7&nbsp;978&nbsp;728&nbsp;0001</span></a>

@@ -13,6 +13,16 @@ function modernize() {
 
 /* input only Number  */
 function inputNumber(block) {
+    $('input', block).focus(function(){
+        if($(this).val() == 0){
+            $(this).val('');
+        }
+    });
+    $('input', block).blur(function(){
+        if($(this).val()==''){
+            $(this).val(0);
+        }
+    });
 	$('input', block).keypress(function(e) {
 		if (e.which >= 47 && e.which <= 57 ){}
 		else return false;
@@ -21,7 +31,7 @@ function inputNumber(block) {
 	$('input', block).keyup(function() {
 		$inputNum = $(this);
 		if ($inputNum.val == '' || $inputNum.val() == 0) {
-			$inputNum.val('');
+			$inputNum.val('0');
 		}
 	});
 }
@@ -152,6 +162,83 @@ function validate(form, options){
     }
 }
 
+function animationBlock(item){
+
+    $(window).scroll(function(){
+        checkForAnimate();
+    });
+
+    function checkForAnimate(){
+        var bottomCheck = $(window).height()+$(window).scrollTop();
+        var windowTop = $(window).scrollTop()+($(window).height()/1.5);
+        item.each(function(){
+           if(windowTop>$(this).offset().top || bottomCheck > $('body').height()*0.98){
+
+              var itemSect = $(this);
+              var point = 0;
+              itemSect.find('.animate-it').addClass('animated');
+
+              var timer = setInterval(function(){
+                 itemSect.find('.animate-delay').eq(point).addClass('animated');
+                 point++;
+                 if(itemSect.find('.animate-delay').length == point){
+                     clearInterval(timer);
+                 }
+              },200);
+
+
+           }
+        });
+    }
+    checkForAnimate();
+}
+
+function calcForm(){
+
+    $('.calc-form').submit(function(){
+
+        var serializeItem = $(this).serializeArray();
+
+        var sumValue = parseInt($(this).find('.sum-input').val());
+        var fondValue = parseInt($(this).find('.fond-input').val());
+        var costValue = parseInt($(this).find('.cost-input').val());
+
+        var sumPerc = parseInt($('.calc-form-table-wrap tr').eq(2).find('td:nth-child(2)').text())/100;
+        var sumPercCrim = parseInt($('.calc-form-table-wrap tr').eq(2).find('td:nth-child(3)').text())/100;
+
+        var costPerc = parseInt($('.calc-form-table-wrap tr').eq(4).find('td:nth-child(2)').text())/100;
+
+        var fondPerc = parseInt($('.calc-form-table-wrap tr').eq(6).find('td:nth-child(2)').text())/100;
+        var fondPercCrim = parseInt($('.calc-form-table-wrap tr').eq(6).find('td:nth-child(3)').text())/100;
+
+        $('.calc-form-table-wrap tr').eq(1).find('td:nth-child(2), td:nth-child(3)').text(sumValue);
+        $('.calc-form-table-wrap tr').eq(3).find('td:nth-child(1)').text(parseInt(sumValue*sumPerc));
+        $('.calc-form-table-wrap tr').eq(3).find('td:nth-child(2)').text(parseInt(sumValue*sumPercCrim));
+
+        $('.calc-form-table-wrap tr').eq(5).find('td:nth-child(1)').text(parseInt(costValue*costPerc));
+        $('.calc-form-table-wrap tr').eq(5).find('td:nth-child(3)').text((parseInt(costValue*costPerc)) - parseInt($('.calc-form-table-wrap tr').eq(4).find('td:nth-child(3)').text()));
+
+        $('.calc-form-table-wrap tr').eq(7).find('td:nth-child(2)').text(parseInt(fondValue * fondPerc));
+        $('.calc-form-table-wrap tr').eq(7).find('td:nth-child(3)').text(parseInt(fondValue * fondPercCrim));
+        $('.calc-form-table-wrap tr').eq(7).find('td:nth-child(4)').text(parseInt(fondValue * fondPerc) - parseInt(fondValue * fondPercCrim));
+
+        var sumCalc = parseInt(sumValue*sumPerc) + parseInt(costValue*costPerc) + parseInt(fondValue * fondPerc);
+        var sumCalcCrim = parseInt(sumValue*sumPercCrim) + parseInt($('.calc-form-table-wrap tr').eq(4).find('td:nth-child(3)').text()) + parseInt(fondValue * fondPercCrim);
+        var sumCalcDif = sumCalc - sumCalcCrim;
+
+        $('.calc-form-table-wrap tr:last-child td:nth-child(2)').text(sumCalc);
+        $('.calc-form-table-wrap tr:last-child td:nth-child(3)').text(sumCalcCrim);
+        $('.calc-form-table-wrap tr:last-child td:nth-child(4)').text(sumCalcDif);
+
+
+        // here gona be ajax fucntion
+
+        return false;
+
+    });
+
+};
+
 /* DOCUMENT READY  */
 $(document).ready(function() {
 	modernize();
@@ -162,7 +249,10 @@ $(document).ready(function() {
 
 $(window).load(function(){
 
+    animationBlock($('.animate-section'));
 
+    inputNumber('.calc-form-input');
+    calcForm();
 
 });
 
