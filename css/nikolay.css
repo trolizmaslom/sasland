@@ -1,0 +1,19 @@
+/*our-clients*/
+.clients-wrapp .clients-align .client-img .item-img a {
+  background-color: transparent;
+  position: relative;
+  display: block;
+}
+
+.clients-wrapp .clients-align .client-img .item-img a:hover img:nth-child(2) {
+  z-index: 1;
+}
+
+.clients-wrapp .clients-align .client-img .item-img a img:nth-child(2) {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+
+/*/our-clients*/
