@@ -1,8 +1,8 @@
 <div class="calc-wrap">
     <div class="container">
         <div class="row">
-            <div class="col-xs-12">
-                <div class="calc-title">
+            <div class="col-xs-12 animate-section">
+                <div class="calc-title animate-it">
                     <div class="calc-title-top">
                         <p>Рассчитайте выгоды для</p>
                         <p>Вашего бизнеса в СЭЗ – самостоятельно!</p>
@@ -15,73 +15,73 @@
         </div>
         <div class="row calc-main">
 
-            <div class="col-sm-5">
+            <div class="col-md-5">
                 <div class="calc-form-wrap">
-                    <div class="calc-form-wrap-title row">
-                        <div class="col-sm-8 inline-block">
+                    <div class="calc-form-wrap-title row animate-section">
+                        <div class="col-xs-8 inline-block animate-it">
                             Расчет экономических выгод
                         </div>
-                        <div class="col-sm-4 inline-block">
+                        <div class="col-xs-4 inline-block animate-it">
                             <a href="#" download>
                                 <span class="icon pdf-icon"></span>
                                 <span class="icon pdf-icon icon-hover"></span>
                             </a>
                         </div>
                     </div>
-                    <div class="calc-form-main">
+                    <div class="calc-form-main animate-section">
                         <form class="calc-form">
-                            <div class="form-row row">
-                                <div class="col-sm-5 inline-block">
+                            <div class="form-row row animate-delay">
+                                <div class="col-xs-5 inline-block">
                                     <div class="calc-form-description">
                                         Сумма прибыли
                                     </div>
                                 </div>
-                                <div class="col-sm-4 inline-block">
+                                <div class="col-xs-4 inline-block">
                                     <div class="calc-form-input">
                                         <input type="text" name="sum" class="sum-input" value=0></input>
                                     </div>
                                 </div>
-                                <div class="col-sm-3 inline-block">
+                                <div class="col-xs-3 inline-block">
                                     <div class="valute">
                                         руб/мес.
                                     </div>
                                 </div>
                             </div>
-                            <div class="form-row row">
-                                <div class="col-sm-5 inline-block">
+                            <div class="form-row row animate-delay">
+                                <div class="col-xs-5 inline-block">
                                     <div class="calc-form-description">
                                         Фонд оплаты труда
                                     </div>
                                 </div>
-                                <div class="col-sm-4 inline-block">
+                                <div class="col-xs-4 inline-block">
                                     <div class="calc-form-input">
                                         <input type="text" name="fond" class="fond-input" value=0></input>
                                     </div>
                                 </div>
-                                <div class="col-sm-3 inline-block">
+                                <div class="col-xs-3 inline-block">
                                     <div class="valute">
                                         руб/мес.
                                     </div>
                                 </div>
                             </div>
-                            <div class="form-row row">
-                                <div class="col-sm-5 inline-block">
+                            <div class="form-row row animate-delay">
+                                <div class="col-xs-5 inline-block">
                                     <div class="calc-form-description">
                                         Стоимость имущества
                                     </div>
                                 </div>
-                                <div class="col-sm-4 inline-block">
+                                <div class="col-xs-4 inline-block">
                                     <div class="calc-form-input">
                                         <input type="text" name="increment" class="cost-input" value=0></input>
                                     </div>
                                 </div>
-                                <div class="col-sm-3 inline-block">
+                                <div class="col-xs-3 inline-block">
                                     <div class="valute">
                                         руб
                                     </div>
                                 </div>
                             </div>
-                            <div class="form-row submit row">
+                            <div class="form-row submit row animate-delay">
                                 <div class="col-xs-12">
                                     <button class="btn btn-blue" type="submit">Расчитать</button>
                                 </div>
@@ -90,8 +90,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-7">
-                <div class="calc-form-table-wrap">
+            <div class="col-md-7 animate-section">
+                <div class="calc-form-table-wrap animate-it">
                     <table>
                         <tr>
                             <th></th>
