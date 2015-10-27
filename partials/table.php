@@ -3,10 +3,10 @@
         <div class="row">
             <div class="col-xs-12 header-table-stroke"> Льготы для участников СЭЗ в Крыму</div>
         </div>
-        <div class="table-responsive table-striped-chits animate-section">
-            <table class="table-chits ">
+        <div class="table-responsive table-striped-chits ">
+            <table class="table-chits animate-section">
                 <thead>
-                    <tr >
+                    <tr class="animate-it" >
                         <th>Вид платежа</th>
                         <th>Льгота</th>
                         <th>Срок действия</th>
@@ -38,8 +38,10 @@
                     <td class="third-row-table-main">10 лет</td>
                     <td class="fifth-row-table-main">ст.58.4  Закона №212-ФЗ</td>
                 </tr>
+            </table>
 
                         <!-- блок 2-->
+            <table class="table-chits animate-section">
                 <tr class="tr-class-2-1 all-row-text animate-it">
                     <td colspan=5>Льготы по налогу на прибыль</td>
                 </tr>
@@ -77,7 +79,9 @@
                     <td class="fourth-row-table-main">Применение повышающего коэффициента</td>
                     <td class="fifth-row-table-main">ст. 259.3 НК РФ</td>
                 </tr>
+            </table>
                     <!-- блок 3-->
+            <table class="table-chits animate-section">
                 <tr class="tr-class-3-1 all-row-text animate-it">
                     <td colspan=5> Дополнительные льготы участников СЭЗ</td>
                 </tr>
@@ -103,8 +107,10 @@
                     <td class="fourth-row-table-main"> Путем применения таможенной процедуры «свободной таможенной зоны»</td>
                     <td class="fifth-row-table-main">п.2 ст.15 +ст.18  Закона СЭЗ</td>
                 </tr>
+            </table>
 
                 <!-- блок 4-->
+            <table class="table-chits animate-section">
                 <tr class="tr-class-4-1 all-row-text animate-it">
                     <td colspan=5> Дополнительные льготы участников СЭЗ </td>
                 </tr>
