@@ -54,20 +54,17 @@
 	<script type="text/javascript" src="js/jquery.jscrollpane.min.js"></script>
 <!-- jScrollPane -->
 
-<!-- jandexMaps -->
-	<style>
-		.map1{width: 100%;height: 350px;}
-		.mapes{height: 350px;margin-bottom: 15px;}
-		.list{width: 200px;float: left;}
-		.list-item.hover{background-color: red;}
-		.checkboxes{float: right;margin-right: 10px;}
-		.checkboxes label{display: inline-block;margin-right: 10px;}
-		.clear{clear: both;}
-	</style>
 
-	<script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
-	<script src="js/jandexMapsScr.js" type="text/javascript"></script>
-<!-- jandexMaps -->
+
+<!-- Google map -->
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&signed_in=true"></script>
+<script>
+	var cordX = 44.951255;
+	var cordY= 34.099116;
+	var googleText = "г. Симферополь, ул. К. Маркса, 4, офис 26";
+</script>
+<script src='js/googleMapsScr.js'></script>
+<!-- /Google map -->
 
 <!-- remove Files -->
 
