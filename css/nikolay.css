@@ -205,4 +205,13 @@
   .list-box ul li {
     padding-bottom: 13px;
   }
+  .risk-wrapp .risk-align .risk-title span, .services-wrapp .services-align .services-title span, .clients-wrapp .clients-align .client-title span {
+    font-size: 32px;
+  }
+  .services-wrapp .services-align .services-title:before {
+    top: 5%;
+  }
+  .clients-wrapp .clients-align .client-title:before {
+    top: 6%;
+  }
 }

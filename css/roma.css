@@ -211,6 +211,15 @@
   font-family: 'PNova';
   font-weight: 300;
   margin-bottom: 68px;
+  opacity: 0;
+  -webkit-transition: all ease 0.3s;
+  -moz-transition: all ease 0.3s;
+  -o-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+}
+
+.form-wrap h2.animated {
+  opacity: 1;
 }
 
 .form-wrap h2:after {
@@ -252,6 +261,15 @@
   width: 100%;
   position: relative;
   margin-bottom: 32px;
+  opacity: 0;
+  -webkit-transition: opacity ease-out 0.3s;
+  -moz-transition: opacity ease-out 0.3s;
+  -o-transition: opacity ease-out 0.3s;
+  transition: opacity ease-out 0.3s;
+}
+
+.form-wrap #consult-form3 .input-wrap.animated, .form-wrap #consult-form2 .input-wrap.animated, .form-wrap #consult-form1 .input-wrap.animated {
+  opacity: 1;
 }
 
 .form-wrap #consult-form3 .input-wrap input, .form-wrap #consult-form2 .input-wrap input, .form-wrap #consult-form1 .input-wrap input {
@@ -313,6 +331,15 @@
   margin: 0 auto;
   width: 100%;
   margin-bottom: 15px;
+  opacity: 0;
+  -webkit-transition: opacity ease-out 0.3s;
+  -moz-transition: opacity ease-out 0.3s;
+  -o-transition: opacity ease-out 0.3s;
+  transition: opacity ease-out 0.3s;
+}
+
+.form-wrap #consult-form3 .input-submit-wrap.animated, .form-wrap #consult-form2 .input-submit-wrap.animated, .form-wrap #consult-form1 .input-submit-wrap.animated {
+  opacity: 1;
 }
 
 .form-wrap #consult-form3 .input-submit-wrap button, .form-wrap #consult-form2 .input-submit-wrap button, .form-wrap #consult-form1 .input-submit-wrap button {
@@ -356,6 +383,18 @@
   z-index: 11;
 }
 
+.consult-from3-wrap .form-wrap p {
+  opacity: 0;
+  -webkit-transition: all ease 0.3s;
+  -moz-transition: all ease 0.3s;
+  -o-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+}
+
+.consult-from3-wrap .form-wrap p.animated {
+  opacity: 1;
+}
+
 /* /consult-form3 */
 /* consult-form2 */
 .consult-from2-wrap {
@@ -367,6 +406,15 @@
   color: #fff;
   padding-top: 62px;
   margin-bottom: 98px;
+  opacity: 0;
+  -webkit-transition: all ease 0.3s;
+  -moz-transition: all ease 0.3s;
+  -o-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+}
+
+.consult-from2-wrap .consult-form2 .form-wrap h2.animated {
+  opacity: 1;
 }
 
 .consult-from2-wrap .consult-form2 .form-wrap #consult-form2 .input-wrap input {
@@ -375,6 +423,15 @@
 
 .consult-from2-wrap .consult-form2 .form-wrap #consult-form2 p {
   margin-bottom: 84px;
+  opacity: 0;
+  -webkit-transition: opacity ease-out 0.3s;
+  -moz-transition: opacity ease-out 0.3s;
+  -o-transition: opacity ease-out 0.3s;
+  transition: opacity ease-out 0.3s;
+}
+
+.consult-from2-wrap .consult-form2 .form-wrap #consult-form2 p.animated {
+  opacity: 1;
 }
 
 /* /consult-form2 */
@@ -391,6 +448,15 @@
   letter-spacing: -0.6px;
   padding-left: 0;
   padding-right: 0;
+  opacity: 0;
+  -webkit-transition: all ease 0.3s;
+  -moz-transition: all ease 0.3s;
+  -o-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+}
+
+.consult-from1-wrap .consult-form1 .form-wrap h2.animated {
+  opacity: 1;
 }
 
 .consult-from1-wrap .consult-form1 .form-wrap h2 span {
@@ -401,11 +467,29 @@
   color: #2299ff;
   font-size: 34px;
   margin-bottom: 28px;
+  opacity: 0;
+  -webkit-transition: all ease 0.3s;
+  -moz-transition: all ease 0.3s;
+  -o-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+}
+
+.consult-from1-wrap .consult-form1 .form-wrap p.animated {
+  opacity: 1;
 }
 
 .consult-from1-wrap .consult-form1 .form-wrap #consult-form1 p {
   margin-bottom: 84px;
   color: #2299ff;
+  opacity: 0;
+  -webkit-transition: opacity ease-out 0.3s;
+  -moz-transition: opacity ease-out 0.3s;
+  -o-transition: opacity ease-out 0.3s;
+  transition: opacity ease-out 0.3s;
+}
+
+.consult-from1-wrap .consult-form1 .form-wrap #consult-form1 p.animated {
+  opacity: 1;
 }
 
 .consult-from1-wrap .consult-form1 .form-wrap #consult-form1 .input-wrap input {

@@ -604,6 +604,9 @@
   .responce.animated:after {
     right: -39%;
   }
+  .responce .responce_title h2 {
+    font-size: 32px;
+  }
   /*declaration*/
   .declarations .declarations-title h2 {
     font-size: 32px;
