@@ -2,7 +2,7 @@
 .icon.pdf-icon{width: 107px;height: 38px;background-image:url(../images/pdf-icon.png);}
 .icon.pdf-icon.icon-hover{background-position: left bottom;}
 
-.inline-block{display: inline-block;float: none;margin-left: -3px;}
+.inline-block{display: inline-block;float: none;}
 
 .btn.btn-blue{display: inline-block;width: 100%;font-size:20px;color: #fcfcfc;background-color: #2299ff;border-radius: 5px;height: 61px;line-height: 61px;padding: 0;border:2px solid #2299ff;transition:background-color 300ms ease, color 300ms ease;
     &:hover{background-color: #fff;color:#2299ff;}
@@ -25,7 +25,7 @@
 }
 
 .calc-form-wrap-title{font-size: 21px;color:#000000;margin-bottom: 20px;
-    .inline-block{vertical-align: middle;}
+    .inline-block{vertical-align: middle;margin-left: -3px;}
     .col-xs-8{opacity: 0;transform:translate(-25%, 0);transition:transform 300ms ease, opacity 500ms ease;}
     .col-xs-4{opacity: 0;transform:translate(0, -25%);transition:transform 300ms ease, opacity 500ms ease;
         a{display:inline-block;position: relative;
@@ -98,7 +98,40 @@
 
 /* facts-about-us */
 
+.facts-about-us .container{position: relative;
+    .facts-about-us-bg{position: absolute;bottom: 0;right: 0;z-index: 0;
+        img{opacity: 0;transition:opacity 300ms ease;
+            &.animated{opacity:1;}
+        }
+    }
+}
 
+.facts-about-us-title-wrap{margin-bottom: 50px;}
+.facts-about-us-title{position: relative;padding-left: 35px;
+    &:before{content: '';display: block;position: absolute;left: 0;top: 0;width: 5px;height:0;background-color: #2299ff;transition:height 300ms ease;}
+    h2{font-size: 48px;color:#343c4b;font-weight: 300;opacity: 0;transform:translate(0,-25%);transition:opacity 500ms ease, transform 300ms ease;}
+    &.animated{
+        &:before{height: 100%;}
+        h2{opacity: 1;transform:translate(0,0);}
+    }
+}
+
+.facts-about-us-wrap{
+    .inline-block{vertical-align: top;margin-bottom: 20px;opacity: 0;transform:translate(0, 25%);transition:opacity 500ms ease, transform 300ms ease;}
+    .facts-about-title{padding-bottom: 15px;margin-bottom: 25px;position: relative;font-weight: 100;color:#343c4b;white-space:nowrap;
+        &:after{content: '';display: block;width: 0;bottom:0;left:0;height: 1px;background-color: #46c3ee;transition:width 300ms ease;}
+        .facts-about-title-num{font-size: 72px;}
+        .facts-about-title-text{font-size: 30px;}
+    }
+    .facts-about-text{font-size: 18px;color:#7b7b7b;line-height: 34px;font-weight: 300;}
+    .animated{
+        &.inline-block{opacity: 1;transform:translate(0, 0);}
+        .facts-about-title{
+            &:after{width: 100%;}
+        }
+
+    }
+}
 
 /* /facts-about-us */
 

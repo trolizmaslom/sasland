@@ -240,6 +240,46 @@ function calcForm(){
 
 };
 
+function valueShow(){
+    $('.timer-wrap').each(function() {
+        if($(this).is('.animated:not(.timered)')){
+            $(this).addClass('timered');
+
+            var timer = $(this).find('.timer');
+            var timerValue = timer.data('value');
+            console.log(timerValue);
+            var pointValue = 1;
+            if(timerValue>=100 && timerValue<250){
+                pointValue = 2;
+            }
+            else if(timerValue>=250 && timerValue<1000){
+                pointValue = 5;
+            }
+            else if(timerValue>=1000 && timerValue<2000){
+                pointValue = 6;
+            }
+            else if(timerValue>=2000 && timerValue<3000){
+                pointValue = 7;
+            }
+            else if(timerValue>=3000){
+                pointValue = 9;
+            }
+            var dataIntervalTime = 2000/timerValue;
+            var point = 0;
+            var timerId = setInterval(function(){
+                point += pointValue;
+                if(point>=timerValue){
+                    point = timerValue;
+                }
+                timer.text(point);
+                if(point==timerValue){
+                    clearInterval(timerId);
+                }
+            }, dataIntervalTime);
+        }
+    });
+}
+
 /* DOCUMENT READY  */
 $(document).ready(function() {
 	modernize();
@@ -254,12 +294,19 @@ $(window).load(function(){
 
     inputNumber('.calc-form-input');
     calcForm();
+    valueShow();
 
 });
 
 $(window).resize(function() {
 
     $('.footer_placeholder').height($('.footer').outerHeight());
+});
+
+$(window).scroll(function(){
+
+    valueShow();
+
 });
 
 
