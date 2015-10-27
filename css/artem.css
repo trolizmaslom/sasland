@@ -5,10 +5,33 @@
 
 .long-table-wrap .container .get-analiz-box {
   text-align: center;
+  color: #24ccf1;
+  font-family: "PNova";
+  font-weight: 400;
+  font-size: 29px;
+}
+
+.long-table-wrap .container .get-analiz-box a {
+  background-color: none;
+}
+
+.long-table-wrap .container .get-analiz-box a:hover, .long-table-wrap .container .get-analiz-box a:active, .long-table-wrap .container .get-analiz-box a:focus, .long-table-wrap .container .get-analiz-box a:visited {
+  text-decoration: none;
+  background: none;
 }
 
 .long-table-wrap .container .header-table-stroke {
   text-align: center;
+  padding-bottom: 36px;
+  padding-top: 36px;
+  font-family: "PNova";
+  font-weight: 300;
+  font-size: 48px;
+}
+
+.long-table-wrap .container .table-striped-chits .table-chits {
+  font-family: "PNova";
+  font-weight: 300;
 }
 
 .long-table-wrap .container .table-striped-chits .table-chits thead tr th {
@@ -17,6 +40,7 @@
   color: #ffffff;
   padding-bottom: 36px;
   padding-top: 36px;
+  font-size: 19px;
 }
 
 .long-table-wrap .container .table-striped-chits .table-chits thead tr th:first-child {
@@ -37,4 +61,268 @@
 
 .long-table-wrap .container .table-striped-chits .table-chits thead tr th:last-child {
   width: 15%;
+}
+
+.long-table-wrap .container .table-striped-chits .table-chits .all-row-text {
+  padding-bottom: 36px;
+  padding-top: 36px;
+  font-family: "PNova";
+  font-weight: 300;
+  font-size: 30px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.long-table-wrap .container .table-striped-chits .table-chits .first-row-table-main {
+  font-size: 21px;
+  padding: 10px;
+}
+
+.long-table-wrap .container .table-striped-chits .table-chits .second-row-table-main {
+  font-size: 16px;
+  padding: 10px;
+}
+
+.long-table-wrap .container .table-striped-chits .table-chits .third-row-table-main {
+  font-size: 21px;
+  padding: 10px;
+  text-align: center;
+}
+
+.long-table-wrap .container .table-striped-chits .table-chits .fourth-row-table-main {
+  font-size: 16px;
+  padding: 10px;
+}
+
+.long-table-wrap .container .table-striped-chits .table-chits .fifth-row-table-main {
+  font-size: 16px;
+  padding: 10px;
+}
+
+.long-table-wrap .container .table-striped-chits .table-chits .tr-class-1-2 .first-row-table-main {
+  background-color: #e6eaec;
+}
+
+.long-table-wrap .container .table-striped-chits .table-chits .tr-class-1-2 .second-row-table-main {
+  background-color: #e6eaec;
+}
+
+.long-table-wrap .container .table-striped-chits .table-chits .tr-class-1-2 .third-row-table-main {
+  background-color: #e6eaec;
+}
+
+.long-table-wrap .container .table-striped-chits .table-chits .tr-class-1-2 .fourth-row-table-main {
+  background-color: #e6eaec;
+}
+
+.long-table-wrap .container .table-striped-chits .table-chits .tr-class-1-2 .fifth-row-table-main {
+  background-color: #e6eaec;
+}
+
+.long-table-wrap .container .table-striped-chits .table-chits .tr-class-1-3 .first-row-table-main {
+  background-color: #e6eaec;
+}
+
+.long-table-wrap .container .table-striped-chits .table-chits .tr-class-1-3 .second-row-table-main {
+  background-color: #f2f6f7;
+}
+
+.long-table-wrap .container .table-striped-chits .table-chits .tr-class-1-3 .third-row-table-main {
+  background-color: #e6eaec;
+}
+
+.long-table-wrap .container .table-striped-chits .table-chits .tr-class-1-3 .fifth-row-table-main {
+  background-color: #f2f6f7;
+}
+
+.long-table-wrap .container .table-striped-chits .table-chits .tr-class-1-4 .first-row-table-main {
+  background-color: #dbdee0;
+}
+
+.long-table-wrap .container .table-striped-chits .table-chits .tr-class-1-4 .second-row-table-main {
+  background-color: #e6eaec;
+}
+
+.long-table-wrap .container .table-striped-chits .table-chits .tr-class-1-4 .third-row-table-main {
+  background-color: #dbdee0;
+}
+
+.long-table-wrap .container .table-striped-chits .table-chits .tr-class-1-4 .fifth-row-table-main {
+  background-color: #dbdee0;
+}
+
+.long-table-wrap .container .table-striped-chits .table-chits .tr-class-2-2 .first-row-table-main {
+  background-color: #edeeef;
+}
+
+.long-table-wrap .container .table-striped-chits .table-chits .tr-class-2-2 .second-row-table-main {
+  background-color: #fafbfc;
+}
+
+.long-table-wrap .container .table-striped-chits .table-chits .tr-class-2-2 .third-row-table-main {
+  background-color: #edeeef;
+}
+
+.long-table-wrap .container .table-striped-chits .table-chits .tr-class-2-2 .fourth-row-table-main {
+  background-color: #fafbfc;
+}
+
+.long-table-wrap .container .table-striped-chits .table-chits .tr-class-2-2 .fifth-row-table-main {
+  background-color: #edeeef;
+}
+
+.long-table-wrap .container .table-striped-chits .table-chits .tr-class-2-3 .first-row-table-main {
+  background-color: #dbdee0;
+}
+
+.long-table-wrap .container .table-striped-chits .table-chits .tr-class-2-3 .second-row-table-main {
+  background-color: #e6eaec;
+}
+
+.long-table-wrap .container .table-striped-chits .table-chits .tr-class-2-3 .third-row-table-main {
+  background-color: #dbdee0;
+}
+
+.long-table-wrap .container .table-striped-chits .table-chits .tr-class-2-3 .fourth-row-table-main {
+  background-color: #e6eaec;
+}
+
+.long-table-wrap .container .table-striped-chits .table-chits .tr-class-2-3 .fifth-row-table-main {
+  background-color: #dbdee0;
+}
+
+.long-table-wrap .container .table-striped-chits .table-chits .tr-class-2-4 .second-row-table-main {
+  background-color: #f2f6f7;
+}
+
+.long-table-wrap .container .table-striped-chits .table-chits .tr-class-2-4 .third-row-table-main {
+  background-color: #e6e9ea;
+}
+
+.long-table-wrap .container .table-striped-chits .table-chits .tr-class-2-5 .second-row-table-main {
+  background-color: #e6eaec;
+}
+
+.long-table-wrap .container .table-striped-chits .table-chits .tr-class-2-5 .third-row-table-main {
+  background-color: #dbdee0;
+}
+
+.long-table-wrap .container .table-striped-chits .table-chits .tr-class-2-6 .first-row-table-main {
+  background-color: #e6e9ea;
+}
+
+.long-table-wrap .container .table-striped-chits .table-chits .tr-class-2-6 .second-row-table-main {
+  background-color: #f2f6f7;
+}
+
+.long-table-wrap .container .table-striped-chits .table-chits .tr-class-2-6 .third-row-table-main {
+  background-color: #e6e9ea;
+}
+
+.long-table-wrap .container .table-striped-chits .table-chits .tr-class-2-6 .fourth-row-table-main {
+  background-color: #f2f6f7;
+}
+
+.long-table-wrap .container .table-striped-chits .table-chits .tr-class-2-6 .fifth-row-table-main {
+  background-color: #e6e9ea;
+}
+
+.long-table-wrap .container .table-striped-chits .table-chits .tr-class-3-2 .first-row-table-main {
+  background-color: #dbdee0;
+}
+
+.long-table-wrap .container .table-striped-chits .table-chits .tr-class-3-2 .second-row-table-main {
+  background-color: #e6eaec;
+}
+
+.long-table-wrap .container .table-striped-chits .table-chits .tr-class-3-2 .third-row-table-main {
+  background-color: #dbdee0;
+}
+
+.long-table-wrap .container .table-striped-chits .table-chits .tr-class-3-2 .fourth-row-table-main {
+  background-color: #e6eaec;
+}
+
+.long-table-wrap .container .table-striped-chits .table-chits .tr-class-3-2 .fifth-row-table-main {
+  background-color: #dbdee0;
+}
+
+.long-table-wrap .container .table-striped-chits .table-chits .tr-class-3-3 .first-row-table-main {
+  background-color: #e6e9ea;
+}
+
+.long-table-wrap .container .table-striped-chits .table-chits .tr-class-3-3 .second-row-table-main {
+  background-color: #f2f6f7;
+}
+
+.long-table-wrap .container .table-striped-chits .table-chits .tr-class-3-3 .third-row-table-main {
+  background-color: #e6e9ea;
+}
+
+.long-table-wrap .container .table-striped-chits .table-chits .tr-class-3-3 .fourth-row-table-main {
+  background-color: #f2f6f7;
+}
+
+.long-table-wrap .container .table-striped-chits .table-chits .tr-class-3-3 .fifth-row-table-main {
+  background-color: #e6e9ea;
+}
+
+.long-table-wrap .container .table-striped-chits .table-chits .tr-class-3-4 .first-row-table-main {
+  background-color: #dbdee0;
+}
+
+.long-table-wrap .container .table-striped-chits .table-chits .tr-class-3-4 .second-row-table-main {
+  background-color: #e6eaec;
+}
+
+.long-table-wrap .container .table-striped-chits .table-chits .tr-class-3-4 .third-row-table-main {
+  background-color: #dbdee0;
+}
+
+.long-table-wrap .container .table-striped-chits .table-chits .tr-class-3-4 .fourth-row-table-main {
+  background-color: #e6eaec;
+}
+
+.long-table-wrap .container .table-striped-chits .table-chits .tr-class-3-4 .fifth-row-table-main {
+  background-color: #dbdee0;
+}
+
+.long-table-wrap .container .table-striped-chits .table-chits .tr-class-4-2 .second-row-table-main {
+  background-color: #e2e6e9;
+}
+
+.long-table-wrap .container .table-striped-chits .table-chits .tr-class-4-2 .fifth-row-table-main {
+  background-color: #d7dadd;
+}
+
+.long-table-wrap .container .table-striped-chits .table-chits .tr-class-4-3 .second-row-table-main {
+  background-color: #f2f6f7;
+}
+
+.long-table-wrap .container .table-striped-chits .table-chits .tr-class-4-3 .fifth-row-table-main {
+  background-color: #e6e9ea;
+}
+
+.long-table-wrap .container .table-striped-chits .table-chits .tr-class-4-4 .second-row-table-main {
+  background-color: #e2e6e9;
+}
+
+.long-table-wrap .container .table-striped-chits .table-chits .tr-class-4-4 .fifth-row-table-main {
+  background-color: #d7dadd;
+}
+
+.long-table-wrap .container .table-striped-chits .table-chits .tr-class-4-5 .second-row-table-main {
+  background-color: #f2f6f7;
+}
+
+.long-table-wrap .container .table-striped-chits .table-chits .tr-class-4-5 .fifth-row-table-main {
+  background-color: #e6e9ea;
+}
+
+.long-table-wrap .container .table-striped-chits .table-chits .tr-class-4-6 .second-row-table-main {
+  background-color: #e2e6e9;
+}
+
+.long-table-wrap .container .table-striped-chits .table-chits .tr-class-4-6 .fifth-row-table-main {
+  background-color: #d7dadd;
 }
