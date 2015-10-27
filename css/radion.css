@@ -84,7 +84,7 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  padding-bottom: 134px;
+  padding-bottom: 124px;
 }
 
 .svg-circles h2 {
@@ -318,6 +318,7 @@
 /*declarations*/
 .declarations {
   overflow: hidden;
+  padding-top: 67px;
 }
 
 .declarations .declarations-title {
@@ -520,6 +521,10 @@
   .responce.animated:after {
     right: 10%;
   }
+  /*declaration*/
+  .declarations .declarations_middle {
+    max-width: 631px;
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -536,9 +541,38 @@
   .responce .responce_title {
     padding-top: 41px;
   }
+  /*declaration*/
+  .declarations .declarations_middle.animated:before {
+    display: none;
+  }
+  .declarations .declarations_middle.animated:after {
+    display: none;
+  }
+  .declarations .declarations_middle {
+    margin: 0 auto;
+  }
 }
 
 @media screen and (max-width: 666px) {
+  /*header*/
+  .header .header_tel_wrap .head_zvonok {
+    width: 100%;
+    text-align: center;
+  }
+  .header .header_tel_wrap a {
+    width: 100%;
+    margin: 10px 0px;
+  }
+  .header .logo {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  .header .logo a {
+    display: inline-block;
+  }
+  .header .head_descr {
+    margin: 0 14% 20px;
+  }
   /*svg*/
   .svg-circles {
     padding-top: 49px;
@@ -564,28 +598,16 @@
   .responce.animated:after {
     right: -39%;
   }
+  /*declaration*/
+  .declarations .declarations-title h2 {
+    font-size: 34px;
+  }
+  .declarations .declarations-title p {
+    font-size: 16px;
+  }
 }
 
 @media screen and (max-width: 479px) {
-  /*header*/
-  .header .header_tel_wrap .head_zvonok {
-    width: 100%;
-    text-align: center;
-  }
-  .header .header_tel_wrap a {
-    width: 100%;
-    margin: 10px 0px;
-  }
-  .header .logo {
-    text-align: center;
-    padding-bottom: 20px;
-  }
-  .header .logo a {
-    display: inline-block;
-  }
-  .header .head_descr {
-    margin: 0 14% 20px;
-  }
   /*svg*/
   .svg-circles {
     padding-top: 49px;
