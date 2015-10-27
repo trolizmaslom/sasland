@@ -405,3 +405,17 @@
     padding: 5px;
   }
 }
+
+@media screen and (max-width: 666px) {
+  .long-table-wrap .container .header-table-stroke {
+    font-size: 31px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .long-table-wrap .container .get-analiz-box {
+    font-size: 25px;
+    padding-top: 50px;
+    padding-bottom: 65px;
+  }
+}
