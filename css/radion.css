@@ -72,3 +72,51 @@
   color: #000;
   font-size: 19px;
 }
+
+/*svg-circles*/
+.svg-circles {
+  padding-top: 49px;
+}
+
+.svg-circles .svg-circles-wrap {
+  background: url("../images/svg_section_bg.jpg") center center no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.svg-circles h2 {
+  font-size: 56px;
+  color: white;
+  margin: 0;
+  padding-top: 127px;
+  font-weight: bold;
+  line-height: 66px;
+}
+
+.svg-circles h5 {
+  font-size: 36px;
+  color: #2299ff;
+  margin: 0;
+  padding-top: 31px;
+}
+
+.svg-circles .svg_item {
+  float: left;
+  width: 20%;
+  height: 205px;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 1024px) {
+  /*header*/
+  .header .header_tel_wrap .head_zvonok {
+    width: 100%;
+    text-align: center;
+  }
+  .header .header_tel_wrap a {
+    width: 100%;
+    margin: 10px 0px;
+  }
+}
