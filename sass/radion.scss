@@ -21,7 +21,23 @@
     h2{font-size: 56px;color: white;margin: 0;padding-top: 127px;font-weight: bold;line-height: 66px;}
     h5{font-size: 36px;color: #2299ff;margin: 0;padding-top: 31px;}
 
-    .svg_item{float: left;width: 20%;height: 205px;overflow: hidden;}
+    .svg_item_wrap{padding-top: 71px;}
+    .svg_item{float: left;width: 20%;position: relative;
+        &.show{
+            &:after{opacity: 1;}
+            &.item_1:before{opacity: 1}
+        }
+        &.item_1:after{right: 82px;}
+        &.item_1:before{content: attr(data-text);position: absolute;top: 89px;right: 178px;width: 20px;height: 21px;color: white;font-size: 27px;font-weight: 300;font-family: 'PNova';opacity: 0;transition: opacity linear .3s;}
+        &.item_2:after{right: 54px;}
+        &:after{content: attr(data-percent);position: absolute;top: 87px;right: 64px;width: 20px;height: 21px;color: white;font-size: 30px;opacity: 0;transition: opacity linear .3s;}
+
+        .svg_item_img{height: 205px;overflow: hidden;}
+    }
+    .svgText{position: relative;}
+    .svg_circle{}
+    .svg_item_text{font-family: 'PNova';color: white;font-size: 20px;font-weight: 100;}
+    .svg_item_text_wrap{margin-right: 28px;}
 }
 
 
