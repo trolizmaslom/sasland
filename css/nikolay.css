@@ -112,6 +112,16 @@
 .list-box ul li {
   padding-bottom: 24px;
   position: relative;
+  -webkit-transform: translate(-50%, 0);
+  -moz-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  -o-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+  opacity: 0;
+  -webkit-transition: -webkit-transform 300ms ease, opacity 500ms ease;
+  -moz-transition: -moz-transform 300ms ease, opacity 500ms ease;
+  -o-transition: -o-transform 300ms ease, opacity 500ms ease;
+  transition: transform 300ms ease, opacity 500ms ease;
 }
 
 .list-box ul li:before {
@@ -139,6 +149,15 @@
   padding-left: 45px;
   display: block;
   line-height: 24px;
+}
+
+.list-box ul li.animated {
+  -webkit-transform: translate(0%, 0);
+  -moz-transform: translate(0%, 0);
+  -ms-transform: translate(0%, 0);
+  -o-transform: translate(0%, 0);
+  transform: translate(0%, 0);
+  opacity: 1;
 }
 
 /*/our-services*/
@@ -174,3 +193,16 @@
 }
 
 /*/risks*/
+@media screen and (max-width: 666px) {
+  .risk-wrapp .risk-align .risk-title:before {
+    height: 90%;
+    top: 0%;
+  }
+  .list-box ul li span {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .list-box ul li {
+    padding-bottom: 13px;
+  }
+}

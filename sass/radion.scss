@@ -17,7 +17,7 @@
 
 /*svg-circles*/
 .svg-circles{padding-top: 49px;
-    .svg-circles-wrap{background: url('../images/svg_section_bg.jpg') center center no-repeat;background-size: cover;padding-bottom: 134px;}
+    .svg-circles-wrap{background: url('../images/svg_section_bg.jpg') center center no-repeat;background-size: cover;padding-bottom: 124px;}
     h2{font-size: 56px;color: white;margin: 0;padding-top: 127px;font-weight: bold;line-height: 66px;}
     h5{font-size: 36px;color: #2299ff;margin: 0;padding-top: 31px;}
 
@@ -72,7 +72,7 @@
 }
 
 /*declarations*/
-.declarations{overflow: hidden;
+.declarations{overflow: hidden;padding-top: 67px;
     .declarations-title{padding-left: 44px;font-weight: 300;margin-bottom: 30px;position: relative;
         &:before{content: '';display: block;position: absolute;left: 0;top: 0;width: 5px;background-color: #2299ff;height: 0%;}
         h2{color: #020202;font-size: 48px;margin: 0;transition:transform 300ms ease, opacity 500ms ease;opacity: 0;transform:translate(0, -25%)}
@@ -122,6 +122,12 @@
     .header .header_tel_wrap a{width: 100%;margin: 10px 0px;}
     /*responce*/
     .responce.animated:after {right: 10%;}
+    /*declaration*/
+    .declarations{
+        .declarations_middle{
+            max-width: 631px;
+        }
+    }
 }
 @media screen and (max-width: 992px){
     /*responce*/
@@ -129,11 +135,23 @@
     .responce .responce_descr{font-size: 18px;}
     .responce.animated:after {right: -5%;}
     .responce .responce_title{padding-top: 41px;}
+
+    /*declaration*/
+    .declarations .declarations_middle.animated:before{display: none;}
+    .declarations .declarations_middle.animated:after{display: none;}
+    .declarations .declarations_middle{margin: 0 auto;}
 }
 @media screen and (max-width: 767px){
 
 }
 @media screen and (max-width: 666px){
+    /*header*/
+    .header .header_tel_wrap .head_zvonok{width: 100%;text-align: center;}
+    .header .header_tel_wrap a{width: 100%;margin: 10px 0px;}
+    .header .logo{text-align: center;padding-bottom: 20px;
+        a{display: inline-block;}
+    }
+    .header .head_descr{margin: 0 14% 20px;}
     /*svg*/
     .svg-circles{padding-top: 49px;
         .svg-circles-wrap{padding-bottom: 90px;}
@@ -142,15 +160,13 @@
     }
     /*responce*/
     .responce.animated:after {right: -39%;}
+    /*declaration*/
+    .declarations .declarations-title h2{font-size: 34px;}
+    .declarations .declarations-title p{font-size: 16px;}
 }
 @media screen and (max-width: 479px){
-    /*header*/
-    .header .header_tel_wrap .head_zvonok{width: 100%;text-align: center;}
-    .header .header_tel_wrap a{width: 100%;margin: 10px 0px;}
-    .header .logo{text-align: center;padding-bottom: 20px;
-        a{display: inline-block;}
-    }
-    .header .head_descr{margin: 0 14% 20px;}
+
+
     /*svg*/
     .svg-circles{padding-top: 49px;
         .svg-circles-wrap{padding-bottom: 90px;}

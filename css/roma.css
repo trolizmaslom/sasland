@@ -198,6 +198,11 @@
 
 /* /footer */
 /* form */
+.form-wrap div {
+  float: none;
+  margin: 0 auto;
+}
+
 .form-wrap h2 {
   margin: 0 auto;
   float: none;
@@ -216,7 +221,12 @@
   height: 1px;
   background-color: #E3E3E4;
   bottom: -41px;
-  left: 44%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
 .form-wrap p {
@@ -323,7 +333,6 @@
   font-weight: 300;
   font-size: 14px;
   text-align: right;
-  float: right;
   width: 78%;
   margin-right: 11%;
   margin-bottom: 65px;
@@ -352,6 +361,29 @@
 .consult-from2-wrap {
   position: relative;
   background-color: #283040;
+}
+
+.consult-from2-wrap:before {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  border-right: 70px solid transparent;
+  border-top: 70px solid #ffde00;
+  border-left: 70px solid #ffde00;
+  border-bottom: 70px solid #ffde00;
+  -webkit-border-top-left-radius: 70px;
+  -moz-border-radius-topleft: 70px;
+  border-top-left-radius: 70px;
+  -webkit-border-top-right-radius: 70px;
+  -moz-border-radius-topright: 70px;
+  border-top-right-radius: 70px;
+  -webkit-border-bottom-left-radius: 70px;
+  -moz-border-radius-bottomleft: 70px;
+  border-bottom-left-radius: 70px;
+  -webkit-border-bottom-right-radius: 70px;
+  -moz-border-radius-bottomright: 70px;
+  border-bottom-right-radius: 70px;
 }
 
 .consult-from2-wrap .consult-form2 .form-wrap h2 {

@@ -47,9 +47,10 @@
     }
     .list-box{padding: 11px 0 0 14px;
         ul{
-            li{    padding-bottom: 24px; position: relative;
+            li{    padding-bottom: 24px; position: relative;transform:translate(-50%,0);opacity: 0;transition:transform 300ms ease, opacity 500ms ease;
                 &:before{content: "";width: 26px;height: 26px;position:absolute; top:0; background-image: url('../images/listyle.png');display: inline-block;vertical-align: top;border-radius:50%; border:solid 1px #2299ff; background-repeat: no-repeat; background-position: center center;}
                 span{font-family: 'PNova';font-weight: 300;font-size: 20px;color: #000; padding-left: 45px; display:block;    line-height: 24px;}
+                &.animated{transform:translate(0%,0);opacity: 1;}
             }
         }
     }
@@ -67,3 +68,10 @@
         }
     }
 /*/risks*/
+
+@media screen and (max-width: 666px){
+    .risk-wrapp .risk-align .risk-title:before{height: 90%;top: 0%;}
+    .list-box ul li span{font-size: 18px;line-height: 22px;}
+    .list-box ul li {padding-bottom: 13px;}
+
+}
