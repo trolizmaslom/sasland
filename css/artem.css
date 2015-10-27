@@ -9,6 +9,8 @@
   font-family: "PNova";
   font-weight: 400;
   font-size: 29px;
+  padding-top: 125px;
+  padding-bottom: 128px;
 }
 
 .long-table-wrap .container .get-analiz-box a {
@@ -18,12 +20,13 @@
 .long-table-wrap .container .get-analiz-box a:hover, .long-table-wrap .container .get-analiz-box a:active, .long-table-wrap .container .get-analiz-box a:focus, .long-table-wrap .container .get-analiz-box a:visited {
   text-decoration: none;
   background: none;
+  color: #24ccf1;
 }
 
 .long-table-wrap .container .header-table-stroke {
   text-align: center;
-  padding-bottom: 36px;
-  padding-top: 36px;
+  padding-bottom: 50px;
+  padding-top: 50px;
   font-family: "PNova";
   font-weight: 300;
   font-size: 48px;
@@ -32,6 +35,19 @@
 .long-table-wrap .container .table-striped-chits .table-chits {
   font-family: "PNova";
   font-weight: 300;
+}
+
+.long-table-wrap .container .table-striped-chits .table-chits tr {
+  opacity: 0;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+}
+
+.long-table-wrap .container .table-striped-chits .table-chits tr.animated {
+  opacity: 1;
 }
 
 .long-table-wrap .container .table-striped-chits .table-chits thead tr th {
@@ -63,7 +79,7 @@
   width: 15%;
 }
 
-.long-table-wrap .container .table-striped-chits .table-chits .all-row-text {
+.long-table-wrap .container .table-striped-chits .table-chits .all-row-text td {
   padding-bottom: 36px;
   padding-top: 36px;
   font-family: "PNova";
@@ -71,32 +87,33 @@
   font-size: 30px;
   background-color: #ffffff;
   text-align: center;
+  padding: 33px;
 }
 
 .long-table-wrap .container .table-striped-chits .table-chits .first-row-table-main {
   font-size: 21px;
-  padding: 10px;
+  padding: 20px;
 }
 
 .long-table-wrap .container .table-striped-chits .table-chits .second-row-table-main {
   font-size: 16px;
-  padding: 10px;
+  padding: 20px;
 }
 
 .long-table-wrap .container .table-striped-chits .table-chits .third-row-table-main {
   font-size: 21px;
-  padding: 10px;
+  padding: 20px;
   text-align: center;
 }
 
 .long-table-wrap .container .table-striped-chits .table-chits .fourth-row-table-main {
   font-size: 16px;
-  padding: 10px;
+  padding: 20px;
 }
 
 .long-table-wrap .container .table-striped-chits .table-chits .fifth-row-table-main {
   font-size: 16px;
-  padding: 10px;
+  padding: 20px;
 }
 
 .long-table-wrap .container .table-striped-chits .table-chits .tr-class-1-2 .first-row-table-main {
