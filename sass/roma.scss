@@ -52,8 +52,9 @@
 /* form */
 
 .form-wrap{
+	div{float: none;margin: 0 auto;}
 	h2{margin: 0 auto;float: none;text-align: center;font-size: 48px; font-family: 'PNova'; font-weight: 300;margin-bottom: 68px;
-		&:after{display: block;content: ''; position: absolute;width: 90px;height: 1px; background-color: #E3E3E4;bottom: -41px;left: 44%;}
+		&:after{display: block;content: ''; position: absolute;width: 90px;height: 1px; background-color: #E3E3E4;bottom: -41px;left: 50%;transform: translateX(-50%);}
 	}
 	p{font-family: 'PNova'; font-size: 25px; font-weight: 100; text-align: center;float: none;margin: 0 auto;color: #777777;line-height: 1.3;    margin-bottom: 85px;}
 	#consult-form3, #consult-form2, #consult-form1{float: none;margin: 0 auto;
@@ -72,7 +73,7 @@
 		.input-submit-wrap{float: none; margin: 0 auto; width: 100%;margin-bottom: 15px;
 			button{width: 78%;font-family: 'PNova'; font-size: 20px; color: #fff; padding: 18px 10px; outline: none; border: 0; background-color: #2299FF;display: block;margin: 0 auto;letter-spacing: -0.5px;}
 		}
-		p{font-weight: 300; font-size: 14px; text-align: right;float: right;width: 78%; margin-right: 11%;margin-bottom: 65px;}
+		p{font-weight: 300; font-size: 14px; text-align: right;width: 78%; margin-right: 11%;margin-bottom: 65px;}
 	}
 }
 

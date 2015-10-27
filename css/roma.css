@@ -198,6 +198,11 @@
 
 /* /footer */
 /* form */
+.form-wrap div {
+  float: none;
+  margin: 0 auto;
+}
+
 .form-wrap h2 {
   margin: 0 auto;
   float: none;
@@ -216,7 +221,12 @@
   height: 1px;
   background-color: #E3E3E4;
   bottom: -41px;
-  left: 44%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
 .form-wrap p {
@@ -323,7 +333,6 @@
   font-weight: 300;
   font-size: 14px;
   text-align: right;
-  float: right;
   width: 78%;
   margin-right: 11%;
   margin-bottom: 65px;
