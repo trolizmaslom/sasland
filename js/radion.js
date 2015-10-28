@@ -1,39 +1,35 @@
 function drawSvg(){
-    var user = detect.parse(navigator.userAgent);
+    $('.svg_item').each(function(){
+        var itemSvg = $(this),
+            circle = itemSvg.find('.svg_circle'),
+            svgText = itemSvg.find('.svgText'),
+            maxValue = itemSvg.data('value'),
+            radius = $(this).find('.svg_circle').attr('r'),
+            interval = 15,
+            angle = 0,
+            angle_increment = 10,
+            max_angle_R = parseInt((maxValue*(2*Math.PI*radius)/100)),
+            zero = 0;
 
-    if(!user.browser.family == "IE"){
-        $('.svg_item').each(function(){
-            var itemSvg = $(this),
-                circle = itemSvg.find('.svg_circle'),
-                svgText = itemSvg.find('.svgText'),
-                maxValue = itemSvg.data('value'),
-                radius = $(this).find('.svg_circle').attr('r'),
-                interval = 15,
-                angle = 0,
-                angle_increment = 10,
-                max_angle_R = parseInt((maxValue*(2*Math.PI*radius)/100)),
-                zero = 0;
+        if(!((maxValue ^ 0) === maxValue)){
+            zero = 1;
+        }
+        itemSvg.addClass("show-block");
+        var timerId = setInterval(function () {;
+            circle.attr("stroke-dasharray", angle + ", 20000");
+            svgText.text((angle/(2*Math.PI*radius)*100).toFixed(zero));
 
-            if(!((maxValue ^ 0) === maxValue)){
-                zero = 1;
+            angle += angle_increment;
+            if (angle > max_angle_R ) {
+                circle.attr("stroke-dasharray", max_angle_R + ", 20000");
+                svgText.text((max_angle_R/(2*Math.PI*radius)*100).toFixed(zero));
+                clearInterval(timerId);
             }
-            itemSvg.addClass("show-block");
-            var timerId = setInterval(function () {;
-                circle.attr("stroke-dasharray", angle + ", 20000");
-                svgText.text((angle/(2*Math.PI*radius)*100).toFixed(zero));
 
-                angle += angle_increment;
-                if (angle > max_angle_R ) {
-                    circle.attr("stroke-dasharray", max_angle_R + ", 20000");
-                    svgText.text((max_angle_R/(2*Math.PI*radius)*100).toFixed(zero));
-                    clearInterval(timerId);
-                }
+        }, interval);
+    });
 
-            }, interval);
-        });
-    }
-    var user = detect.parse(navigator.userAgent);
-    console.log(user.browser.family);
+
 }
 
 $(window).load(function() {
