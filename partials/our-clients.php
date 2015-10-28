@@ -2,7 +2,7 @@
     <div class="clients-align animate-section">
         <div class="row">
             <div class="col-sm-12">
-                 <div class="client-title"><h2>Наши клиенты</span></h2>
+                <div class="client-title"><h2>Наши клиенты</h2></div>
             </div>
         </div>
         <div class="client-img row jfix-after animate-it">
