@@ -1,6 +1,6 @@
 /*our-clients*/
 .clients-wrapp .clients-align {
-  padding-bottom: 92px;
+  padding: 44px 0 92px;
 }
 
 .clients-wrapp .clients-align .client-title {
@@ -15,7 +15,7 @@
   background-color: #2299ff;
   float: left;
   position: absolute;
-  top: 18%;
+  top: 26%;
 }
 
 .clients-wrapp .clients-align .client-title h2 {
@@ -101,7 +101,7 @@
   background-color: #2299ff;
   float: left;
   position: absolute;
-  top: 18%;
+  top: 26%;
 }
 
 .services-wrapp .services-align .services-title h2 {
@@ -188,7 +188,7 @@
   background-color: #2299ff;
   float: left;
   position: absolute;
-  top: 18%;
+  top: 26%;
 }
 
 .risk-wrapp .risk-align .risk-title h2 {
