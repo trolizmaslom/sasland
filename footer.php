@@ -44,5 +44,14 @@
 			</div>
 		</div>
 	</footer>
+	<!-- Google map -->
+	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&signed_in=true"></script>
+	<script>
+		var cordX = 44.951255;
+		var cordY= 34.099116;
+		var googleText = "г. Симферополь, ул. К. Маркса, 4, офис 26";
+	</script>
+	<script src='js/googleMapsScr.js'></script>
+	<!-- /Google map -->
 </body>
 </html>
