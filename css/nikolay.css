@@ -218,7 +218,7 @@
   .list-box ul li {
     padding-bottom: 13px;
   }
-  .risk-wrapp .risk-align .risk-title span, .services-wrapp .services-align .services-title span, .clients-wrapp .clients-align .client-title span {
+  .risk-wrapp .risk-align .risk-title h2, .services-wrapp .services-align .services-title h2, .clients-wrapp .clients-align .client-title h2 {
     font-size: 32px;
   }
   .services-wrapp .services-align .services-title:before {
@@ -232,6 +232,9 @@
   }
   .clients-wrapp .clients-align .client-title h2 {
     font-size: 38px;
+  }
+  .clients-wrapp .clients-align .client-img {
+    padding: 0 4%;
   }
 }
 
