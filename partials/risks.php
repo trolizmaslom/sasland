@@ -1,7 +1,9 @@
 <div class="risk-wrapp animate-section">
     <div class="risk-align container">
         <div class="row">
-            <div class="risk-title col-sm-12"><span>Риски приводящие к ответствености</span></div>
+            <div class="col-sm-12">
+                <div class="risk-title"><h2>Риски приводящие к ответствености</h2></div>
+            </div>
         </div>
         <div class="list-box row">
             <ul>

@@ -1,7 +1,9 @@
 <div class="clients-wrapp container">
     <div class="clients-align animate-section">
         <div class="row">
-             <div class="client-title col-sm-6"><span>Наши клиенты</span></div>
+            <div class="col-sm-12">
+                 <div class="client-title"><h2>Наши клиенты</span></h2>
+            </div>
         </div>
         <div class="client-img row jfix-after animate-it">
             <div class="item-img"><a href="#"><img src="images/client0-hover.png" alt=""></a></div>

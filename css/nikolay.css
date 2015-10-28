@@ -1,6 +1,6 @@
 /*our-clients*/
 .clients-wrapp .clients-align {
-  padding-bottom: 92px;
+  padding: 44px 0 92px;
 }
 
 .clients-wrapp .clients-align .client-title {
@@ -15,10 +15,10 @@
   background-color: #2299ff;
   float: left;
   position: absolute;
-  top: 18%;
+  top: 26%;
 }
 
-.clients-wrapp .clients-align .client-title span {
+.clients-wrapp .clients-align .client-title h2 {
   font-family: 'PNova';
   font-weight: 300;
   color: #343c4b;
@@ -52,6 +52,10 @@
 
 .clients-wrapp .clients-align .client-img .item-img a img {
   -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  filter: grayscale(100%);
   opacity: 0.58;
   -webkit-transition: opacity 600ms linear;
   -moz-transition: opacity 600ms linear;
@@ -61,6 +65,10 @@
 
 .clients-wrapp .clients-align .client-img .item-img a img:hover {
   -webkit-filter: none;
+  -moz-filter: none;
+  -o-filter: none;
+  -ms-filter: none;
+  filter: none;
   opacity: 1;
 }
 
@@ -93,10 +101,10 @@
   background-color: #2299ff;
   float: left;
   position: absolute;
-  top: 18%;
+  top: 26%;
 }
 
-.services-wrapp .services-align .services-title span {
+.services-wrapp .services-align .services-title h2 {
   font-family: 'PNova';
   font-weight: 300;
   color: #343c4b;
@@ -180,10 +188,10 @@
   background-color: #2299ff;
   float: left;
   position: absolute;
-  top: 18%;
+  top: 26%;
 }
 
-.risk-wrapp .risk-align .risk-title span {
+.risk-wrapp .risk-align .risk-title h2 {
   font-family: 'PNova';
   font-weight: 300;
   color: #343c4b;

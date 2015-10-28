@@ -1,7 +1,9 @@
 <div class="services-wrapp animate-section">
     <div class="services-align container">
         <div class="row">
-            <div class="services-title col-sm-12"><span>Содержание нашей услуги:</span></div>
+            <div class="col-sm-12">
+                <div class="services-title "><h2>Содержание нашей услуги:</h2></div>
+            </div>
         </div>
         <div class="list-box row">
             <ul>
