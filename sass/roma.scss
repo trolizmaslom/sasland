@@ -30,7 +30,7 @@
 					p{font-size: 18px; font-family: 'PNova'; color: #fcfcfc;}
 				}
 			}
-			.right-form{padding-top: 29px;padding-left: 78px;padding-right: 0;
+			.right-form{padding-top: 29px;padding-left: 78px;/*padding-right: 0;*/
 				.form-wrap{padding-right: 20px;
 					.input-wrap{float: left;    padding-right: 0;
 						input{width: 100%;border: 1px solid #F4F4F4; background-color: #F4F4F4;outline: none;margin-bottom: 10px;border-radius: 3px;font-size: 16px;font-family: 'PNova'; font-weight: 300; color: #9a9a9a;    padding: 12px 10px 12px 10px; transition: border-color 500ms ease; -moz-transition: border-color 500ms ease; -webkit-transition: border-color 500ms ease; -ms-transition: border-color 500ms ease;
@@ -173,7 +173,8 @@
 /* /form */
 }
 @media screen and (max-width: 992px){
-
+	.footer .container .footer-wrap .right-form .form-wrap .input-wrap input{font-size: 14px;}
+	.footer .container .footer-wrap .right-form .form-wrap .input-submit-wrap button{font-size: 18px;padding: 15px 9px;}
 }
 @media screen and (max-width: 767px){
 	.form-wrap{

@@ -129,7 +129,7 @@
 .footer .container .footer-wrap .right-form {
   padding-top: 29px;
   padding-left: 78px;
-  padding-right: 0;
+  /*padding-right: 0;*/
 }
 
 .footer .container .footer-wrap .right-form .form-wrap {
@@ -519,6 +519,16 @@
     width: 100%;
   }
   /* /form */
+}
+
+@media screen and (max-width: 992px) {
+  .footer .container .footer-wrap .right-form .form-wrap .input-wrap input {
+    font-size: 14px;
+  }
+  .footer .container .footer-wrap .right-form .form-wrap .input-submit-wrap button {
+    font-size: 18px;
+    padding: 15px 9px;
+  }
 }
 
 @media screen and (max-width: 767px) {
