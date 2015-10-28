@@ -176,8 +176,18 @@
   overflow: hidden;
 }
 
+.svg-circles svg {
+  height: 300px;
+  width: 300px;
+}
+
 .svg-circles .svgText {
   position: relative;
+}
+
+.svg-circles .svg_circle {
+  height: 192px;
+  width: 192px;
 }
 
 .svg-circles .svg_item_text {
@@ -621,6 +631,9 @@
 }
 
 @media screen and (max-width: 479px) {
+  .header .head_descr {
+    margin: 0 5% 20px;
+  }
   /*svg*/
   .svg-circles {
     padding-top: 49px;
@@ -648,6 +661,7 @@
   }
   .responce .responce_descr {
     font-size: 13px;
+    line-height: 18px;
   }
   .responce .responce_title h2 {
     font-size: 30px;

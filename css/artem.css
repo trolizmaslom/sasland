@@ -39,6 +39,7 @@
 
 .long-table-wrap .container .table-striped-chits {
   width: 100%;
+  overflow: hidden;
 }
 
 .long-table-wrap .container .table-striped-chits .table-chits {
@@ -376,6 +377,12 @@
 
 .long-table-wrap .container .table-striped-chits .table-chits .tr-class-4-6 .fifth-row-table-main {
   background-color: #d7dadd;
+}
+
+@media screen and (max-width: 1024px) {
+  .long-table-wrap .container .table-striped-chits {
+    overflow: auto;
+  }
 }
 
 @media screen and (max-width: 767px) {

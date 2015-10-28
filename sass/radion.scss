@@ -36,8 +36,9 @@
 
         .svg_item_img{height: 205px;overflow: hidden;}
     }
+    svg{height: 300px;width: 300px;}
     .svgText{position: relative;}
-    .svg_circle{}
+    .svg_circle{height: 192px;width: 192px;}
     .svg_item_text{font-family: 'PNova';color: white;font-size: 20px;font-weight: 100;opacity: 0;transition:all ease-out .2s;
         &.animated{opacity: 1;}
     }
@@ -174,7 +175,7 @@
     }
 }
 @media screen and (max-width: 479px){
-
+    .header .head_descr {margin: 0 5% 20px;}
 
     /*svg*/
     .svg-circles{padding-top: 49px;
@@ -186,7 +187,7 @@
     }
     /*responce*/
     .responce.animated:after {right: -52%;}
-    .responce .responce_descr{font-size: 13px;}
+    .responce .responce_descr{font-size: 13px;line-height: 18px;}
     .responce .responce_title h2 {font-size: 30px;}
 }
 @media screen and (max-width: 320px){
