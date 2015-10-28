@@ -48,28 +48,33 @@
 
 .clients-wrapp .clients-align .client-img .item-img a {
   background-color: transparent;
+  position: relative;
 }
 
-.clients-wrapp .clients-align .client-img .item-img a img {
-  -webkit-filter: grayscale(100%);
-  -moz-filter: grayscale(100%);
-  -o-filter: grayscale(100%);
-  -ms-filter: grayscale(100%);
-  filter: grayscale(100%);
+.clients-wrapp .clients-align .client-img .item-img a img:nth-child(2) {
+  position: absolute;
+  left: 0;
   opacity: 0.58;
-  -webkit-transition: opacity 600ms linear;
-  -moz-transition: opacity 600ms linear;
-  -o-transition: opacity 600ms linear;
-  transition: opacity 600ms linear;
+  -webkit-transition: opacity 500ms linear;
+  -moz-transition: opacity 500ms linear;
+  -o-transition: opacity 500ms linear;
+  transition: opacity 500ms linear;
 }
 
-.clients-wrapp .clients-align .client-img .item-img a img:hover {
-  -webkit-filter: none;
-  -moz-filter: none;
-  -o-filter: none;
-  -ms-filter: none;
-  filter: none;
+.clients-wrapp .clients-align .client-img .item-img a img:nth-child(1) {
+  opacity: 0;
+  -webkit-transition: opacity 500ms linear;
+  -moz-transition: opacity 500ms linear;
+  -o-transition: opacity 500ms linear;
+  transition: opacity 500ms linear;
+}
+
+.clients-wrapp .clients-align .client-img .item-img a:hover img:nth-child(1) {
   opacity: 1;
+}
+
+.clients-wrapp .clients-align .client-img .item-img a:hover img:nth-child(2) {
+  opacity: 0;
 }
 
 @media screen and (max-width: 479px) {

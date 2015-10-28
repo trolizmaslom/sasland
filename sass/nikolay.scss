@@ -10,9 +10,17 @@
         .client-img{ text-align: justify; opacity: 0; transition:opacity 600ms linear;
             &.animated{opacity:1;}
             .item-img{display: inline-block; vertical-align: top;margin-left: -4px;
-                a{background-color: transparent;
-                    img{-webkit-filter: grayscale(100%);-moz-filter: grayscale(100%);-o-filter: grayscale(100%);-ms-filter: grayscale(100%);filter: grayscale(100%);opacity:0.58; transition: opacity 600ms linear;
-                        &:hover{-webkit-filter: none;-moz-filter: none;-o-filter: none;-ms-filter: none; filter: none;opacity:1;}
+                a{background-color: transparent;position: relative;
+                    img{
+                        &:nth-child(2){position: absolute;left:0; opacity:0.58;transition: opacity 500ms linear;}
+                        &:nth-child(1){ opacity:0;transition: opacity 500ms linear;}
+
+                    }
+                    &:hover{
+                        img{
+                            &:nth-child(1){ opacity:1;}
+                            &:nth-child(2){ opacity:0;}
+                        }
                     }
                 }
             }
