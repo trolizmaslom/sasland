@@ -42,20 +42,13 @@
   overflow: hidden;
 }
 
-.long-table-wrap .container .table-striped-chits .table-chits {
-  font-family: "PNova";
-  font-weight: 300;
-  width: 100%;
-  min-width: 666px;
-}
-
-.long-table-wrap .container .table-striped-chits .table-chits tr {
+.long-table-wrap .container .table-striped-chits .table-chits-wrap2 {
   opacity: 0;
-  -o-transition: all 1s ease;
-  transition: all 1s ease;
-  -webkit-transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  -ms-transition: all 1s ease;
+  -o-transition: opacity 1s ease, -o-transform 1s ease;
+  transition: opacity 1s ease, transform 1s ease;
+  -ms-transition: opacity 1s ease, transform 1s ease;
+  -moz-transition: opacity 1s ease, -moz-transform 1s ease;
+  -webkit-transition: opacity 1s ease, -webkit-transform 1s ease;
   -o-transform: translate(0, 100%);
   transform: translate(0, 100%);
   -webkit-transform: translate(0, 100%);
@@ -63,13 +56,20 @@
   -ms-transform: translate(0, 100%);
 }
 
-.long-table-wrap .container .table-striped-chits .table-chits tr.animated {
+.long-table-wrap .container .table-striped-chits .table-chits-wrap2.animated {
   opacity: 1;
   -o-transform: translate(0, 0);
   transform: translate(0, 0);
   -webkit-transform: translate(0, 0);
   -moz-transform: translate(0, 0);
   -ms-transform: translate(0, 0);
+}
+
+.long-table-wrap .container .table-striped-chits .table-chits {
+  font-family: "PNova";
+  font-weight: 300;
+  width: 100%;
+  min-width: 666px;
 }
 
 .long-table-wrap .container .table-striped-chits .table-chits thead tr th {
@@ -424,5 +424,8 @@
     font-size: 25px;
     padding-top: 50px;
     padding-bottom: 65px;
+  }
+  .long-table-wrap .container .header-table-stroke {
+    font-size: 29px;
   }
 }

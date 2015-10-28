@@ -54,10 +54,6 @@
 	<script type="text/javascript" src="js/jquery.jscrollpane.min.js"></script>
 <!-- jScrollPane -->
 
-<!--grayscale for ie 10 & 11-->
-<link rel="stylesheet" href="css/gray.css" media="all" />
-<script src="js/gray.js" type="text/javascript"></script>
-<!--grayscale for ie 10 & 11-->
 
 <!-- Google map -->
 <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&signed_in=true"></script>

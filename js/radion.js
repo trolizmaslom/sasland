@@ -28,6 +28,8 @@ function drawSvg(){
 
         }, interval);
     });
+
+
 }
 
 $(window).load(function() {

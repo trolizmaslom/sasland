@@ -247,7 +247,6 @@ function valueShow(){
 
             var timer = $(this).find('.timer');
             var timerValue = timer.data('value');
-            console.log(timerValue);
             var pointValue = 1;
             if(timerValue>=100 && timerValue<250){
                 pointValue = 2;
