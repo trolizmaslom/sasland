@@ -14,7 +14,7 @@
 
 	<link rel="stylesheet" type="text/css" href="css/style.css" media="all" />
 
-	<link rel="stylesheet" href="css/tuesdayAnimate.css" media='all' />
+<!-- 	<link rel="stylesheet" href="css/tuesdayAnimate.css" media='all' /> -->
 
 	<script src="js/jquery-1.11.3.min.js" type="text/javascript"></script>
 
@@ -47,23 +47,6 @@
 	<link rel="stylesheet" type="text/css" href="css/slick.css" media="all" />
 	<script src="js/slick.js" type="text/javascript"></script>
 <!-- sliders -->
-
-<!-- jScrollPane -->
-	<link type="text/css" href="css/jquery.jscrollpane.css" rel="stylesheet" media="all" />
-	<script type="text/javascript" src="js/jquery.mousewheel.js"></script>
-	<script type="text/javascript" src="js/jquery.jscrollpane.min.js"></script>
-<!-- jScrollPane -->
-
-
-<!-- Google map -->
-<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&signed_in=true"></script>
-<script>
-	var cordX = 44.951255;
-	var cordY= 34.099116;
-	var googleText = "г. Симферополь, ул. К. Маркса, 4, офис 26";
-</script>
-<script src='js/googleMapsScr.js'></script>
-<!-- /Google map -->
 
 <!-- remove Files -->
 
