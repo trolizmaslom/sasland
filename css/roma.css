@@ -216,10 +216,10 @@
   font-weight: 300;
   margin-bottom: 68px;
   opacity: 0;
-  -webkit-transition: all ease .3s;
-  -moz-transition: all ease .3s;
-  -o-transition: all ease .3s;
-  transition: all ease .3s;
+  -webkit-transition: all ease 0.3s;
+  -moz-transition: all ease 0.3s;
+  -o-transition: all ease 0.3s;
+  transition: all ease 0.3s;
 }
 
 .form-wrap h2.animated {
@@ -266,10 +266,10 @@
   position: relative;
   margin-bottom: 32px;
   opacity: 0;
-  -webkit-transition: opacity ease-out .3s;
-  -moz-transition: opacity ease-out .3s;
-  -o-transition: opacity ease-out .3s;
-  transition: opacity ease-out .3s;
+  -webkit-transition: opacity ease-out 0.3s;
+  -moz-transition: opacity ease-out 0.3s;
+  -o-transition: opacity ease-out 0.3s;
+  transition: opacity ease-out 0.3s;
 }
 
 .form-wrap #consult-form3 .input-wrap.animated, .form-wrap #consult-form2 .input-wrap.animated, .form-wrap #consult-form1 .input-wrap.animated {
@@ -336,10 +336,10 @@
   width: 100%;
   margin-bottom: 15px;
   opacity: 0;
-  -webkit-transition: opacity ease-out .3s;
-  -moz-transition: opacity ease-out .3s;
-  -o-transition: opacity ease-out .3s;
-  transition: opacity ease-out .3s;
+  -webkit-transition: opacity ease-out 0.3s;
+  -moz-transition: opacity ease-out 0.3s;
+  -o-transition: opacity ease-out 0.3s;
+  transition: opacity ease-out 0.3s;
 }
 
 .form-wrap #consult-form3 .input-submit-wrap.animated, .form-wrap #consult-form2 .input-submit-wrap.animated, .form-wrap #consult-form1 .input-submit-wrap.animated {
@@ -389,10 +389,10 @@
 
 .consult-from3-wrap .form-wrap p {
   opacity: 0;
-  -webkit-transition: all ease .3s;
-  -moz-transition: all ease .3s;
-  -o-transition: all ease .3s;
-  transition: all ease .3s;
+  -webkit-transition: all ease 0.3s;
+  -moz-transition: all ease 0.3s;
+  -o-transition: all ease 0.3s;
+  transition: all ease 0.3s;
 }
 
 .consult-from3-wrap .form-wrap p.animated {
@@ -411,10 +411,10 @@
   padding-top: 62px;
   margin-bottom: 98px;
   opacity: 0;
-  -webkit-transition: all ease .3s;
-  -moz-transition: all ease .3s;
-  -o-transition: all ease .3s;
-  transition: all ease .3s;
+  -webkit-transition: all ease 0.3s;
+  -moz-transition: all ease 0.3s;
+  -o-transition: all ease 0.3s;
+  transition: all ease 0.3s;
 }
 
 .consult-from2-wrap .consult-form2 .form-wrap h2.animated {
@@ -428,10 +428,10 @@
 .consult-from2-wrap .consult-form2 .form-wrap #consult-form2 p {
   margin-bottom: 84px;
   opacity: 0;
-  -webkit-transition: opacity ease-out .3s;
-  -moz-transition: opacity ease-out .3s;
-  -o-transition: opacity ease-out .3s;
-  transition: opacity ease-out .3s;
+  -webkit-transition: opacity ease-out 0.3s;
+  -moz-transition: opacity ease-out 0.3s;
+  -o-transition: opacity ease-out 0.3s;
+  transition: opacity ease-out 0.3s;
 }
 
 .consult-from2-wrap .consult-form2 .form-wrap #consult-form2 p.animated {
@@ -453,10 +453,10 @@
   padding-left: 0;
   padding-right: 0;
   opacity: 0;
-  -webkit-transition: all ease .3s;
-  -moz-transition: all ease .3s;
-  -o-transition: all ease .3s;
-  transition: all ease .3s;
+  -webkit-transition: all ease 0.3s;
+  -moz-transition: all ease 0.3s;
+  -o-transition: all ease 0.3s;
+  transition: all ease 0.3s;
 }
 
 .consult-from1-wrap .consult-form1 .form-wrap h2.animated {
@@ -472,10 +472,10 @@
   font-size: 34px;
   margin-bottom: 28px;
   opacity: 0;
-  -webkit-transition: all ease .3s;
-  -moz-transition: all ease .3s;
-  -o-transition: all ease .3s;
-  transition: all ease .3s;
+  -webkit-transition: all ease 0.3s;
+  -moz-transition: all ease 0.3s;
+  -o-transition: all ease 0.3s;
+  transition: all ease 0.3s;
 }
 
 .consult-from1-wrap .consult-form1 .form-wrap p.animated {
@@ -486,10 +486,10 @@
   margin-bottom: 84px;
   color: #2299ff;
   opacity: 0;
-  -webkit-transition: opacity ease-out .3s;
-  -moz-transition: opacity ease-out .3s;
-  -o-transition: opacity ease-out .3s;
-  transition: opacity ease-out .3s;
+  -webkit-transition: opacity ease-out 0.3s;
+  -moz-transition: opacity ease-out 0.3s;
+  -o-transition: opacity ease-out 0.3s;
+  transition: opacity ease-out 0.3s;
 }
 
 .consult-from1-wrap .consult-form1 .form-wrap #consult-form1 p.animated {
