@@ -241,13 +241,14 @@ function calcForm(){
 };
 
 function valueShow(){
+    var user = detect.parse(navigator.userAgent);
+
     $('.timer-wrap').each(function() {
         if($(this).is('.animated:not(.timered)')){
             $(this).addClass('timered');
 
             var timer = $(this).find('.timer');
             var timerValue = timer.data('value');
-            console.log(timerValue);
             var pointValue = 1;
             if(timerValue>=100 && timerValue<250){
                 pointValue = 2;
@@ -266,16 +267,20 @@ function valueShow(){
             }
             var dataIntervalTime = 2000/timerValue;
             var point = 0;
-            var timerId = setInterval(function(){
-                point += pointValue;
-                if(point>=timerValue){
-                    point = timerValue;
-                }
-                timer.text(point);
-                if(point==timerValue){
-                    clearInterval(timerId);
-                }
-            }, dataIntervalTime);
+            if(!(user.browser.family == "IE")){
+                var timerId = setInterval(function(){
+                    point += pointValue;
+                    if(point>=timerValue){
+                        point = timerValue;
+                    }
+                    timer.text(point);
+                    if(point==timerValue){
+                        clearInterval(timerId);
+                    }
+                }, dataIntervalTime);
+            }else{
+                timer.text(timerValue);
+            }
         }
     });
 }

@@ -1,9 +1,9 @@
 /*our-clients*/
 .clients-wrapp{
-    .clients-align{    padding-bottom: 92px;
+    .clients-align{    padding:44px 0 92px;
         .client-title{padding:0 0 29px 14px;
-                &:before{content: ""; display: block; width:5px; height: 35px; background-color: #2299ff;float:left;position: absolute; top: 18%; }
-                span{font-family: 'PNova'; font-weight: 300;color:#343c4b; font-size: 48px;padding-left: 36px; display: block;
+                &:before{content: ""; display: block; width:5px; height: 35px; background-color: #2299ff;float:left;position: absolute; top: 26%; }
+                h2{font-family: 'PNova'; font-weight: 300;color:#343c4b; font-size: 48px;padding-left: 36px; display: block;
 
                 }
         }
@@ -11,8 +11,8 @@
             &.animated{opacity:1;}
             .item-img{display: inline-block; vertical-align: top;margin-left: -4px;
                 a{background-color: transparent;
-                    img{-webkit-filter: grayscale(100%);opacity:0.58; transition: opacity 600ms linear;
-                        &:hover{ -webkit-filter: none;opacity:1;}
+                    img{-webkit-filter: grayscale(100%);-moz-filter: grayscale(100%);-o-filter: grayscale(100%);-ms-filter: grayscale(100%);filter: grayscale(100%);opacity:0.58; transition: opacity 600ms linear;
+                        &:hover{-webkit-filter: none;-moz-filter: none;-o-filter: none;-ms-filter: none; filter: none;opacity:1;}
                     }
                 }
             }
@@ -37,8 +37,8 @@
     .services-wrapp{padding: 55px 0 48px 0; background-color: #fafbfc; width:100%;
         .services-align{
             .services-title{padding:0 0 29px 14px;
-                &:before{content: ""; display: block; width:5px; height: 35px; background-color: #2299ff;float:left;position: absolute; top: 18%; }
-                span{font-family: 'PNova'; font-weight: 300;color:#343c4b; font-size: 48px;padding-left: 36px; display: block;
+                &:before{content: ""; display: block; width:5px; height: 35px; background-color: #2299ff;float:left;position: absolute; top: 26%; }
+                h2{font-family: 'PNova'; font-weight: 300;color:#343c4b; font-size: 48px;padding-left: 36px; display: block;
 
                 }
             }
@@ -59,8 +59,8 @@
 .risk-wrapp{padding: 55px 0 48px 0; background-color: #fff; width:100%;
         .risk-align{
             .risk-title{padding:0 0 29px 14px;
-                &:before{content: ""; display: block; width:5px; height: 35px; background-color: #2299ff;float:left;position: absolute; top: 18%; }
-                span{font-family: 'PNova'; font-weight: 300;color:#343c4b; font-size: 48px;padding-left: 36px; display: block;
+                &:before{content: ""; display: block; width:5px; height: 35px; background-color: #2299ff;float:left;position: absolute; top: 26%; }
+                h2{font-family: 'PNova'; font-weight: 300;color:#343c4b; font-size: 48px;padding-left: 36px; display: block;
 
                 }
             }
