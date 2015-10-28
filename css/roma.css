@@ -132,6 +132,10 @@
   padding-right: 0;
 }
 
+.footer .container .footer-wrap .right-form .form-wrap {
+  padding-right: 20px;
+}
+
 .footer .container .footer-wrap .right-form .form-wrap .input-wrap {
   float: left;
   padding-right: 0;
@@ -150,7 +154,7 @@
   font-family: 'PNova';
   font-weight: 300;
   color: #9a9a9a;
-  padding: 12px 10px 12px 45px;
+  padding: 12px 10px 12px 10px;
   -o-transition: border-color 500ms ease;
   transition: border-color 500ms ease;
   -moz-transition: border-color 500ms ease;
@@ -212,10 +216,10 @@
   font-weight: 300;
   margin-bottom: 68px;
   opacity: 0;
-  -webkit-transition: all ease 0.3s;
-  -moz-transition: all ease 0.3s;
-  -o-transition: all ease 0.3s;
-  transition: all ease 0.3s;
+  -webkit-transition: all ease .3s;
+  -moz-transition: all ease .3s;
+  -o-transition: all ease .3s;
+  transition: all ease .3s;
 }
 
 .form-wrap h2.animated {
@@ -262,10 +266,10 @@
   position: relative;
   margin-bottom: 32px;
   opacity: 0;
-  -webkit-transition: opacity ease-out 0.3s;
-  -moz-transition: opacity ease-out 0.3s;
-  -o-transition: opacity ease-out 0.3s;
-  transition: opacity ease-out 0.3s;
+  -webkit-transition: opacity ease-out .3s;
+  -moz-transition: opacity ease-out .3s;
+  -o-transition: opacity ease-out .3s;
+  transition: opacity ease-out .3s;
 }
 
 .form-wrap #consult-form3 .input-wrap.animated, .form-wrap #consult-form2 .input-wrap.animated, .form-wrap #consult-form1 .input-wrap.animated {
@@ -332,10 +336,10 @@
   width: 100%;
   margin-bottom: 15px;
   opacity: 0;
-  -webkit-transition: opacity ease-out 0.3s;
-  -moz-transition: opacity ease-out 0.3s;
-  -o-transition: opacity ease-out 0.3s;
-  transition: opacity ease-out 0.3s;
+  -webkit-transition: opacity ease-out .3s;
+  -moz-transition: opacity ease-out .3s;
+  -o-transition: opacity ease-out .3s;
+  transition: opacity ease-out .3s;
 }
 
 .form-wrap #consult-form3 .input-submit-wrap.animated, .form-wrap #consult-form2 .input-submit-wrap.animated, .form-wrap #consult-form1 .input-submit-wrap.animated {
@@ -385,10 +389,10 @@
 
 .consult-from3-wrap .form-wrap p {
   opacity: 0;
-  -webkit-transition: all ease 0.3s;
-  -moz-transition: all ease 0.3s;
-  -o-transition: all ease 0.3s;
-  transition: all ease 0.3s;
+  -webkit-transition: all ease .3s;
+  -moz-transition: all ease .3s;
+  -o-transition: all ease .3s;
+  transition: all ease .3s;
 }
 
 .consult-from3-wrap .form-wrap p.animated {
@@ -407,10 +411,10 @@
   padding-top: 62px;
   margin-bottom: 98px;
   opacity: 0;
-  -webkit-transition: all ease 0.3s;
-  -moz-transition: all ease 0.3s;
-  -o-transition: all ease 0.3s;
-  transition: all ease 0.3s;
+  -webkit-transition: all ease .3s;
+  -moz-transition: all ease .3s;
+  -o-transition: all ease .3s;
+  transition: all ease .3s;
 }
 
 .consult-from2-wrap .consult-form2 .form-wrap h2.animated {
@@ -424,10 +428,10 @@
 .consult-from2-wrap .consult-form2 .form-wrap #consult-form2 p {
   margin-bottom: 84px;
   opacity: 0;
-  -webkit-transition: opacity ease-out 0.3s;
-  -moz-transition: opacity ease-out 0.3s;
-  -o-transition: opacity ease-out 0.3s;
-  transition: opacity ease-out 0.3s;
+  -webkit-transition: opacity ease-out .3s;
+  -moz-transition: opacity ease-out .3s;
+  -o-transition: opacity ease-out .3s;
+  transition: opacity ease-out .3s;
 }
 
 .consult-from2-wrap .consult-form2 .form-wrap #consult-form2 p.animated {
@@ -449,10 +453,10 @@
   padding-left: 0;
   padding-right: 0;
   opacity: 0;
-  -webkit-transition: all ease 0.3s;
-  -moz-transition: all ease 0.3s;
-  -o-transition: all ease 0.3s;
-  transition: all ease 0.3s;
+  -webkit-transition: all ease .3s;
+  -moz-transition: all ease .3s;
+  -o-transition: all ease .3s;
+  transition: all ease .3s;
 }
 
 .consult-from1-wrap .consult-form1 .form-wrap h2.animated {
@@ -468,10 +472,10 @@
   font-size: 34px;
   margin-bottom: 28px;
   opacity: 0;
-  -webkit-transition: all ease 0.3s;
-  -moz-transition: all ease 0.3s;
-  -o-transition: all ease 0.3s;
-  transition: all ease 0.3s;
+  -webkit-transition: all ease .3s;
+  -moz-transition: all ease .3s;
+  -o-transition: all ease .3s;
+  transition: all ease .3s;
 }
 
 .consult-from1-wrap .consult-form1 .form-wrap p.animated {
@@ -482,10 +486,10 @@
   margin-bottom: 84px;
   color: #2299ff;
   opacity: 0;
-  -webkit-transition: opacity ease-out 0.3s;
-  -moz-transition: opacity ease-out 0.3s;
-  -o-transition: opacity ease-out 0.3s;
-  transition: opacity ease-out 0.3s;
+  -webkit-transition: opacity ease-out .3s;
+  -moz-transition: opacity ease-out .3s;
+  -o-transition: opacity ease-out .3s;
+  transition: opacity ease-out .3s;
 }
 
 .consult-from1-wrap .consult-form1 .form-wrap #consult-form1 p.animated {
@@ -521,6 +525,37 @@
   .form-wrap #consult-form3 .input-wrap.phone:before, .form-wrap #consult-form2 .input-wrap.phone:before, .form-wrap #consult-form1 .input-wrap.phone:before {
     left: 5%;
   }
+  .footer .footer-wrap .left-info {
+    text-align: center;
+  }
+  .footer .footer-wrap .left-info .info {
+    padding: 0px 10px !important;
+  }
+  .footer .footer-wrap .left-info .info span {
+    position: relative;
+  }
+  .footer .footer-wrap .left-info .info span:before {
+    left: -30px !important;
+  }
+  .footer .footer-wrap .right-form {
+    padding-right: 40px !important;
+    padding-left: 40px !important;
+  }
+  .footer .footer-wrap .right-form .form-wrap {
+    padding: 0 !important;
+  }
+  .footer .footer-wrap .right-form .form-wrap div {
+    padding: 0;
+  }
+  .footer .footer-wrap .right-form .form-wrap #question-form .input-wrap {
+    float: none;
+  }
+  .footer .footer-wrap .right-form .form-wrap #question-form .input-submit-wrap button {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+  }
 }
 
 @media screen and (max-width: 666px) {
@@ -544,9 +579,6 @@
 @media screen and (max-width: 320px) {
   .form-wrap h2 {
     font-size: 34px;
-  }
-  .form-wrap h2:after {
-    left: 35%;
   }
   .form-wrap p {
     font-size: 22px !important;

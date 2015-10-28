@@ -31,9 +31,9 @@
 				}
 			}
 			.right-form{padding-top: 29px;padding-left: 78px;padding-right: 0;
-				.form-wrap{
+				.form-wrap{padding-right: 20px;
 					.input-wrap{float: left;    padding-right: 0;
-						input{width: 100%;border: 1px solid #F4F4F4; background-color: #F4F4F4;outline: none;margin-bottom: 10px;border-radius: 3px;font-size: 16px;font-family: 'PNova'; font-weight: 300; color: #9a9a9a;    padding: 12px 10px 12px 45px; transition: border-color 500ms ease; -moz-transition: border-color 500ms ease; -webkit-transition: border-color 500ms ease; -ms-transition: border-color 500ms ease;
+						input{width: 100%;border: 1px solid #F4F4F4; background-color: #F4F4F4;outline: none;margin-bottom: 10px;border-radius: 3px;font-size: 16px;font-family: 'PNova'; font-weight: 300; color: #9a9a9a;    padding: 12px 10px 12px 10px; transition: border-color 500ms ease; -moz-transition: border-color 500ms ease; -webkit-transition: border-color 500ms ease; -ms-transition: border-color 500ms ease;
 							&.error{border: 1px solid #f00;}
 						}
 						textarea{width: 100%;border: 1px solid #F4F4F4; background-color: #F4F4F4;resize:none;outline: none;font-size: 16px;font-family: 'PNova'; font-weight: 300; color: #9a9a9a;padding: 10px 10px;border-radius: 3px;    margin-bottom: 6px;}
@@ -185,6 +185,29 @@
 			}
 		}
 	}
+
+	.footer{
+		.footer-wrap{
+			.left-info{text-align: center;
+				.info{padding:0px 10px!important;
+					span{position: relative;
+						&:before{    left: -30px!important;}
+					}
+				}
+			}
+			.right-form{padding-right: 40px !important;padding-left: 40px !important;
+				.form-wrap{padding: 0!important;
+					div{padding: 0;}
+	    			#question-form{
+	    				.input-wrap{float: none;}
+	    				.input-submit-wrap{
+	    					button{box-sizing:border-box;margin-bottom: 20px;}
+	    				}
+	    			}
+    			}
+			}
+		}
+	}
 }
 @media screen and (max-width: 666px){
 	.form-wrap h2{font-size: 30px;}
@@ -204,9 +227,7 @@
 }
 @media screen and (max-width: 320px){
 	.form-wrap{
-		h2{font-size: 34px;
-			&:after{left: 35%;}
-		}
+		h2{font-size: 34px;}
 		p{font-size: 22px!important;}
 		#consult-form3, #consult-form2, #consult-form1{
 			.input-wrap{
