@@ -78,8 +78,11 @@
     .services-wrapp .services-align .services-title:before{top: 5%;}
     .clients-wrapp .clients-align .client-title:before{top: 6%;}
 
+    .services-wrapp .services-align .services-title h2{font-size: 32px;}
+    .clients-wrapp .clients-align .client-title h2{font-size: 38px;}
 }
 @media screen and (max-width: 320px){
     .clients-wrapp .clients-align{padding-top: 41px;}
+    .services-wrapp .services-align .services-title h2{margin-top: 0;}
 
 }

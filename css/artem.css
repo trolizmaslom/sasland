@@ -425,4 +425,7 @@
     padding-top: 50px;
     padding-bottom: 65px;
   }
+  .long-table-wrap .container .header-table-stroke {
+    font-size: 29px;
+  }
 }

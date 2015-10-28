@@ -14,7 +14,7 @@
 
 	<link rel="stylesheet" type="text/css" href="css/style.css" media="all" />
 
-	<link rel="stylesheet" href="css/tuesdayAnimate.css" media='all' />
+	<!-- <link rel="stylesheet" href="css/tuesdayAnimate.css" media='all' /> -->
 
 	<script src="js/jquery-1.11.3.min.js" type="text/javascript"></script>
 
@@ -36,7 +36,6 @@
 
 	<script src="js/modernizr.js" type="text/javascript"></script>
 	<script src="js/jquery.watermark.min.js" type="text/javascript"></script>
-	<script src="js/detect.js" type="text/javascript"></script>
 
 <!-- mask for inputs -->
 
@@ -48,12 +47,6 @@
 	<link rel="stylesheet" type="text/css" href="css/slick.css" media="all" />
 	<script src="js/slick.js" type="text/javascript"></script>
 <!-- sliders -->
-
-<!-- jScrollPane -->
-	<link type="text/css" href="css/jquery.jscrollpane.css" rel="stylesheet" media="all" />
-	<script type="text/javascript" src="js/jquery.mousewheel.js"></script>
-	<script type="text/javascript" src="js/jquery.jscrollpane.min.js"></script>
-<!-- jScrollPane -->
 
 
 <!-- remove Files -->
