@@ -145,10 +145,10 @@
   font-weight: 300;
   font-family: 'PNova';
   opacity: 0;
-  -webkit-transition: opacity linear 0.3s;
-  -moz-transition: opacity linear 0.3s;
-  -o-transition: opacity linear 0.3s;
-  transition: opacity linear 0.3s;
+  -webkit-transition: opacity linear .3s;
+  -moz-transition: opacity linear .3s;
+  -o-transition: opacity linear .3s;
+  transition: opacity linear .3s;
 }
 
 .svg-circles .svg_item.item_2:after {
@@ -165,10 +165,10 @@
   color: white;
   font-size: 30px;
   opacity: 0;
-  -webkit-transition: opacity linear 0.3s;
-  -moz-transition: opacity linear 0.3s;
-  -o-transition: opacity linear 0.3s;
-  transition: opacity linear 0.3s;
+  -webkit-transition: opacity linear .3s;
+  -moz-transition: opacity linear .3s;
+  -o-transition: opacity linear .3s;
+  transition: opacity linear .3s;
 }
 
 .svg-circles .svg_item .svg_item_img {
@@ -196,10 +196,10 @@
   font-size: 20px;
   font-weight: 100;
   opacity: 0;
-  -webkit-transition: all ease-out 0.2s;
-  -moz-transition: all ease-out 0.2s;
-  -o-transition: all ease-out 0.2s;
-  transition: all ease-out 0.2s;
+  -webkit-transition: all ease-out .2s;
+  -moz-transition: all ease-out .2s;
+  -o-transition: all ease-out .2s;
+  transition: all ease-out .2s;
 }
 
 .svg-circles .svg_item_text.animated {
@@ -212,10 +212,10 @@
 }
 
 .map .map_wrap {
-  -webkit-transition: all ease 0.4s;
-  -moz-transition: all ease 0.4s;
-  -o-transition: all ease 0.4s;
-  transition: all ease 0.4s;
+  -webkit-transition: all ease .4s;
+  -moz-transition: all ease .4s;
+  -o-transition: all ease .4s;
+  transition: all ease .4s;
   opacity: 0;
 }
 
@@ -239,10 +239,10 @@
   background: url("../images/responce.png") center center no-repeat;
   top: 0;
   right: -50%;
-  -webkit-transition: all ease 0.4s;
-  -moz-transition: all ease 0.4s;
-  -o-transition: all ease 0.4s;
-  transition: all ease 0.4s;
+  -webkit-transition: all ease .4s;
+  -moz-transition: all ease .4s;
+  -o-transition: all ease .4s;
+  transition: all ease .4s;
 }
 
 .responce.animated:after {
@@ -252,10 +252,10 @@
 .responce .responce_title {
   position: relative;
   padding-top: 73px;
-  -webkit-transition: all ease 0.4s;
-  -moz-transition: all ease 0.4s;
-  -o-transition: all ease 0.4s;
-  transition: all ease 0.4s;
+  -webkit-transition: all ease .4s;
+  -moz-transition: all ease .4s;
+  -o-transition: all ease .4s;
+  transition: all ease .4s;
   opacity: 0;
 }
 
@@ -294,10 +294,10 @@
   color: #283040;
   font-weight: 300;
   line-height: 28px;
-  -webkit-transition: all ease 0.4s;
-  -moz-transition: all ease 0.4s;
-  -o-transition: all ease 0.4s;
-  transition: all ease 0.4s;
+  -webkit-transition: all ease .4s;
+  -moz-transition: all ease .4s;
+  -o-transition: all ease .4s;
+  transition: all ease .4s;
   opacity: 0;
 }
 
@@ -421,10 +421,10 @@
   -ms-transform: translate(0%, 110%);
   -o-transform: translate(0%, 110%);
   transform: translate(0%, 110%);
-  -webkit-transition: -webkit-transform ease-out 0.5s, opacity ease-out 0.3s;
-  -moz-transition: -moz-transform ease-out 0.5s, opacity ease-out 0.3s;
-  -o-transition: -o-transform ease-out 0.5s, opacity ease-out 0.3s;
-  transition: transform ease-out 0.5s, opacity ease-out 0.3s;
+  -webkit-transition: -webkit-transform ease-out .5s,opacity ease-out .3s;
+  -moz-transition: -moz-transform ease-out .5s,opacity ease-out .3s;
+  -o-transition: -o-transform ease-out .5s,opacity ease-out .3s;
+  transition: transform ease-out .5s,opacity ease-out .3s;
   opacity: 0;
 }
 
@@ -441,10 +441,10 @@
   -ms-transform: rotate(45deg) translate(39%, -134%);
   -o-transform: rotate(45deg) translate(39%, -134%);
   transform: rotate(45deg) translate(39%, -134%);
-  -webkit-transition: -webkit-transform ease-out 0.5s, opacity ease-out 0.3s;
-  -moz-transition: -moz-transform ease-out 0.5s, opacity ease-out 0.3s;
-  -o-transition: -o-transform ease-out 0.5s, opacity ease-out 0.3s;
-  transition: transform ease-out 0.5s, opacity ease-out 0.3s;
+  -webkit-transition: -webkit-transform ease-out .5s,opacity ease-out .3s;
+  -moz-transition: -moz-transform ease-out .5s,opacity ease-out .3s;
+  -o-transition: -o-transform ease-out .5s,opacity ease-out .3s;
+  transition: transform ease-out .5s,opacity ease-out .3s;
   opacity: 0;
 }
 
