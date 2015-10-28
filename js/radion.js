@@ -1,7 +1,7 @@
 function drawSvg(){
     var user = detect.parse(navigator.userAgent);
-    console.log(user.browser.family == "IE");
 
+    if(!user.browser.family == "IE"){
         $('.svg_item').each(function(){
             var itemSvg = $(this),
                 circle = itemSvg.find('.svg_circle'),
@@ -18,26 +18,23 @@ function drawSvg(){
                 zero = 1;
             }
             itemSvg.addClass("show-block");
-            if(!(user.browser.family == "IE")){
-                var timerId = setInterval(function () {;
-                    circle.attr("stroke-dasharray", angle + ", 20000");
-                    svgText.text((angle/(2*Math.PI*radius)*100).toFixed(zero));
+            var timerId = setInterval(function () {;
+                circle.attr("stroke-dasharray", angle + ", 20000");
+                svgText.text((angle/(2*Math.PI*radius)*100).toFixed(zero));
 
-                    angle += angle_increment;
-                    if (angle > max_angle_R ) {
-                        circle.attr("stroke-dasharray", max_angle_R + ", 20000");
-                        svgText.text((max_angle_R/(2*Math.PI*radius)*100).toFixed(zero));
-                        clearInterval(timerId);
-                    }
+                angle += angle_increment;
+                if (angle > max_angle_R ) {
+                    circle.attr("stroke-dasharray", max_angle_R + ", 20000");
+                    svgText.text((max_angle_R/(2*Math.PI*radius)*100).toFixed(zero));
+                    clearInterval(timerId);
+                }
 
-                }, interval);
-            }else{
-                circle.attr("stroke-dasharray", max_angle_R + ", 20000");
-                svgText.text((max_angle_R/(2*Math.PI*radius)*100).toFixed(zero));
-            }
+            }, interval);
         });
     }
-
+    var user = detect.parse(navigator.userAgent);
+    console.log(user.browser.family);
+}
 
 $(window).load(function() {
     drawSvg();

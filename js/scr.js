@@ -241,8 +241,6 @@ function calcForm(){
 };
 
 function valueShow(){
-    var user = detect.parse(navigator.userAgent);
-
     $('.timer-wrap').each(function() {
         if($(this).is('.animated:not(.timered)')){
             $(this).addClass('timered');
@@ -267,20 +265,16 @@ function valueShow(){
             }
             var dataIntervalTime = 2000/timerValue;
             var point = 0;
-            if(!(user.browser.family == "IE")){
-                var timerId = setInterval(function(){
-                    point += pointValue;
-                    if(point>=timerValue){
-                        point = timerValue;
-                    }
-                    timer.text(point);
-                    if(point==timerValue){
-                        clearInterval(timerId);
-                    }
-                }, dataIntervalTime);
-            }else{
-                timer.text(timerValue);
-            }
+            var timerId = setInterval(function(){
+                point += pointValue;
+                if(point>=timerValue){
+                    point = timerValue;
+                }
+                timer.text(point);
+                if(point==timerValue){
+                    clearInterval(timerId);
+                }
+            }, dataIntervalTime);
         }
     });
 }
