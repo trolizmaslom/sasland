@@ -57,15 +57,15 @@
 		&.animated{opacity: 1;}
 		&:after{display: block;content: ''; position: absolute;width: 90px;height: 1px; background-color: #E3E3E4;bottom: -41px;left: 50%;transform: translateX(-50%);}
 	}
-	p{font-family: 'PNova'; font-size: 25px; font-weight: 100; text-align: center;float: none;margin: 0 auto;color: #777777;line-height: 1.3;margin-bottom: 85px;}
+	p{font-family: 'PNova'; font-size: 25px; font-weight: 100; text-align: center;float: none;margin: 0 auto;color: #313436;line-height: 1.3;margin-bottom: 85px;}
 	#consult-form3, #consult-form2, #consult-form1{float: none;margin: 0 auto;
 		.input-wrap{float: none;margin: 0 auto; width: 100%;position: relative;margin-bottom: 32px;opacity: 0;transition:opacity ease-out .3s;
 			&.animated{opacity: 1;}
-			input{width: 78%;border: 1px solid #8ECAFD; padding: 19px 54px;font-family: 'PNova'; font-size: 18px;color: #bbbbbb;border-radius: 3px;display: block;margin: 0 auto;margin-bottom: 30px;transition: border-color 500ms ease; -moz-transition: border-color 500ms ease; -webkit-transition: border-color 500ms ease; -ms-transition: border-color 500ms ease;outline: none;
-				&::-webkit-input-placeholder {color:#bbb;}
-				&::-moz-placeholder          {color:#bbb;}
-				&:-moz-placeholder           {color:#bbb;}
-				&:-ms-input-placeholder      {color:#bbb;}
+			input{width: 78%;border: 1px solid #8ECAFD; padding: 19px 54px;font-family: 'PNova'; font-size: 18px;color: #313436;border-radius: 3px;display: block;margin: 0 auto;margin-bottom: 30px;transition: border-color 500ms ease; -moz-transition: border-color 500ms ease; -webkit-transition: border-color 500ms ease; -ms-transition: border-color 500ms ease;outline: none;
+				&::-webkit-input-placeholder {color:#313436;}
+				&::-moz-placeholder          {color:#313436;}
+				&:-moz-placeholder           {color:#313436;}
+				&:-ms-input-placeholder      {color:#313436;}
 				&.error{border: 1px solid #f00!important;}
 			}
 			&.phone{
