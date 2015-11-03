@@ -2,7 +2,8 @@
 	<div class="consult-form2 container">
 		<div class="form-wrap row">
 			<div class="col-sm-8">
-				<h2 class="animate-it">Записаться на консультацию</h2>
+				<h2 class="animate-it">Оставьте заявку на консультацию,
+ мы произведем подробный расчет выгод для Вашего бизнеса</h2>
 			</div>
 			<div class="col-sm-6">
 				<form id="consult-form2" method="POST" action="" class="ajax-form">

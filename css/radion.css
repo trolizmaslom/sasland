@@ -73,6 +73,14 @@
   font-size: 19px;
 }
 
+.logo {
+  text-align: center;
+}
+
+.logo img {
+  max-width: 36%;
+}
+
 /*svg-circles*/
 .svg-circles {
   padding-top: 49px;
@@ -549,6 +557,7 @@
   }
   .responce .responce_descr {
     font-size: 18px;
+    color: #000;
   }
   .responce.animated:after {
     right: -5%;
@@ -616,6 +625,7 @@
   }
   .responce .responce_title h2 {
     font-size: 32px;
+    color: red;
   }
   /*declaration*/
   .declarations .declarations-title h2 {

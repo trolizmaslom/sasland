@@ -59,6 +59,7 @@
                 &:before{content: "";width: 26px;height: 26px;position:absolute; top:0; background-image: url('../images/listyle.png');display: inline-block;vertical-align: top;border-radius:50%; border:solid 1px #2299ff; background-repeat: no-repeat; background-position: center center;}
                 span{font-family: 'PNova';font-weight: 300;font-size: 20px;color: #000; padding-left: 45px; display:block;    line-height: 24px;}
                 &.animated{transform:translate(0%,0);opacity: 1;}
+                i{    font-style: normal; text-decoration: underline;}
             }
         }
     }

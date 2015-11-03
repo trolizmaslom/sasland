@@ -173,6 +173,11 @@
   opacity: 1;
 }
 
+.list-box ul li i {
+  font-style: normal;
+  text-decoration: underline;
+}
+
 /*/our-services*/
 /*risks*/
 .risk-wrapp {

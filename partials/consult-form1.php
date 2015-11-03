@@ -2,7 +2,7 @@
 	<div class="consult-form1 container">
 		<div class="form-wrap row">
 			<div class="col-sm-12 ">
-				<h2 class="animate-it">Рассчитаем выгоды для вашего бизнеса <span>БЕСПЛАТНО</span></h2>
+				<h2 class="animate-it">Мы рассчитаем выгоды для Вашего бизнеса в СЭЗ</h2>
 			</div>
 			<div class="col-sm-6">
 				<p class="animate-delay">Оставьте заявку</p>
@@ -13,7 +13,7 @@
 						<input type="text" name="phone" placeholder="Ваш телефон" required="required"></input>
 					</div>
 					<div class="input-submit-wrap col-sm-6 animate-delay">
-						<button type="submit">Записаться на консультацию</button>
+						<button type="submit">Оставьте заявку на консультацию</button>
 					</div>
 					<div class="col-sm-12 cfix ">
 					<p class="animate-delay">Мы гарантируем конфиденциальность ваших данных</p>
