@@ -1,6 +1,6 @@
 .header{
     .row{padding-top: 45px;}
-    .head_descr{color: #99a3ab;font-size: 15px;border-left:4px solid #46c3ee;padding-left: 13px;margin-left: 11px;}
+    .head_descr{color: #313436;font-size: 15px;border-left:4px solid #46c3ee;padding-left: 13px;margin-left: 11px;}
 
     .header_tel_wrap{text-align: center;
         a{text-decoration: none;display: inline-block;width: 49%;vertical-align: middle;}
@@ -80,7 +80,7 @@
     .declarations-title{padding-left: 44px;font-weight: 300;margin-bottom: 30px;position: relative;
         &:before{content: '';display: block;position: absolute;left: 0;top: 0;width: 5px;background-color: #2299ff;height: 0%;}
         h2{color: #020202;font-size: 48px;margin: 0;transition:transform 300ms ease, opacity 500ms ease;opacity: 0;transform:translate(0, -25%);font-weight: 300;}
-        p{color: #b1b1b1;font-size: 21px;transition:transform 300ms ease, opacity 500ms ease;opacity: 0;transform:translate(0, -25%)}
+        p{color: #313436;font-size: 21px;transition:transform 300ms ease, opacity 500ms ease;opacity: 0;transform:translate(0, -25%)}
 
         &.animated{
             h2{transform: translate(0, 0);opacity: 1;}

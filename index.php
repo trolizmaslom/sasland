@@ -26,6 +26,6 @@
 
 		<? partial('our-clients'); ?>
 
-		<? partial('map'); ?>
+		<? //partial('map'); ?>
 
 	</div>

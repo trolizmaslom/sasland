@@ -15,7 +15,7 @@
 
 .calc-title{padding-left: 44px;font-weight: 300;margin-bottom: 30px;position: relative;
     .calc-title-top{color:#020202;font-size: 48px;transform:translate(0, -25%);opacity: 0;transition:transform 300ms ease, opacity 500ms ease;}
-    .calc-title-bottom{font-size: 21px;color:#888888;transform:translate(0, -25%);opacity: 0;transition:transform 300ms ease, opacity 500ms ease;}
+    .calc-title-bottom{font-size: 21px;color:#313436;transform:translate(0, -25%);opacity: 0;transition:transform 300ms ease, opacity 500ms ease;}
     &:before{content: '';display: block;position: absolute;left:0;top: 0;width: 5px;background-color: #2299ff;height: 0;transition:height 300ms ease;}
     &.animated{
         &:before{height: 100%;}
