@@ -92,7 +92,7 @@
                 <div class="table-chits-wrap2 animate-it">
                     <table class="table-chits">
                         <tr class="tr-class-3-1 all-row-text">
-                            <td colspan=5> Иные налоговые льготы участников СЭЗ</td>
+                            <td colspan=5>Дополнительные льготы участников СЭЗ</td>
                         </tr>
 
                         <tr class="tr-class-3-2">
@@ -125,7 +125,7 @@
                 <div class="table-chits-wrap2 animate-it">
                     <table class="table-chits">
                         <tr class="tr-class-4-1 all-row-text">
-                            <td colspan=5> Дополнительные льготы участников СЭЗ </td>
+                            <td colspan=5> Иные налоговые льготы участников СЭЗ</td>
                         </tr>
                         <tr class="tr-class-4-2">
                             <td colspan=4 class="second-row-table-main">На участника СЭЗ не распространяется действие Законов о повышении налоговых ставок после даты регистрации в реестре участников СЭЗ (за исключением НДС и акцизов).</td>
