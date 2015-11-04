@@ -17,6 +17,8 @@
 .logo{text-align: center;
     img{    max-width: 36%;}
 }
+.responce .responce_title h2{color:red;}
+ .responce .responce_descr{color:#000;}
 
 /*svg-circles*/
 .svg-circles{padding-top: 49px;
@@ -168,7 +170,7 @@
     }
     /*responce*/
     .responce.animated:after {right: -39%;}
-    .responce .responce_title h2{font-size: 32px;color:red;}
+    .responce .responce_title h2{font-size: 32px;}
     /*declaration*/
     .declarations .declarations-title h2{font-size: 32px;}
     .declarations .declarations-title p{font-size: 16px;}

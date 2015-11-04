@@ -10,19 +10,8 @@
         .client-img{ text-align: justify; opacity: 0; transition:opacity 600ms linear;
             &.animated{opacity:1;}
             .item-img{display: inline-block; vertical-align: top;margin-left: -4px;
-                a{background-color: transparent;position: relative;
-                    img{
-                        &:nth-child(2){position: absolute;left:0; opacity:0.58;transition: opacity 500ms linear;}
-                        &:nth-child(1){ opacity:0;transition: opacity 500ms linear;}
+                a{background-color: transparent;position: relative;}
 
-                    }
-                    &:hover{
-                        img{
-                            &:nth-child(1){ opacity:1;}
-                            &:nth-child(2){ opacity:0;}
-                        }
-                    }
-                }
             }
 
         }

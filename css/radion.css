@@ -81,6 +81,14 @@
   max-width: 36%;
 }
 
+.responce .responce_title h2 {
+  color: red;
+}
+
+.responce .responce_descr {
+  color: #000;
+}
+
 /*svg-circles*/
 .svg-circles {
   padding-top: 49px;
@@ -625,7 +633,6 @@
   }
   .responce .responce_title h2 {
     font-size: 32px;
-    color: red;
   }
   /*declaration*/
   .declarations .declarations-title h2 {

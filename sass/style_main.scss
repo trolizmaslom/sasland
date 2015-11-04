@@ -89,7 +89,7 @@
         }
     }
     .we-answer-text{color:#fff;font-size: 24px;font-weight: 100;line-height: 30px;opacity: 0;transform:translate(0, 25%);transition:transform 300ms ease, opacity 500ms ease;
-        p{display: block;max-width: 900px;width: 100%;margin: 0 auto;}
+        p{display: block;max-width: 900px;width: 100%;margin: 0 auto;padding-bottom: 10px;}
         &.animated{opacity: 1;transform:translate(0,0);}
     }
 }
