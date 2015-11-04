@@ -31,7 +31,7 @@ function inputNumber(block) {
 	$('input', block).keyup(function() {
 		$inputNum = $(this);
 		if ($inputNum.val == '' || $inputNum.val() == 0) {
-			$inputNum.val('0');
+			$inputNum.val('');
 		}
 	});
 }
