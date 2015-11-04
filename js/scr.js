@@ -162,6 +162,48 @@ function validate(form, options){
     }
 }
 
+function validationCall(form){
+
+  var thisForm = $(form);
+  var formSur = thisForm.serialize();
+
+    $.ajax({
+        url : thisForm.attr('action'),
+        data: formSur,
+        method:'POST',
+        success : function(data){
+            if ( data.trim()!='true') {
+                thisForm.trigger("reset");
+                popNext();
+            }
+            else {
+               $(this).trigger('reset');
+            }
+
+        }
+    });
+
+    function popNext(){
+        $.fancybox.open("#call_success",{
+            padding:0,
+            fitToView:false,
+            wrapCSS:"popup-class",
+            autoSize:true,
+            afterClose: function(){
+                $('form').trigger("reset");
+                clearTimeout(timer);
+            }
+        });
+        var timer = null;
+
+        timer = setTimeout(function(){
+            $('form').trigger("reset");
+            $.fancybox.close("#call_success");
+        },2000);
+
+    }
+}
+
 function animationBlock(item){
 
     $(window).scroll(function(){
@@ -279,6 +321,17 @@ function valueShow(){
     });
 }
 
+function fancyInit(){
+
+    $('.fancybox').fancybox({
+        fitToView:true,
+        autosize:true,
+        wrapCSS:'popup-class',
+        padding:0
+    });
+
+}
+
 /* DOCUMENT READY  */
 $(document).ready(function() {
 	modernize();
@@ -292,8 +345,12 @@ $(window).load(function(){
     animationBlock($('.animate-section'));
 
     inputNumber('.calc-form-input');
+    inputNumber('.telefone-field');
     calcForm();
     valueShow();
+
+    fancyInit();
+    validate('.call-form-main',{submitFunction:validationCall});
 
 });
 

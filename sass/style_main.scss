@@ -137,6 +137,37 @@
 
 /* /facts-about-us */
 
+/* fancyboxes */
+
+.fancybox-opened.popup-class{
+    .fancybox-skin{box-shadow:none;border-radius: 5px;
+        .fancybox-close{display: none;}
+    }
+}
+.call-form{background-color: #283040;padding: 25px 40px 25px 40px;border-radius: 4px;max-width: 380px;width: 100%;}
+.call-form-title{color:#fcfcfc;font-size: 30px;position: relative;padding-left: 20px;margin-bottom: 20px;font-weight: 300;
+    &:before{content:'';position: absolute;left: 0;height: 100%;width: 5px;background-color:#2299ff;}
+}
+.call-form-wrap{
+    .form-row{max-width: 305px;margin-bottom: 20px;
+        input{width: 100%;height: 48px;line-height: 48px;font-size: 16px;border:none;border-radius: 4px;padding: 0 15px;font-weight: 300;border:1px solid transparent;transition:border-color 300ms ease, box-shadow 300ms ease;
+            &::-webkit-input-placeholder {color:#717171;}
+            &:-moz-placeholder {color:#717171;}
+            &::-moz-placeholder {color:#717171;}
+            &:-ms-input-placeholder {color:#717171;}
+            &.error{border-color:#db0000;box-shadow:inset 0 0 15px 0 rgba(219,0,0,.6);}
+        }
+    }
+}
+.call-form-main button{display: inline-block;width: 100%;border:3px solid #2299ff;border-radius: 2px;background-color: transparent;height: 65px;line-height: 60px;font-size: 20px;color:#fcfcfc;transition:background-color 300ms ease;
+    &:hover{background-color:#2299ff;}
+}
+
+.call_success{font-size: 29px;color:#fff;text-align: center;
+    span{font-weight:700;font-size: 32px;}
+}
+
+/* /fancyboxes */
 
 
 /* adaptive */
@@ -234,6 +265,13 @@
     }
 
     /* /we answer */
+
+    /* fancyboxes */
+
+    .call-form-title{font-size: 26px;}
+    .call-form{padding: 25px 20px 25px 20px;}
+
+    /* /fancyboxes */
 
 }
 

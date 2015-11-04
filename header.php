@@ -106,7 +106,7 @@
 				</div>
 				<div class="col-xs-12 col-sm-4">
 					<div class="header_tel_wrap">
-						<a href="#" class="head_zvonok btn btn-lg"><span>Заказать звонок</span></a>
+						<a href="#call-form" class="head_zvonok btn btn-lg fancybox"><span>Заказать звонок</span></a>
 						<a href="tel:+79787280001" class="head_tel"><span>+7&nbsp;978&nbsp;728&nbsp;0001</span></a>
 					</div>
 				</div>
