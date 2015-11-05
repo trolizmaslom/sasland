@@ -202,6 +202,14 @@
 
 /* /footer */
 /* form */
+#question-form {
+  text-align: center;
+}
+
+#question-form .input-submit-wrap {
+  display: inline-block;
+}
+
 .form-wrap div {
   float: none;
   margin: 0 auto;

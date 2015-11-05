@@ -50,7 +50,9 @@
 /* /footer */
 
 /* form */
-
+#question-form{text-align: center;
+	.input-submit-wrap{display: inline-block;}
+}
 .form-wrap{
 	div{float: none;margin: 0 auto;}
 	h2{margin: 0 auto;float: none;text-align: center;font-size: 48px; font-family: 'PNova'; font-weight: 300;margin-bottom: 68px;opacity: 0;transition:all ease .3s;
