@@ -192,7 +192,7 @@
 }
 
 .calc-form-wrap-title .animated.col-xs-8 {
-  opacity: 0;
+  opacity: 1;
   -webkit-transform: translate(0, 0);
   -moz-transform: translate(0, 0);
   -ms-transform: translate(0, 0);
@@ -201,7 +201,7 @@
 }
 
 .calc-form-wrap-title .animated.col-xs-4 {
-  opacity: 0;
+  opacity: 1;
   -webkit-transform: translate(0, 0);
   -moz-transform: translate(0, 0);
   -ms-transform: translate(0, 0);

@@ -38,8 +38,8 @@
         }
     }
     .animated{
-        &.col-xs-8{opacity: 0;transform:translate(0,0);}
-        &.col-xs-4{opacity: 0;transform:translate(0,0);}
+        &.col-xs-8{opacity: 1;transform:translate(0,0);}
+        &.col-xs-4{opacity: 1;transform:translate(0,0);}
     }
 }
 .calc-form-main{margin-bottom: 30px;}

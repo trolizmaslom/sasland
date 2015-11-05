@@ -259,7 +259,7 @@ function calcForm(){
         $('.calc-form-table-wrap tr').eq(3).find('td:nth-child(3)').text(parseInt(sumValue*sumPerc) - parseInt(sumValue*sumPercCrim));
 
         $('.calc-form-table-wrap tr').eq(5).find('td:nth-child(1)').text(parseInt(costValue*costPerc));
-        $('.calc-form-table-wrap tr').eq(5).find('td:nth-child(3)').text((parseInt(costValue*costPerc)) - parseInt($('.calc-form-table-wrap tr').eq(4).find('td:nth-child(3)').text()));
+        $('.calc-form-table-wrap tr').eq(5).find('td:nth-child(2)').text((parseInt(costValue*costPerc)) - parseInt($('.calc-form-table-wrap tr').eq(4).find('td:nth-child(3)').text()));
 
         $('.calc-form-table-wrap tr').eq(7).find('td:nth-child(2)').text(parseInt(fondValue * fondPerc));
         $('.calc-form-table-wrap tr').eq(7).find('td:nth-child(3)').text(parseInt(fondValue * fondPercCrim));
