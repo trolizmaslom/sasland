@@ -364,9 +364,3 @@ $(window).scroll(function(){
     valueShow();
 
 });
-
-
-
-
-
-
