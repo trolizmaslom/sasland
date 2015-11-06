@@ -110,7 +110,7 @@ function validate(form, options){
             focusInvalid : false,
             invalidHandler: function(event, validator) {
                 if(typeof(setings.errorFunction) === 'function'){
-                    setings.errorFunction();
+                    setings.errorFunction(form);
                 }
             },
             errorPlacement: function(error, element) {
@@ -126,7 +126,7 @@ function validate(form, options){
             },
             submitHandler: function(form) {
                 if( typeof(setings.submitFunction) === 'function' ) {
-                    setings.submitFunction();
+                    setings.submitFunction(form);
                 } else {
                     form.submit();
                 }
@@ -177,7 +177,7 @@ function validationCall(form){
                 popNext();
             }
             else {
-               $(this).trigger('reset');
+               thisForm.trigger('reset');
             }
 
         }
