@@ -140,21 +140,33 @@
                         </tr>
                         <tr>
                             <td class="text-left">Таможенная пошлина <br /> + НДС (при импорте)</td>
-                            <td class="gray-50"></td>
-                            <td>0%</td>
-                            <td class="blue-50">0%</td>
+                            <td class="gray-50">
+                                <form>
+                                    <div class="num-field first-table-input-field">
+                                        <input type="text" name="poshlina" type="text" value=0 />
+                                    </div>
+                                </form>
+                            </td>
+                            <td>0</td>
+                            <td class="blue-50"><span>0</span></td>
                         </tr>
                         <tr>
                             <td class="gray-50 text-left">Налог на землю</td>
-                            <td class="gray-75"></td>
-                            <td class="gray-50">0%</td>
-                            <td class="blue-75">0%</td>
+                            <td class="gray-75">
+                                <form>
+                                    <div class="num-field second-table-input-field">
+                                        <input type="text" name="nalog" type="text" value=0 />
+                                    </div>
+                                </form>
+                            </td>
+                            <td class="gray-50">0</td>
+                            <td class="blue-75"><span>0</span></td>
                         </tr>
                         <tr>
                             <td class="text-left">ИТОГО РАСХОДОВ</td>
-                            <td class="gray-50">0</td>
-                            <td>0</td>
-                            <td class="blue-50">0</td>
+                            <td class="gray-50"><span>0</span></td>
+                            <td><span>0</span></td>
+                            <td class="blue-50"><span>0</span></td>
                         </tr>
                     </table>
                 </div>

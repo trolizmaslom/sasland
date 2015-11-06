@@ -287,6 +287,16 @@
   transition: transform 300ms ease, opacity 500ms ease;
 }
 
+.calc-form-table-wrap input {
+  text-align: center;
+  background-color: transparent;
+  border: none;
+}
+
+.calc-form-table-wrap input:focus {
+  outline: none;
+}
+
 .calc-form-table-wrap table {
   width: 100%;
   border: 1px solid #f5f5f5;
@@ -316,6 +326,22 @@
   -ms-transform: translate(0, 0);
   -o-transform: translate(0, 0);
   transform: translate(0, 0);
+}
+
+.calc-form-table-wrap tr td:nth-child(4) span {
+  display: inline-block;
+  max-width: 75px;
+  word-break: break-word;
+}
+
+.calc-form-table-wrap tr:last-child td:last-child span {
+  max-width: 75px;
+}
+
+.calc-form-table-wrap tr:last-child td span {
+  display: inline-block;
+  max-width: 100px;
+  word-break: break-word;
 }
 
 .gray-50 {

@@ -58,11 +58,19 @@
 }
 
 .calc-form-table-wrap{opacity: 0;transform:translate(0, 25%);transition:transform 300ms ease, opacity 500ms ease;
+    input{text-align: center;background-color:transparent;border:none;
+        &:focus{outline: none;}
+    }
     table{width: 100%;border:1px solid #f5f5f5;font-weight: 600;font-size: 14px;color:#000000;}
     td, th{text-align: center;vertical-align: middle;padding:10px 10px 10px 10px;}
     tr td:last-child, tr th:last-child{color:#fff;}
     td.text-left, th.text-left{text-align: left;}
     &.animated{opacity: 1;transform:translate(0,0);}
+    tr td:nth-child(4) span{display: inline-block;max-width: 75px;word-break:break-word;}
+    tr:last-child td{
+        &:last-child span{max-width: 75px;}
+        span{display: inline-block;max-width: 100px;word-break:break-word;}
+    }
 }
 
 .gray-50{background-color: #f5f5f5;}

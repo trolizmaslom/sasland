@@ -265,19 +265,25 @@ function calcForm(){
         $('.calc-form-table-wrap tr').eq(7).find('td:nth-child(3)').text(parseInt(fondValue * fondPercCrim));
         $('.calc-form-table-wrap tr').eq(7).find('td:nth-child(4)').text(parseInt(fondValue * fondPerc) - parseInt(fondValue * fondPercCrim));
 
-        var sumCalc = parseInt(sumValue*sumPerc) + parseInt(costValue*costPerc) + parseInt(fondValue * fondPerc);
+        var sumCalc = parseInt(sumValue*sumPerc) + parseInt(costValue*costPerc) + parseInt(fondValue * fondPerc)+$('.first-table-input-field input').val() + $('.second-table-input-field input').val();
         var sumCalcCrim = parseInt(sumValue*sumPercCrim) + parseInt($('.calc-form-table-wrap tr').eq(4).find('td:nth-child(3)').text()) + parseInt(fondValue * fondPercCrim);
         var sumCalcDif = sumCalc - sumCalcCrim;
 
-        $('.calc-form-table-wrap tr:last-child td:nth-child(2)').text(sumCalc);
-        $('.calc-form-table-wrap tr:last-child td:nth-child(3)').text(sumCalcCrim);
-        $('.calc-form-table-wrap tr:last-child td:nth-child(4)').text(sumCalcDif);
+        $('.calc-form-table-wrap tr:last-child td:nth-child(2) span').text(sumCalc);
+        $('.calc-form-table-wrap tr:last-child td:nth-child(3) span').text(sumCalcCrim);
+        $('.calc-form-table-wrap tr:last-child td:nth-child(4) span').text(sumCalcDif);
 
 
         // here gona be ajax fucntion
 
         return false;
 
+    });
+
+    $('.calc-form-table-wrap .num-field input').keyup(function(){
+        var inpValue = $(this).val();
+        var parent = $(this).parents('tr');
+        parent.find('td:nth-child(4) span').text(inpValue);
     });
 
 };
@@ -346,6 +352,7 @@ $(window).load(function(){
 
     inputNumber('.calc-form-input');
     inputNumber('.telefone-field');
+    inputNumber('.num-field');
     calcForm();
     valueShow();
 
